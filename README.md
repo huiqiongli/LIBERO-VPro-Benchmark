@@ -119,7 +119,11 @@ videos, caches and private audit reports belong outside the release directory.
 
 ## Licenses
 
-Bundled third-party files retain their applicable upstream notices. LIBERO and
-model assets remain subject to their own licenses. A license for the
-project-authored code and benchmark assets must be selected by the authors
-before public distribution; this package does not assume a new blanket license.
+Project-authored code is [MIT licensed](LICENSE). The authors' original setting
+definitions, case manifests, annotations, original assets, and original
+modifications to upstream assets are [CC BY 4.0 licensed](LICENSE-DATA.md). This follows the separate
+code/data licensing used by LIBERO and LIBERO-X.
+
+Bundled third-party files retain their applicable upstream notices and are not
+relicensed by the project licenses; see [third-party notices](THIRD_PARTY_NOTICES.md).
+External LIBERO assets and model checkpoints remain subject to their own terms.

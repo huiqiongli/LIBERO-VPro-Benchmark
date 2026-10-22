@@ -14,6 +14,6 @@ code licenses above do not automatically license all meshes, textures, or
 checkpoints. See `source/fastwam_reference/PROVENANCE.md` for the bundled
 runtime's origins.
 
-These notices do not choose a license for the benchmark authors' original
-code, modifications, or new assets. The authors must select that license
-before public distribution.
+Project-authored code and benchmark data use separate MIT and CC BY 4.0
+licenses, respectively; see `LICENSE` and `LICENSE-DATA.md`. These licenses
+do not replace the terms attached to third-party files.
