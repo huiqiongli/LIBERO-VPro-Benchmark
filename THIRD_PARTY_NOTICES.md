@@ -5,9 +5,6 @@ The following upstream notices are retained with the bundled reference code:
 - FastWAM-derived evaluation code, including the reference evaluator and the
   FastWAM snapshots under `source/*/isolated_sources/`:
   `source/fastwam_reference/LICENSE` (MIT).
-- LingBot-VA-derived client/scheduling code, including client snapshots under
-  `source/*/isolated_sources/`:
-  `source/_shared_core/LICENSE.lingbot-va` (Apache-2.0).
 - LIBERO-derived source code:
   `source/_shared_core/LICENSE.libero` (MIT).
 
