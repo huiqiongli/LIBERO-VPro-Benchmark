@@ -1,0 +1,35 @@
+{
+  "schema_version": "wam_syncbench.A1.physical_surface.v1",
+  "track": "A1",
+  "scenario": "A1_physical_target_object_ratio",
+  "variant": "physical_surface_black_100pct",
+  "description": "Blacken the requested fraction of the task target object's complete three-dimensional render surface. A contiguous camera-aligned slice is cut from the full surface, including inner, rear, initially hidden, and later revealed regions that fall inside that slice.",
+  "status": "implemented",
+  "enabled": true,
+  "suite": "libero_goal",
+  "coverage_definition": "complete_3d_render_surface_area",
+  "coverage": 1.0,
+  "selection_axis": "agentview_aligned_complete_surface_slice",
+  "render_edit_only": true,
+  "collision_unchanged": true,
+  "pose_unchanged": true,
+  "observation_pixel_masking": false,
+  "require_task_match": true,
+  "task_id": 3,
+  "object_surface_black_fraction_overrides": [
+    {
+      "object": "akita_black_bowl_1",
+      "coverage": 1.0,
+      "coverage_definition": "complete_3d_render_surface_area",
+      "selection_axis": "agentview_aligned_complete_surface_slice",
+      "rgba": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "require_exact": true,
+      "surface_overlay_prefix": "a1_"
+    }
+  ]
+}

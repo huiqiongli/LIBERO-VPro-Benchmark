@@ -1,0 +1,33 @@
+<mujoco model="a4_handled_signal_lamp">
+  <asset>
+    <mesh file="signal_lamp_lower_octagon.obj" name="signal_lamp_lower_octagon"/>
+    <mesh file="signal_lamp_upper_octagon.obj" name="signal_lamp_upper_octagon"/>
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom name="signal_lower_visual" type="mesh" mesh="signal_lamp_lower_octagon" group="1" contype="0" conaffinity="0" rgba="0.07 0.13 0.20 1"/>
+        <geom name="signal_globe_visual" type="mesh" mesh="signal_lamp_upper_octagon" group="1" contype="0" conaffinity="0" rgba="0.96 0.65 0.12 1"/>
+        <geom name="signal_waist_visual" type="cylinder" pos="0 0 0.011" size="0.031 0.006" group="1" contype="0" conaffinity="0" rgba="0.08 0.11 0.14 1"/>
+        <geom name="signal_cap_visual" type="cylinder" pos="0 0 0.069" size="0.041 0.005" group="1" contype="0" conaffinity="0" rgba="0.08 0.11 0.14 1"/>
+        <geom name="signal_button_visual" type="sphere" pos="0 0 0.080" size="0.008" group="1" contype="0" conaffinity="0" rgba="0.78 0.10 0.08 1"/>
+        <geom name="signal_cage_x_visual" type="box" pos="0 0 0.039" size="0.004 0.039 0.027" group="1" contype="0" conaffinity="0" rgba="0.12 0.14 0.16 1"/>
+        <geom name="signal_cage_y_visual" type="box" pos="0 0 0.039" size="0.039 0.004 0.027" group="1" contype="0" conaffinity="0" rgba="0.12 0.14 0.16 1"/>
+        <geom name="handle_outer_visual" type="box" pos="0 0.069 0.030" size="0.005 0.005 0.044" group="1" contype="0" conaffinity="0" rgba="0.10 0.10 0.12 1"/>
+        <geom name="handle_low_visual" type="box" pos="0 0.053 -0.010" size="0.005 0.020 0.005" group="1" contype="0" conaffinity="0" rgba="0.10 0.10 0.12 1"/>
+        <geom name="handle_high_visual" type="box" pos="0 0.053 0.070" size="0.005 0.020 0.005" group="1" contype="0" conaffinity="0" rgba="0.10 0.10 0.12 1"/>
+        <geom name="reflector_housing_visual" type="box" pos="0 -0.055 0.052" size="0.019 0.017 0.016" group="1" contype="0" conaffinity="0" rgba="0.18 0.20 0.22 1"/>
+        <geom name="reflector_lens_visual" type="cylinder" pos="0 -0.073 0.052" quat="0.70710678 0.70710678 0 0" size="0.018 0.002" group="1" contype="0" conaffinity="0" rgba="0.88 0.94 0.98 1"/>
+        <geom name="signal_lower_collision" type="cylinder" pos="0 0 -0.027" size="0.040 0.038" group="0" density="95" friction="1.0 0.3 0.1" rgba="0.8 0.8 0.8 0.2"/>
+        <geom name="signal_upper_collision" type="cylinder" pos="0 0 0.039" size="0.039 0.027" group="0" density="70" friction="0.95 0.3 0.1" rgba="0.8 0.8 0.8 0.2"/>
+        <geom name="handle_outer_collision" type="box" pos="0 0.069 0.030" size="0.005 0.005 0.044" group="0" density="25" friction="0.95 0.3 0.1" rgba="0.8 0.8 0.8 0.2"/>
+        <geom name="handle_low_collision" type="box" pos="0 0.053 -0.010" size="0.005 0.020 0.005" group="0" density="25" friction="0.95 0.3 0.1" rgba="0.8 0.8 0.8 0.2"/>
+        <geom name="handle_high_collision" type="box" pos="0 0.053 0.070" size="0.005 0.020 0.005" group="0" density="25" friction="0.95 0.3 0.1" rgba="0.8 0.8 0.8 0.2"/>
+        <geom name="reflector_collision" type="box" pos="0 -0.055 0.052" size="0.019 0.017 0.016" group="0" density="25" friction="0.95 0.3 0.1" rgba="0.8 0.8 0.8 0.2"/>
+      </body>
+      <site rgba="0 0 0 0" size="0.003" pos="0 0 -0.065" name="bottom_site"/>
+      <site rgba="0 0 0 0" size="0.003" pos="0 0 0.088" name="top_site"/>
+      <site rgba="0 0 0 0" size="0.003" pos="0.041 0.074 0" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

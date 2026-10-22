@@ -1,0 +1,43 @@
+{
+  "schema_version": "wam_syncbench.c1_cross_view.v2",
+  "status": "validated_semantic_definition",
+  "track": "C1",
+  "subtask": "position",
+  "case_id": "C1_position_libero_goal_t5__agent",
+  "semantic_case_id": "C1_position_libero_goal_t5",
+  "suite": "libero_goal",
+  "task_id": 5,
+  "instruction": "push the plate to the front of the stove",
+  "bddl_file": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_goal/push_the_plate_to_the_front_of_the_stove.bddl",
+  "direction": "agent",
+  "enabled": true,
+  "observation_mode": "perturbed",
+  "target_policy": "object_edit",
+  "mask_source": "object_edit",
+  "render_mode": "temporary_counterfactual_simulator_branch",
+  "views": [
+    "agentview"
+  ],
+  "corrupted_view": "agentview",
+  "truth_view": "robot0_eye_in_hand",
+  "target": "plate_1",
+  "object_edits": [
+    {
+      "op": "relocate",
+      "object": "plate_1",
+      "offset": [
+        0.12,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "save_masked_video": true,
+  "visual_input_contract": "official_dual_camera",
+  "simulator_state_contract": {
+    "physical_rollout_unchanged": true,
+    "temporary_edit_restored_after_render": true
+  },
+  "source_validation_status": "existing_full",
+  "existing_scenario": "trackC_C3ext3_libero_goal_t5_position_agent-libero_goal-t5"
+}

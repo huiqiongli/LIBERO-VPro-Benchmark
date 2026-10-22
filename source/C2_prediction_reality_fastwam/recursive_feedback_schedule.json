@@ -1,0 +1,16 @@
+{
+  "schema_version": "wam_syncbench.c2_recursive_self_prediction.schedule.v1",
+  "enabled": true,
+  "trigger": "always",
+  "phase_diagnostics": true,
+  "imagine_feedback_phases": [
+    "initial",
+    "reach",
+    "pre_grasp",
+    "grasp",
+    "transport",
+    "pre_place",
+    "release"
+  ],
+  "imagine_budget_frames": 1000000
+}

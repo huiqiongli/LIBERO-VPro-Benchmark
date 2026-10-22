@@ -1,0 +1,89 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_shape",
+  "suite": "libero_10",
+  "benchmark": "libero_10",
+  "task_id": 0,
+  "task_name": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+  "instruction": "LIVING ROOM SCENE2 put both the alphabet soup and the tomato sauce in the basket",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_10/task_00/same_shape.bddl",
+  "target": "alphabet_soup_1",
+  "target_category": "alphabet_soup",
+  "definition": {
+    "zh": "同形状干扰物",
+    "definition": "匹配目标轮廓和尺度、具有独立功能结构的不同语义类别代理。",
+    "target": "alphabet_soup_1",
+    "target_category": "alphabet_soup",
+    "distractor": "tomato_sauce_d1_same_shape",
+    "category": "portable_speaker",
+    "registry_category": "tomato_sauce",
+    "proxy_identity": "portable_speaker",
+    "construction": "different_category_outline_matched_proxy",
+    "appearance_change": "native_proxy_identity"
+  },
+  "settle_steps": 18,
+  "object_scale_overrides": [
+    {
+      "object": "tomato_sauce_d1_same_shape",
+      "category": "tomato_sauce",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/shared/same_shape_proxy/alphabet_soup/portable_speaker/portable_speaker.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "tomato_sauce_d1_same_shape",
+      "relative_to": "alphabet_soup_1",
+      "candidate_offsets": [
+        [
+          0.0,
+          0.105,
+          0.0
+        ],
+        [
+          0.105,
+          0.0,
+          0.0
+        ],
+        [
+          -0.105,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.105,
+          0.0
+        ]
+      ],
+      "candidate_selection": "max_clearance",
+      "avoid_objects": [
+        "alphabet_soup_1",
+        "cream_cheese_1",
+        "tomato_sauce_1",
+        "ketchup_1",
+        "orange_juice_1",
+        "milk_1",
+        "butter_1",
+        "basket_1",
+        "living_room_table"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.34,
+          0.34
+        ],
+        [
+          -0.34,
+          0.38
+        ]
+      ],
+      "min_distance_from_others": 0.045,
+      "z_from": "alphabet_soup_1",
+      "quat_from": "alphabet_soup_1"
+    }
+  ]
+}

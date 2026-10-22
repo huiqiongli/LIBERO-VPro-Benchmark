@@ -1,0 +1,33 @@
+{
+  "schema_version": "libero_vpro.paper_facing_config.v1",
+  "setting_id": "A4.target_region_noise",
+  "status": "canonical_release_runner",
+  "canonical_execution": true,
+  "description": "Temporary Gaussian noise is applied only to the target-object segmentation region in both views at the fixed discrete replan schedule [2,5,8].",
+  "enabled": true,
+  "mask_source": "target_noise",
+  "target_policy": "obj_of_interest",
+  "target_objects_by_task": {
+    "libero_goal:0": [
+      "wooden_cabinet_1"
+    ]
+  },
+  "mask_geometry": "segmentation",
+  "noise_region": "target",
+  "noise_type": "gaussian",
+  "noise_mean": 0.0,
+  "noise_std": 80.0,
+  "noise_seed": 20260723,
+  "dilate_px": 0,
+  "views": [
+    "agentview",
+    "robot0_eye_in_hand"
+  ],
+  "save_masked_video": true,
+  "replan_schedule": [
+    2,
+    5,
+    8
+  ],
+  "runner": "runnable_settings/run_a4_target_region_noise.py"
+}

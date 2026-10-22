@@ -1,0 +1,18 @@
+{
+  "libero_object": {
+    "lingbot_va": 80,
+    "fastwam": 80
+  },
+  "libero_spatial": {
+    "lingbot_va": 80,
+    "fastwam": 80
+  },
+  "libero_goal": {
+    "lingbot_va": 80,
+    "fastwam": 80
+  },
+  "libero_10": {
+    "lingbot_va": 80,
+    "fastwam": 80
+  }
+}

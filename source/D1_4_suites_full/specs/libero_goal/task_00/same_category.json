@@ -1,0 +1,98 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_category",
+  "suite": "libero_goal",
+  "benchmark": "libero_goal",
+  "task_id": 0,
+  "task_name": "open_the_middle_drawer_of_the_cabinet",
+  "instruction": "open the middle drawer of the cabinet",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_goal/open_the_middle_drawer_of_the_cabinet.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_goal/task_00/same_category.bddl",
+  "target": "wooden_cabinet_1",
+  "target_category": "wooden_cabinet",
+  "definition": {
+    "zh": "同类别干扰物",
+    "definition": "保持与目标完全相同的类别和几何结构，但使用明显不同的颜色，并紧挨目标放置。",
+    "target": "wooden_cabinet_1",
+    "target_category": "wooden_cabinet",
+    "distractor": "wooden_cabinet_d1_same_category",
+    "category": "wooden_cabinet",
+    "construction": "same_category_exact_geometry_recolored",
+    "appearance_change": "color_changed",
+    "color_tint_rgba": [
+      0.05,
+      0.85,
+      1.0,
+      1.0
+    ]
+  },
+  "settle_steps": 18,
+  "geom_color_overrides": [
+    {
+      "body_name_contains": [
+        "wooden_cabinet_d1_same_category"
+      ],
+      "rgba": [
+        0.05,
+        0.85,
+        1.0,
+        1.0
+      ],
+      "mesh_only": false,
+      "include_descendants": true
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "wooden_cabinet_d1_same_category",
+      "relative_to": "wooden_cabinet_1",
+      "candidate_offsets": [
+        [
+          0.0,
+          0.34,
+          0.0
+        ],
+        [
+          0.34,
+          0.0,
+          0.0
+        ],
+        [
+          -0.34,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.34,
+          0.0
+        ]
+      ],
+      "candidate_selection": "max_clearance",
+      "avoid_objects": [
+        "akita_black_bowl_1",
+        "cream_cheese_1",
+        "wine_bottle_1",
+        "plate_1",
+        "main_table",
+        "wooden_cabinet_1",
+        "flat_stove_1",
+        "wine_rack_1"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.48,
+          0.48
+        ],
+        [
+          -0.36,
+          0.38
+        ]
+      ],
+      "min_distance_from_others": 0.18,
+      "preserve_z": true,
+      "fixed_fixture": true
+    }
+  ]
+}

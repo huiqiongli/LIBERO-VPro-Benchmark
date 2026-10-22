@@ -1,0 +1,206 @@
+{
+  "schema_version": "d1_4_suites_full_suite_manifest.v1",
+  "suite": "libero_object",
+  "conditions": [
+    "same_category",
+    "same_color",
+    "same_shape",
+    "same_affordance",
+    "same_position",
+    "trajectory"
+  ],
+  "task_count": 10,
+  "case_count": 60,
+  "tasks": [
+    {
+      "task_id": 0,
+      "task_name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "target": "alphabet_soup_1",
+      "target_category": "alphabet_soup",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_00/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_00/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_00/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_00/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_00/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_00/trajectory.json"
+      }
+    },
+    {
+      "task_id": 1,
+      "task_name": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+      "instruction": "pick up the cream cheese and place it in the basket",
+      "target": "cream_cheese_1",
+      "target_category": "cream_cheese",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_01/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_01/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_01/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_01/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_01/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_01/trajectory.json"
+      }
+    },
+    {
+      "task_id": 2,
+      "task_name": "pick_up_the_salad_dressing_and_place_it_in_the_basket",
+      "instruction": "pick up the salad dressing and place it in the basket",
+      "target": "salad_dressing_1",
+      "target_category": "salad_dressing",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_02/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_02/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_02/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_02/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_02/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_02/trajectory.json"
+      }
+    },
+    {
+      "task_id": 3,
+      "task_name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+      "instruction": "pick up the bbq sauce and place it in the basket",
+      "target": "bbq_sauce_1",
+      "target_category": "bbq_sauce",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_03/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_03/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_03/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_03/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_03/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_03/trajectory.json"
+      }
+    },
+    {
+      "task_id": 4,
+      "task_name": "pick_up_the_ketchup_and_place_it_in_the_basket",
+      "instruction": "pick up the ketchup and place it in the basket",
+      "target": "ketchup_1",
+      "target_category": "ketchup",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_04/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_04/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_04/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_04/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_04/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_04/trajectory.json"
+      }
+    },
+    {
+      "task_id": 5,
+      "task_name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+      "instruction": "pick up the tomato sauce and place it in the basket",
+      "target": "tomato_sauce_1",
+      "target_category": "tomato_sauce",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_05/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_05/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_05/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_05/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_05/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_05/trajectory.json"
+      }
+    },
+    {
+      "task_id": 6,
+      "task_name": "pick_up_the_butter_and_place_it_in_the_basket",
+      "instruction": "pick up the butter and place it in the basket",
+      "target": "butter_1",
+      "target_category": "butter",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_06/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_06/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_06/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_06/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_06/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_06/trajectory.json"
+      }
+    },
+    {
+      "task_id": 7,
+      "task_name": "pick_up_the_milk_and_place_it_in_the_basket",
+      "instruction": "pick up the milk and place it in the basket",
+      "target": "milk_1",
+      "target_category": "milk",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_07/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_07/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_07/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_07/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_07/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_07/trajectory.json"
+      }
+    },
+    {
+      "task_id": 8,
+      "task_name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+      "instruction": "pick up the chocolate pudding and place it in the basket",
+      "target": "chocolate_pudding_1",
+      "target_category": "chocolate_pudding",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_08/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_08/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_08/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_08/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_08/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_08/trajectory.json"
+      }
+    },
+    {
+      "task_id": 9,
+      "task_name": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+      "instruction": "pick up the orange juice and place it in the basket",
+      "target": "orange_juice_1",
+      "target_category": "orange_juice",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_09/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_09/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_09/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_09/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_09/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_object/task_09/trajectory.json"
+      }
+    }
+  ]
+}

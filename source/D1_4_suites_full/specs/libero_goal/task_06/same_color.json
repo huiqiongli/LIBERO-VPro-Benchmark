@@ -1,0 +1,84 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_color",
+  "suite": "libero_goal",
+  "benchmark": "libero_goal",
+  "task_id": 6,
+  "task_name": "put_the_cream_cheese_in_the_bowl",
+  "instruction": "put the cream cheese in the bowl",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_goal/put_the_cream_cheese_in_the_bowl.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_goal/task_06/same_color.bddl",
+  "target": "cream_cheese_1",
+  "target_category": "cream_cheese",
+  "definition": {
+    "zh": "同颜色/纹理/图案干扰物",
+    "definition": "不同类别的真实带把手杯映射目标物的颜色、纹理和图案，并紧挨目标放置。",
+    "target": "cream_cheese_1",
+    "target_category": "cream_cheese",
+    "distractor": "red_coffee_mug_d1_same_color",
+    "category": "red_coffee_mug",
+    "construction": "different_category_target_texture_transfer"
+  },
+  "settle_steps": 18,
+  "object_scale_overrides": [
+    {
+      "object": "red_coffee_mug_d1_same_color",
+      "category": "red_coffee_mug",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/shared/same_color/cream_cheese/red_coffee_mug_d1_same_color_v2.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "red_coffee_mug_d1_same_color",
+      "relative_to": "cream_cheese_1",
+      "candidate_offsets": [
+        [
+          0.0,
+          0.105,
+          0.0
+        ],
+        [
+          0.105,
+          0.0,
+          0.0
+        ],
+        [
+          -0.105,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.105,
+          0.0
+        ]
+      ],
+      "candidate_selection": "max_clearance",
+      "avoid_objects": [
+        "akita_black_bowl_1",
+        "cream_cheese_1",
+        "wine_bottle_1",
+        "plate_1",
+        "main_table",
+        "wooden_cabinet_1",
+        "flat_stove_1",
+        "wine_rack_1"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.48,
+          0.48
+        ],
+        [
+          -0.36,
+          0.38
+        ]
+      ],
+      "min_distance_from_others": 0.045,
+      "z_from": "cream_cheese_1"
+    }
+  ]
+}

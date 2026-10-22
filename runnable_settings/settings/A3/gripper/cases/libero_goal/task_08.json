@@ -1,0 +1,43 @@
+{
+  "schema_version": "wam_syncbench.trackA.a3.blur.v1",
+  "scenario": "A3_gripper_exact_black_bar_geometry_blur",
+  "enabled": true,
+  "occlusion_space": "world_anchored_camera_blur",
+  "implementation": "projected_exact_single_grip_site_black_bar_geometry_gaussian_blur",
+  "dynamics_mode": "observation_only_no_sim_mutation",
+  "localization_mode": "accepted_black_bar_grip_site_pose",
+  "activation": "entire_episode",
+  "interaction_parts": [
+    "gripper"
+  ],
+  "views": [
+    "agentview",
+    "robot0_eye_in_hand"
+  ],
+  "observation_image_convention": "opengl",
+  "geometry_reference_spec": "/home/huiqiongli/Sim/release/source/A3_interaction_part_occlusion/specs/A3_fixed_gripper.json",
+  "geometry_parity_contract": "same_3d_box_center_orientation_and_half_extents_as_black_bar",
+  "gripper_attachment_mode": "mocap_grip_site",
+  "gripper_patch_half_extents_m": [
+    0.054,
+    0.015,
+    0.03
+  ],
+  "gripper_patch_axis_offset_m": -0.0175,
+  "gripper_patch_local_offset_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "mask_to_source_body_visible_pixels": false,
+  "protect_robot_visible_pixels": false,
+  "blur_operator": "gaussian",
+  "gaussian_radius_fraction": 0.12,
+  "edge_feather_fraction": 0.002,
+  "full_experiment_approved": true,
+  "track": "A3",
+  "subtask": "gripper",
+  "suite": "libero_goal",
+  "task_id": 8,
+  "case_id": "A3_gripper__libero_goal__task08"
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "wam_syncbench.d3.case.v1",
+  "status": "implemented",
+  "track": "D3",
+  "suite": "libero_10",
+  "task_id": 6,
+  "instruction": "LIVING ROOM SCENE6 put the white mug on the plate and put the chocolate pudding to the right of the plate",
+  "target": "porcelain_mug_1",
+  "ambiguity_schedule": {
+    "mode": "full_episode",
+    "operator": "symmetric_paired_state_exposure_v5"
+  },
+  "camera_render_contract": "equal_weight_paired_state_render_in_both_official_views",
+  "physics_and_goal_contract": "truth_state_unchanged",
+  "alternative_state_rendered": true,
+  "alternative_state_role": "equal_weight_visual_evidence_only_never_physics_or_goal_state",
+  "ambiguity_kind": "object_support_state_ambiguity",
+  "morphology": "handled_vessel",
+  "truth_a_definition": "official_initial_support_state",
+  "truth_b_definition": {
+    "support_state": "tipped_on_side",
+    "real_world_scenario": "handled_vessel_tipped_to_a_stable_side_never_base_up",
+    "forbidden_pose": "base_up_inversion"
+  },
+  "reveal_entity": "porcelain_mug_1",
+  "case_id": "libero_10__t06__object_support_state_obfuscation__truth_b__obfuscated",
+  "d3_subclass": "object_support_state_obfuscation",
+  "truth_state": "truth_b",
+  "observation_mode": "obfuscated",
+  "visual_evidence_state": "truth_state_evidence_obfuscated",
+  "case_path": "/home/huiqiongli/Sim/release/source/D2_D3_state_20260823/cases/D3/libero_10/libero_10__t06__object_support_state_obfuscation__truth_b__obfuscated.json"
+}

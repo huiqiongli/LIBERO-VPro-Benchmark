@@ -1,0 +1,23 @@
+{
+  "schema_version": "libero_vpro.runnable_setting.v1",
+  "setting_id": "C2.recursive_self_prediction.all_steps",
+  "category": "C2",
+  "trials_per_case": 10,
+  "backend": "c2_feedback",
+  "source_roots": [
+    "source/C2_prediction_reality_fastwam"
+  ],
+  "config_files": [
+    "source/C2_prediction_reality_fastwam/recursive_feedback_schedule.json"
+  ],
+  "asset_contract_schema": "libero_vpro.asset_contract.v1",
+  "asset_mode": "runtime_feedback_transform",
+  "asset_roots": [
+    "source/C2_prediction_reality_fastwam"
+  ],
+  "external_dependencies": [
+    "unmodified LIBERO bddl_files and init_files",
+    "MuJoCo and the selected model backend/checkpoint"
+  ],
+  "full_result_source": "external/full_results/by_experiment_subclass_model/C2/recursive_self_prediction.all_steps"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_affordance",
+  "suite": "libero_10",
+  "benchmark": "libero_10",
+  "task_id": 5,
+  "task_name": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+  "instruction": "STUDY SCENE1 pick up the book and place it in the back compartment of the caddy",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_10/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_10/task_05/same_affordance.bddl",
+  "target": "black_book_1",
+  "target_category": "black_book",
+  "definition": {
+    "zh": "同可供性干扰物",
+    "definition": "不同类别但同样提供容纳功能的篮子",
+    "target": "desk_caddy_1",
+    "target_category": "desk_caddy",
+    "distractor": "basket_d1_affordance",
+    "category": "basket",
+    "construction": "different_category_same_function"
+  },
+  "settle_steps": 18,
+  "object_pose_overrides": [
+    {
+      "object": "basket_d1_affordance",
+      "relative_to": "desk_caddy_1",
+      "candidate_offsets": [
+        [
+          0.34,
+          0.0,
+          0.0
+        ]
+      ],
+      "candidate_selection": "first_clear",
+      "avoid_objects": [
+        "black_book_1",
+        "white_yellow_mug_1",
+        "study_table",
+        "desk_caddy_1"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.32,
+          0.32
+        ],
+        [
+          -0.3,
+          0.3
+        ]
+      ],
+      "min_distance_from_others": 0.045,
+      "z_from": "desk_caddy_1"
+    }
+  ]
+}

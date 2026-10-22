@@ -1,0 +1,10 @@
+{
+  "schema_version": "wam_syncbench.formal_timing.v1",
+  "scenario": "A1_pre_grasp_occlusion",
+  "trigger": "grasp_pulse",
+  "grasp_pulse": {
+    "side": "before"
+  },
+  "pre_grasp_band": 0.25,
+  "phase_diagnostics": true
+}

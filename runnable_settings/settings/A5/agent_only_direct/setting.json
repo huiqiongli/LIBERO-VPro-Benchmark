@@ -1,0 +1,32 @@
+{
+  "schema_version": "libero_vpro.runnable_setting.v1",
+  "setting_id": "A5.agent_only_direct",
+  "category": "A5",
+  "trials_per_case": 10,
+  "backend": "a5_condition",
+  "source_roots": [
+    "source/A5_single_view",
+    "source/A5_view_copy",
+    "source/A5_blank_view_control",
+    "source/A5_white_view_control"
+  ],
+  "config_files": [
+    "source/A5_single_view/README.md",
+    "source/A5_view_copy/README.md",
+    "source/A5_blank_view_control/README.md",
+    "source/A5_white_view_control/README.md"
+  ],
+  "asset_contract_schema": "libero_vpro.asset_contract.v1",
+  "asset_mode": "runtime_observation_transform",
+  "asset_roots": [
+    "source/A5_single_view",
+    "source/A5_view_copy",
+    "source/A5_blank_view_control",
+    "source/A5_white_view_control"
+  ],
+  "external_dependencies": [
+    "unmodified LIBERO bddl_files and init_files",
+    "MuJoCo and the selected model backend/checkpoint"
+  ],
+  "full_result_source": "external/full_results/by_experiment_subclass_model/A5/agent_only_direct"
+}

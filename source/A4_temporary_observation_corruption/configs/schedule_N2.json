@@ -1,0 +1,8 @@
+{
+  "schema_version": "wam_syncbench.trackA.v1",
+  "scenario": "A4_fixed_2replans",
+  "trigger": "random_replans",
+  "random_replans": {"indices": [2, 5]},
+  "paper_setting_aliases": ["black_N2", "noise_N2"],
+  "description": "Paper-facing N2 schedule: corrupt replans 2 and 5."
+}

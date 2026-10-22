@@ -1,0 +1,505 @@
+{
+  "schema_version": "libero_vpro.paper_facing_settings.v1",
+  "paper_source": "external/paper/LIBERO_VPro_arxiv/root.tex (not bundled)",
+  "statistical_source": "PAPER_FACING_STATISTICS.json",
+  "case_definition": "unique suite x task x setting; model, trial, and output path are not new cases",
+  "protocol": {
+    "base_task_count": 40,
+    "trials_per_case": 10,
+    "paper_category_count": 12,
+    "paper_setting_count": 96,
+    "paper_task_condition_case_count": 3296
+  },
+  "runnable_settings_root": "runnable_settings",
+  "runnable_settings_index": "runnable_settings/index.json",
+  "asset_contract": {
+    "schema": "libero_vpro.asset_contract.v1",
+    "canonical_asset_root": "assets",
+    "setting_fields": [
+      "asset_mode",
+      "asset_roots",
+      "external_dependencies"
+    ],
+    "compatibility_note": "source/ may contain relative aliases for legacy runners; assets/ is canonical",
+    "category_ids": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "B1",
+      "C1",
+      "C2",
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ]
+  },
+  "categories": [
+    {
+      "id": "A1",
+      "name": "Target-Object Masking",
+      "dimension": "Visual Evidence Degradation",
+      "source_roots": [
+        "source/A1_physical_target_object_ratio_20260822",
+        "source/A1_physical_target_object_ratio_6models_full_20260822",
+        "source/A1_timing_variants",
+        "source/formal_timing_manifests",
+        "source/adapted"
+      ],
+      "settings": [
+        {
+          "id": "ratio_25pct"
+        },
+        {
+          "id": "ratio_50pct"
+        },
+        {
+          "id": "ratio_75pct"
+        },
+        {
+          "id": "ratio_100pct"
+        },
+        {
+          "id": "initially_occluded_then_revealed"
+        },
+        {
+          "id": "initially_visible_then_occluded"
+        },
+        {
+          "id": "pre_grasp"
+        },
+        {
+          "id": "post_grasp"
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "name": "Target-Receptacle Masking",
+      "dimension": "Visual Evidence Degradation",
+      "source_roots": [
+        "source/A2_physical_receptacle_ratio_20260822",
+        "source/A2_physical_receptacle_ratio_6models_full_20260822",
+        "source/A2_placement_timing",
+        "source/formal_timing_manifests",
+        "source/adapted"
+      ],
+      "settings": [
+        {
+          "id": "ratio_25pct"
+        },
+        {
+          "id": "ratio_50pct"
+        },
+        {
+          "id": "ratio_75pct"
+        },
+        {
+          "id": "ratio_100pct"
+        },
+        {
+          "id": "initially_occluded_then_revealed"
+        },
+        {
+          "id": "initially_visible_then_occluded"
+        },
+        {
+          "id": "pre_place"
+        },
+        {
+          "id": "post_place"
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "name": "Interaction-Cue Masking",
+      "dimension": "Visual Evidence Degradation",
+      "source_roots": [
+        "source/A3_interaction_part_occlusion"
+      ],
+      "settings": [
+        {
+          "id": "gripper"
+        },
+        {
+          "id": "target_contact"
+        },
+        {
+          "id": "fixture_contact"
+        },
+        {
+          "id": "bounded_receiver"
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "name": "Temporary Observation Corruption",
+      "dimension": "Visual Evidence Degradation",
+      "source_roots": [
+        "source/A4_temporary_observation_corruption",
+        "paper_facing_configs/A4"
+      ],
+      "scope": "Discrete-event, contiguous-duration, phase-triggered, and target-region observation corruption; N settings specify scattered replan events and D settings specify consecutive corrupted replans.",
+      "settings": [
+        {
+          "id": "black_N1"
+        },
+        {
+          "id": "black_N2"
+        },
+        {
+          "id": "black_N3"
+        },
+        {
+          "id": "noise_N1"
+        },
+        {
+          "id": "noise_N2"
+        },
+        {
+          "id": "noise_N3"
+        },
+        {
+          "id": "target_region_noise"
+        },
+        {
+          "id": "black_D2"
+        },
+        {
+          "id": "black_D3"
+        },
+        {
+          "id": "noise_D2"
+        },
+        {
+          "id": "noise_D3"
+        },
+        {
+          "id": "black_reach_3replan_once"
+        },
+        {
+          "id": "black_pre_grasp_3replan_once"
+        },
+        {
+          "id": "black_grasp_3replan_once"
+        },
+        {
+          "id": "black_transport_3replan_once"
+        },
+        {
+          "id": "black_pre_place_3replan_once"
+        },
+        {
+          "id": "noise_reach_3replan_once"
+        },
+        {
+          "id": "noise_pre_grasp_3replan_once"
+        },
+        {
+          "id": "noise_grasp_3replan_once"
+        },
+        {
+          "id": "noise_transport_3replan_once"
+        },
+        {
+          "id": "noise_pre_place_3replan_once"
+        }
+      ]
+    },
+    {
+      "id": "A5",
+      "name": "View Unavailability",
+      "dimension": "Visual Evidence Degradation",
+      "source_roots": [
+        "source/A5_single_view",
+        "source/A5_blank_view_control",
+        "source/A5_white_view_control",
+        "source/A5_view_copy"
+      ],
+      "settings": [
+        {
+          "id": "agent_only_direct"
+        },
+        {
+          "id": "wrist_only_direct"
+        },
+        {
+          "id": "agentview_copy_to_dual"
+        },
+        {
+          "id": "wrist_copy_to_dual"
+        },
+        {
+          "id": "agent_plus_black_wrist"
+        },
+        {
+          "id": "wrist_plus_black_agent"
+        },
+        {
+          "id": "agent_plus_white_wrist"
+        },
+        {
+          "id": "wrist_plus_white_agent"
+        }
+      ]
+    },
+    {
+      "id": "B1",
+      "name": "Camera Staleness",
+      "dimension": "Camera Staleness",
+      "source_roots": [
+        "source/B1_camera_staleness",
+        "source/adapted"
+      ],
+      "settings": [
+        {
+          "id": "delay1_agent"
+        },
+        {
+          "id": "delay1_wrist"
+        },
+        {
+          "id": "delay3_agent"
+        },
+        {
+          "id": "delay3_wrist"
+        },
+        {
+          "id": "delay5_agent"
+        },
+        {
+          "id": "delay5_wrist"
+        },
+        {
+          "id": "freeze_agent"
+        },
+        {
+          "id": "freeze_wrist"
+        },
+        {
+          "id": "replay_agent"
+        },
+        {
+          "id": "replay_wrist"
+        }
+      ]
+    },
+    {
+      "id": "C1",
+      "name": "Cross-View Contradiction",
+      "dimension": "Visual Source Consistency",
+      "source_roots": [
+        "source/C1_cross_view_20260825"
+      ],
+      "settings": [
+        {
+          "id": "count.agent"
+        },
+        {
+          "id": "count.wrist"
+        },
+        {
+          "id": "existence.agent"
+        },
+        {
+          "id": "existence.wrist"
+        },
+        {
+          "id": "position.agent"
+        },
+        {
+          "id": "position.wrist"
+        },
+        {
+          "id": "state.agent"
+        },
+        {
+          "id": "state.wrist"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "name": "Prediction–Reality Divergence",
+      "dimension": "Visual Source Consistency",
+      "source_roots": [
+        "source/C2_prediction_reality_fastwam",
+        "source/C2_prediction_reality_fastwam"
+      ],
+      "scope": "requires an interface that produces predicted camera frames",
+      "settings": [
+        {
+          "id": "recursive_self_prediction.all_steps"
+        }
+      ]
+    },
+    {
+      "id": "D1",
+      "name": "Task-Relevant Distractors",
+      "dimension": "Task-Relevant Scene Variation",
+      "source_roots": [
+        "source/D1_4_suites_full"
+      ],
+      "settings": [
+        {
+          "id": "same_category"
+        },
+        {
+          "id": "same_color"
+        },
+        {
+          "id": "same_shape"
+        },
+        {
+          "id": "same_affordance"
+        },
+        {
+          "id": "same_position"
+        },
+        {
+          "id": "trajectory"
+        }
+      ]
+    },
+    {
+      "id": "D2",
+      "name": "Task-Precondition Variation",
+      "dimension": "Task-Relevant Scene Variation",
+      "source_roots": [
+        "source/D2_D3_state_20260823"
+      ],
+      "scope": "paper-facing openness and object-pose subset; occupancy branches remain provenance-only",
+      "settings": [
+        {
+          "id": "open_5pct"
+        },
+        {
+          "id": "open_12pct"
+        },
+        {
+          "id": "open_20pct"
+        },
+        {
+          "id": "open_50pct"
+        },
+        {
+          "id": "open_85pct"
+        },
+        {
+          "id": "open_90pct"
+        },
+        {
+          "id": "adjacent_support_face"
+        },
+        {
+          "id": "opposite_support_face"
+        }
+      ]
+    },
+    {
+      "id": "D3",
+      "name": "Visual State Ambiguity",
+      "dimension": "Task-Relevant Scene Variation",
+      "source_roots": [
+        "source/D2_D3_state_20260823"
+      ],
+      "scope": "paper-facing truth-A obfuscation subset",
+      "settings": [
+        {
+          "id": "articulation_state_ambiguity.truth_a_obfuscated"
+        },
+        {
+          "id": "object_support_state_ambiguity.truth_a_obfuscated"
+        }
+      ]
+    },
+    {
+      "id": "D4",
+      "name": "Target Geometry Variation",
+      "dimension": "Task-Relevant Scene Variation",
+      "source_roots": [
+        "source/D4_contact4_physical_3severity_40task_20260815"
+      ],
+      "scope": "four retained deformation families at three severity levels; 36 eligible tasks per setting",
+      "settings": [
+        {
+          "id": "taper.low"
+        },
+        {
+          "id": "taper.medium"
+        },
+        {
+          "id": "taper.high"
+        },
+        {
+          "id": "multipeak.low"
+        },
+        {
+          "id": "multipeak.medium"
+        },
+        {
+          "id": "multipeak.high"
+        },
+        {
+          "id": "twist.low"
+        },
+        {
+          "id": "twist.medium"
+        },
+        {
+          "id": "twist.high"
+        },
+        {
+          "id": "asymmetric.low"
+        },
+        {
+          "id": "asymmetric.medium"
+        },
+        {
+          "id": "asymmetric.high"
+        }
+      ]
+    }
+  ],
+  "entrypoints": {
+    "public": [
+      "evaluation_config.yaml",
+      "scripts/run_eval.py",
+      "scripts/check_assets.py",
+      "scripts/download_assets.sh"
+    ],
+    "settings_index": "runnable_settings/index.json",
+    "setting_launcher_pattern": "runnable_settings/settings/<category>/<setting>/run.sh",
+    "dispatcher": "runnable_settings/run_setting.py"
+  },
+  "scope_notes": [
+    "The paper-facing count excludes the expanded D2 occupancy/support-region branches and the D3 truth-B branch that are retained in the full source archive.",
+    "A4 phase corruption is expanded into the five full-protocol phases (reach, pre_grasp, grasp, transport, pre_place) for both black and Gaussian-noise observations.",
+    "C1 contains 190 task-condition cases across its eight settings.",
+    "D4 has 36 eligible tasks per setting. Three LIBERO-Goal tasks have no grasped target; a fourth is excluded because outward contact-band deformation makes the initial bowl pose intersect its drawer."
+  ],
+  "paper_category_order": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "B1",
+    "C1",
+    "C2",
+    "D1",
+    "D2",
+    "D3",
+    "D4"
+  ],
+  "dimension_codes": {
+    "A": "Visual Evidence Degradation",
+    "B": "Camera Staleness",
+    "C": "Visual Source Consistency",
+    "D": "Task-Relevant Scene Variation"
+  }
+}

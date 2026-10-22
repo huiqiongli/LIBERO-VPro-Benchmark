@@ -1,0 +1,56 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "trajectory",
+  "suite": "libero_goal",
+  "benchmark": "libero_goal",
+  "task_id": 9,
+  "task_name": "put_the_wine_bottle_on_the_rack",
+  "instruction": "put the wine bottle on the rack",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_goal/put_the_wine_bottle_on_the_rack.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_goal/task_09/trajectory.bddl",
+  "target": "wine_bottle_1",
+  "target_category": "wine_bottle",
+  "definition": {
+    "zh": "轨迹干扰物",
+    "definition": "在容器型目标内部或非容器目标顶部放置真实碰撞方块，使其直接占据目标抓取/交互路径；方块宽度近似目标所需夹爪开度。",
+    "target": "wine_bottle_1",
+    "target_category": "wine_bottle",
+    "distractor": "trajectory_block_d1",
+    "category": "trajectory_block",
+    "construction": "target_supported_grasp_width_matched_block"
+  },
+  "settle_steps": 18,
+  "object_scale_overrides": [
+    {
+      "object": "trajectory_block_d1",
+      "category": "trajectory_block",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/shared/trajectory_block_045mm_capfit.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "trajectory_block_d1",
+      "on_top_of": "wine_bottle_1",
+      "support_gap_m": -0.01,
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "trajectory_calibration": {
+    "trajectory_phase": "pre-grasp/pre-interaction approach to wine_bottle_1",
+    "placement_mode": "top",
+    "placement_rule": "center on the target top and settle with direct target support",
+    "block_side_length_m": 0.045,
+    "gripper_opening_reference_m": 0.045,
+    "gripper_opening_basis": "target graspable cross-section, capped to Panda usable opening",
+    "physical_support": "wine_bottle_1",
+    "floating": false
+  }
+}

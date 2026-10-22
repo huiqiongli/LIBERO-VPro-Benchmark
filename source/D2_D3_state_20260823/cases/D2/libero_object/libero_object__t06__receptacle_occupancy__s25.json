@@ -1,0 +1,46 @@
+{
+  "schema_version": "wam_syncbench.d2.occupancy.v1",
+  "status": "implemented",
+  "track": "D2",
+  "subtask": "receptacle_occupancy",
+  "case_id": "libero_object__t06__receptacle_occupancy__s25",
+  "suite": "libero_object",
+  "benchmark": "libero_object",
+  "task_id": 6,
+  "instruction": "pick up the butter and place it in the basket",
+  "target": "butter_1",
+  "target_morphology": "box",
+  "receiver_kind": "enclosed",
+  "physical_relation": "in",
+  "severity_pct": 25,
+  "severity_definition": "calibrated_fraction_of_maximum_feasible_neutral_block",
+  "achieved_nominal_footprint_fraction": 0.009649491857758765,
+  "destination": {
+    "kind": "site",
+    "name": "basket_1_contain_region"
+  },
+  "primary_goal_states": [
+    [
+      "in",
+      "butter_1",
+      "basket_1_contain_region"
+    ]
+  ],
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_object/pick_up_the_butter_and_place_it_in_the_basket.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D2_D3_state_variation/bddl_overrides/libero_object/task_06/occupancy.bddl",
+  "object_scale_overrides": [
+    {
+      "object": "occupancy_block_d2",
+      "category": "trajectory_block",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D2_D3_state_variation/assets/libero_object/task_06/occupancy_25.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "placement_probe_steps": 500,
+  "settle_steps": 120,
+  "spec_path": "/home/huiqiongli/Sim/release/source/D2_D3_state_20260823/specs/d2_occupancy/libero_object/task_06/severity_25.json",
+  "visual_input_contract": "official_dual_camera",
+  "perturbation_scope": "physical_simulator_state_full_episode",
+  "case_path": "/home/huiqiongli/Sim/release/source/D2_D3_state_20260823/cases/D2/libero_object/libero_object__t06__receptacle_occupancy__s25.json"
+}

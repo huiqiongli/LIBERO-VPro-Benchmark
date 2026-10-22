@@ -1,0 +1,16 @@
+{
+  "schema_version": "wam_syncbench.trackA.a3.v5.semantic_shape_candidate",
+  "scenario": "A3_v5_target_object_preview",
+  "enabled": true,
+  "occlusion_space": "mujoco_world",
+  "dynamics_mode": "non_colliding_scene_geometry",
+  "localization_mode": "frozen_task_local_regions",
+  "activation": "entire_episode",
+  "task_region_manifest": "manifest_target_objects.json",
+  "interaction_parts": ["object_contact"],
+  "expected_patch_count": {"object_contact": 1},
+  "patch_geom_type": {"object_contact": "box"},
+  "occluder_rgba": [0.0, 0.0, 0.0, 1.0],
+  "views": ["agentview", "robot0_eye_in_hand"],
+  "minimum_contact_coverage": 0.0
+}

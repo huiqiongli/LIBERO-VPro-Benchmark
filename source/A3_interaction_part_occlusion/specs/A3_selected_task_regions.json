@@ -1,0 +1,110 @@
+{
+  "schema_version": "wam_syncbench.trackA.a3.fixed_regions.v4",
+  "description": "Frozen, always-on task-local rectangular patches: one compact gripper box, one calibrated horizontal target-contact pad, and one horizontal receiving pad.",
+  "coverage_contract": {
+    "minimum_contact_fraction": 0.95,
+    "runtime_motion": "rigidly_attached_to_source_body",
+    "runtime_retargeting": false,
+    "activation": "entire_episode"
+  },
+  "tasks": {
+    "libero_spatial/0": {
+      "target": "akita_black_bowl_1",
+      "receptacle": "plate_1",
+      "object_contact_template": "akita_black_bowl_outer_grasp_band",
+      "receptacle_contact_template": "plate_top_receiving_surface"
+    },
+    "libero_spatial/2": {
+      "target": "akita_black_bowl_1",
+      "receptacle": "plate_1",
+      "object_contact_template": "akita_black_bowl_outer_grasp_band",
+      "receptacle_contact_template": "plate_top_receiving_surface"
+    },
+    "libero_spatial/7": {
+      "target": "akita_black_bowl_1",
+      "receptacle": "plate_1",
+      "object_contact_template": "akita_black_bowl_outer_grasp_band",
+      "receptacle_contact_template": "plate_top_receiving_surface"
+    },
+    "libero_goal/1": {
+      "target": "akita_black_bowl_1",
+      "receptacle": "flat_stove_1_cook_region",
+      "object_contact_template": "akita_black_bowl_outer_grasp_band",
+      "receptacle_contact_template": "flat_stove_cook_surface"
+    },
+    "libero_goal/2": {
+      "target": "wine_bottle_1",
+      "receptacle": "wooden_cabinet_1_top_side",
+      "object_contact_template": "wine_bottle_neck_and_cap_grasp_region",
+      "receptacle_contact_template": "wooden_cabinet_bottle_landing_region"
+    },
+    "libero_goal/4": {
+      "target": "akita_black_bowl_1",
+      "receptacle": "wooden_cabinet_1_top_side",
+      "object_contact_template": "akita_black_bowl_outer_grasp_band",
+      "receptacle_contact_template": "wooden_cabinet_bowl_landing_region"
+    },
+    "libero_goal/8": {
+      "target": "akita_black_bowl_1",
+      "receptacle": "plate_1",
+      "object_contact_template": "akita_black_bowl_outer_grasp_band",
+      "receptacle_contact_template": "plate_top_receiving_surface"
+    }
+  },
+  "templates": {
+    "akita_black_bowl_outer_grasp_band": {
+      "role": "target",
+      "body_name": "akita_black_bowl_1_main",
+      "geom_type": "box",
+      "semantic_region": "single_contact_calibrated_outer_grasp_rectangle",
+      "patches": [
+        {"pos": [0.0480, 0.0000, 0.0270], "normal": [1.0, 0.0, 0.0], "tangent_y": [0.0, 0.0, 1.0], "size": [0.0160, 0.0100, 0.0020]}
+      ]
+    },
+    "wine_bottle_neck_and_cap_grasp_region": {
+      "role": "target",
+      "body_name": "wine_bottle_1_main",
+      "geom_type": "box",
+      "semantic_region": "single_neck_grasp_rectangle",
+      "patches": [
+        {"pos": [0.0035, 0.0000, 0.1370], "normal": [1.0, 0.0, 0.0], "tangent_y": [0.0, 0.0, 1.0], "size": [0.0200, 0.0130, 0.0015]}
+      ]
+    },
+    "plate_top_receiving_surface": {
+      "role": "receptacle",
+      "body_name": "plate_1_main",
+      "geom_type": "box",
+      "semantic_region": "central_top_support_surface",
+      "patches": [
+        {"pos": [0.0008, 0.0004, 0.0035], "normal": [0.0, 0.0, 1.0], "tangent_y": [0.0, 1.0, 0.0], "size": [0.0525, 0.0350, 0.0015]}
+      ]
+    },
+    "flat_stove_cook_surface": {
+      "role": "receptacle",
+      "body_name": "flat_stove_1_burner",
+      "geom_type": "box",
+      "semantic_region": "single_rectangular_burner_receiving_patch",
+      "patches": [
+        {"pos": [0.0000, 0.0000, 0.0155], "normal": [0.0, 0.0, 1.0], "tangent_y": [0.0, 1.0, 0.0], "size": [0.0750, 0.0500, 0.0015]}
+      ]
+    },
+    "wooden_cabinet_bottle_landing_region": {
+      "role": "receptacle",
+      "body_name": "wooden_cabinet_1_base",
+      "geom_type": "box",
+      "semantic_region": "bddl_top_side_bottle_base_landing_region",
+      "patches": [
+        {"pos": [0.0035, 0.0157, 0.2245], "normal": [0.0, 0.0, 1.0], "tangent_y": [0.0, 1.0, 0.0], "size": [0.0350, 0.0220, 0.0015]}
+      ]
+    },
+    "wooden_cabinet_bowl_landing_region": {
+      "role": "receptacle",
+      "body_name": "wooden_cabinet_1_base",
+      "geom_type": "box",
+      "semantic_region": "bddl_top_side_bowl_base_landing_region",
+      "patches": [
+        {"pos": [0.0035, 0.0157, 0.2217], "normal": [0.0, 0.0, 1.0], "tangent_y": [0.0, 1.0, 0.0], "size": [0.0675, 0.0430, 0.0015]}
+      ]
+    }
+  }
+}

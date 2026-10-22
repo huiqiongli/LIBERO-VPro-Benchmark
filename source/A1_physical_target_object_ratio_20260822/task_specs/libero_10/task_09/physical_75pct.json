@@ -1,0 +1,67 @@
+{
+  "schema_version": "wam_syncbench.A1.physical_surface.v1",
+  "track": "A1",
+  "scenario": "A1_physical_target_object_ratio",
+  "variant": "physical_surface_black_75pct",
+  "description": "Blacken the requested fraction of the task target object's complete three-dimensional render surface. A contiguous camera-aligned slice is cut from the full surface, including inner, rear, initially hidden, and later revealed regions that fall inside that slice.",
+  "status": "implemented",
+  "enabled": true,
+  "suite": "libero_10",
+  "coverage_definition": "complete_3d_render_surface_area",
+  "coverage": 0.75,
+  "selection_axis": "agentview_aligned_complete_surface_slice",
+  "render_edit_only": true,
+  "collision_unchanged": true,
+  "pose_unchanged": true,
+  "observation_pixel_masking": false,
+  "require_task_match": true,
+  "task_id": 9,
+  "object_surface_black_fraction_overrides": [
+    {
+      "object": "white_yellow_mug_1",
+      "coverage": 0.75,
+      "coverage_definition": "complete_3d_render_surface_area",
+      "selection_axis": "agentview_aligned_complete_surface_slice",
+      "rgba": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "require_exact": true,
+      "surface_overlay_prefix": "a1_",
+      "precompiled_surface_audit": {
+        "object": "white_yellow_mug_1",
+        "mode": "precompiled_visual_surface_partition",
+        "coverage_definition": "complete_3d_render_surface_area",
+        "requested_surface_coverage": 0.75,
+        "actual_surface_coverage": 0.7500000000002247,
+        "surface_area_total": 0.06384874399441244,
+        "surface_area_black": 0.04788655799582368,
+        "selected_face_count": 7247,
+        "total_face_count": 8454,
+        "selection_axis": "screen_x",
+        "screen_cutoff_px": 135.95466484040588,
+        "selection_side": "low_coordinate_prefix",
+        "baseline_agentview_target_pixels": 1387,
+        "predicted_agentview_black_pixels": 1129,
+        "predicted_agentview_visible_coverage": 0.8139870223503965,
+        "surface_enumeration": "mujoco_render_geometries",
+        "brightness_independent_surface_enumeration": true,
+        "includes_initially_hidden_surface": true,
+        "includes_inner_and_rear_surface": true,
+        "collision_unchanged": true,
+        "pose_unchanged": true
+      }
+    }
+  ],
+  "object_scale_overrides": [
+    {
+      "object": "white_yellow_mug_1",
+      "category": "white_yellow_mug",
+      "scale": 1.0,
+      "scale_mode": "precompile_xml",
+      "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_09/white_yellow_mug_1/75pct/white_yellow_mug.xml"
+    }
+  ]
+}

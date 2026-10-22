@@ -1,0 +1,32 @@
+{
+  "schema_version": "wam_syncbench.d3.case.v1",
+  "status": "implemented",
+  "track": "D3",
+  "suite": "libero_goal",
+  "task_id": 4,
+  "instruction": "put the bowl on top of the cabinet",
+  "target": "akita_black_bowl_1",
+  "ambiguity_schedule": {
+    "mode": "full_episode",
+    "operator": "symmetric_paired_state_exposure_v5"
+  },
+  "camera_render_contract": "equal_weight_paired_state_render_in_both_official_views",
+  "physics_and_goal_contract": "truth_state_unchanged",
+  "alternative_state_rendered": true,
+  "alternative_state_role": "equal_weight_visual_evidence_only_never_physics_or_goal_state",
+  "ambiguity_kind": "object_support_state_ambiguity",
+  "morphology": "open_vessel",
+  "truth_a_definition": "official_initial_support_state",
+  "truth_b_definition": {
+    "support_state": "rim_down_storage",
+    "real_world_scenario": "bowl_placed_rim_down_for_drying_or_storage",
+    "forbidden_pose": "none"
+  },
+  "reveal_entity": "akita_black_bowl_1",
+  "case_id": "libero_goal__t04__object_support_state_obfuscation__truth_a__obfuscated",
+  "d3_subclass": "object_support_state_obfuscation",
+  "truth_state": "truth_a",
+  "observation_mode": "obfuscated",
+  "visual_evidence_state": "truth_state_evidence_obfuscated",
+  "case_path": "/home/huiqiongli/Sim/release/source/D2_D3_state_20260823/cases/D3/libero_goal/libero_goal__t04__object_support_state_obfuscation__truth_a__obfuscated.json"
+}

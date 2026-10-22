@@ -1,0 +1,353 @@
+[
+  {
+    "task_id": 0,
+    "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+    "target": "alphabet_soup_1",
+    "category": "alphabet_soup",
+    "extents": [
+      0.062429,
+      0.062398,
+      0.07619
+    ],
+    "top_offset": 0.0376,
+    "mass": 0.02585145,
+    "shape_kind": "paper_roll",
+    "same_category_variant": "can",
+    "same_category_size_xyz": [
+      0.072,
+      0.072,
+      0.06
+    ],
+    "same_shape_semantic": "candle",
+    "label_crop_norm": [
+      0.0,
+      0.55,
+      1.0,
+      0.98
+    ],
+    "tint": [
+      0.05,
+      0.85,
+      1.0,
+      1.0
+    ],
+    "texture_crop_top": 0.64,
+    "trajectory_side": 0.052,
+    "trajectory_xy": [
+      -0.0067,
+      -0.0007
+    ],
+    "trajectory_spawn_offset": 0.067,
+    "trajectory_settled_range": [
+      0.058,
+      0.065
+    ]
+  },
+  {
+    "task_id": 1,
+    "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+    "target": "cream_cheese_1",
+    "category": "cream_cheese",
+    "extents": [
+      0.081216,
+      0.042672,
+      0.017872
+    ],
+    "top_offset": 0.008936,
+    "mass": 0.00619381,
+    "shape_kind": "book",
+    "same_category_variant": "tub",
+    "same_category_size_xyz": [
+      0.06,
+      0.06,
+      0.034
+    ],
+    "same_shape_semantic": "smart_device",
+    "label_crop_norm": [
+      0.25,
+      0.48,
+      1.0,
+      1.0
+    ],
+    "tint": [
+      0.92,
+      0.15,
+      0.82,
+      1.0
+    ],
+    "texture_crop_top": 0.58,
+    "trajectory_side": 0.043
+  },
+  {
+    "task_id": 2,
+    "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket",
+    "target": "salad_dressing_1",
+    "category": "salad_dressing",
+    "extents": [
+      0.035512,
+      0.05274,
+      0.14557
+    ],
+    "top_offset": 0.07285,
+    "mass": 0.02178453,
+    "shape_kind": "wine_bottle",
+    "same_category_variant": "bottle",
+    "same_category_size_xyz": [
+      0.055,
+      0.055,
+      0.105
+    ],
+    "same_shape_semantic": "bowling_pin",
+    "label_crop_norm": [
+      0.66,
+      0.43,
+      1.0,
+      0.98
+    ],
+    "tint": [
+      0.2,
+      0.45,
+      1.0,
+      1.0
+    ],
+    "texture_crop_top": 0.58
+  },
+  {
+    "task_id": 3,
+    "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+    "target": "bbq_sauce_1",
+    "category": "bbq_sauce",
+    "extents": [
+      0.02911,
+      0.04698,
+      0.1071
+    ],
+    "top_offset": 0.05246,
+    "mass": 0.01218031,
+    "shape_kind": "wine_bottle",
+    "same_category_variant": "jar",
+    "same_category_size_xyz": [
+      0.062,
+      0.062,
+      0.07
+    ],
+    "same_shape_semantic": "bowling_pin",
+    "label_crop_norm": [
+      0.4,
+      0.35,
+      0.88,
+      0.92
+    ],
+    "tint": [
+      0.05,
+      0.85,
+      1.0,
+      1.0
+    ],
+    "texture_crop_top": 0.58
+  },
+  {
+    "task_id": 4,
+    "name": "pick_up_the_ketchup_and_place_it_in_the_basket",
+    "target": "ketchup_1",
+    "category": "ketchup",
+    "extents": [
+      0.03676,
+      0.05622,
+      0.14561
+    ],
+    "top_offset": 0.07319,
+    "mass": 0.02321683,
+    "shape_kind": "wine_bottle",
+    "same_category_variant": "bottle",
+    "same_category_size_xyz": [
+      0.06,
+      0.06,
+      0.105
+    ],
+    "same_shape_semantic": "bowling_pin",
+    "label_crop_norm": [
+      0.3,
+      0.4,
+      0.8,
+      0.92
+    ],
+    "tint": [
+      0.15,
+      0.9,
+      0.25,
+      1.0
+    ],
+    "texture_crop_top": 0.58
+  },
+  {
+    "task_id": 5,
+    "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+    "target": "tomato_sauce_1",
+    "category": "tomato_sauce",
+    "extents": [
+      0.062192,
+      0.061638,
+      0.07619
+    ],
+    "top_offset": 0.0376,
+    "mass": 0.02663278,
+    "shape_kind": "paper_roll",
+    "same_category_variant": "jar",
+    "same_category_size_xyz": [
+      0.068,
+      0.068,
+      0.065
+    ],
+    "same_shape_semantic": "candle",
+    "label_crop_norm": [
+      0.62,
+      0.52,
+      1.0,
+      0.95
+    ],
+    "tint": [
+      0.05,
+      0.85,
+      1.0,
+      1.0
+    ],
+    "texture_crop_top": 0.64
+  },
+  {
+    "task_id": 6,
+    "name": "pick_up_the_butter_and_place_it_in_the_basket",
+    "target": "butter_1",
+    "category": "butter",
+    "extents": [
+      0.07618,
+      0.03954,
+      0.01742
+    ],
+    "top_offset": 0.00871,
+    "mass": 0.00524718,
+    "shape_kind": "book",
+    "same_category_variant": "tub",
+    "same_category_size_xyz": [
+      0.06,
+      0.06,
+      0.032
+    ],
+    "same_shape_semantic": "smart_device",
+    "label_crop_norm": [
+      0.35,
+      0.25,
+      0.95,
+      0.9
+    ],
+    "tint": [
+      0.25,
+      0.35,
+      1.0,
+      1.0
+    ],
+    "texture_crop_top": 0.58
+  },
+  {
+    "task_id": 7,
+    "name": "pick_up_the_milk_and_place_it_in_the_basket",
+    "target": "milk_1",
+    "category": "milk",
+    "extents": [
+      0.0525,
+      0.05307,
+      0.13119
+    ],
+    "top_offset": 0.06144,
+    "mass": 0.03166591,
+    "shape_kind": "book",
+    "same_category_variant": "bottle",
+    "same_category_size_xyz": [
+      0.06,
+      0.06,
+      0.11
+    ],
+    "same_shape_semantic": "toy_house",
+    "label_crop_norm": [
+      0.36,
+      0.22,
+      0.82,
+      0.86
+    ],
+    "tint": [
+      0.95,
+      0.2,
+      0.75,
+      1.0
+    ],
+    "texture_crop_top": 0.58
+  },
+  {
+    "task_id": 8,
+    "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+    "target": "chocolate_pudding_1",
+    "category": "chocolate_pudding",
+    "extents": [
+      0.0802,
+      0.04632,
+      0.02742
+    ],
+    "top_offset": 0.01434,
+    "mass": 0.01018616,
+    "shape_kind": "book",
+    "same_category_variant": "cup",
+    "same_category_size_xyz": [
+      0.06,
+      0.06,
+      0.05
+    ],
+    "same_shape_semantic": "smart_device",
+    "label_crop_norm": [
+      0.0,
+      0.43,
+      0.78,
+      0.95
+    ],
+    "tint": [
+      0.05,
+      0.85,
+      1.0,
+      1.0
+    ],
+    "texture_crop_top": 0.58
+  },
+  {
+    "task_id": 9,
+    "name": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+    "target": "orange_juice_1",
+    "category": "orange_juice",
+    "extents": [
+      0.0525,
+      0.05307,
+      0.13119
+    ],
+    "top_offset": 0.06144,
+    "mass": 0.03166591,
+    "shape_kind": "book",
+    "same_category_variant": "bottle",
+    "same_category_size_xyz": [
+      0.06,
+      0.06,
+      0.11
+    ],
+    "same_shape_semantic": "toy_house",
+    "label_crop_norm": [
+      0.2,
+      0.35,
+      0.83,
+      0.9
+    ],
+    "tint": [
+      0.25,
+      0.4,
+      1.0,
+      1.0
+    ],
+    "texture_crop_top": 0.58
+  }
+]

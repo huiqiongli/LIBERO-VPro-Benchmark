@@ -1,0 +1,8 @@
+{
+  "schema_version": "wam_syncbench.trackA.v1",
+  "scenario": "A4_contiguous_duration_3_replans",
+  "trigger": "replan_window",
+  "replan_window": {"start_replan": 2, "num_replans": 3},
+  "paper_setting_aliases": ["black_D3", "noise_D3"],
+  "description": "Duration-3: three consecutive corrupted replans starting at replan index 2."
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "wam_syncbench.d3.case.v1",
+  "status": "implemented",
+  "track": "D3",
+  "suite": "libero_object",
+  "task_id": 0,
+  "instruction": "pick up the alphabet soup and place it in the basket",
+  "target": "alphabet_soup_1",
+  "ambiguity_schedule": {
+    "mode": "full_episode",
+    "operator": "symmetric_paired_state_exposure_v5"
+  },
+  "camera_render_contract": "equal_weight_paired_state_render_in_both_official_views",
+  "physics_and_goal_contract": "truth_state_unchanged",
+  "alternative_state_rendered": true,
+  "alternative_state_role": "equal_weight_visual_evidence_only_never_physics_or_goal_state",
+  "ambiguity_kind": "receptacle_occupancy_ambiguity",
+  "occupancy_subtype": "receptacle_occupancy",
+  "truth_a_definition": "empty_official_receiver",
+  "truth_b_definition": {
+    "severity_pct": 75,
+    "occupancy_spec_path": "/home/huiqiongli/Sim/release/source/D2_D3_state_20260823/specs/d3_occupancy/libero_object/task_00.json"
+  },
+  "reveal_entity": "basket_1",
+  "case_id": "libero_object__t00__receptacle_occupancy_obfuscation__truth_a__obfuscated",
+  "d3_subclass": "receptacle_occupancy_obfuscation",
+  "truth_state": "truth_a",
+  "observation_mode": "obfuscated",
+  "visual_evidence_state": "truth_state_evidence_obfuscated",
+  "case_path": "/home/huiqiongli/Sim/release/source/D2_D3_state_20260823/cases/D3/libero_object/libero_object__t00__receptacle_occupancy_obfuscation__truth_a__obfuscated.json"
+}

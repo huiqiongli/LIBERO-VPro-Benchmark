@@ -1,0 +1,12 @@
+{
+  "schema_version": "wam_syncbench.trackB.v1",
+  "scenario": "B1_staleness_replay_agent",
+  "camera": {
+    "agentview": {
+      "mode": "replay",
+      "replay_from": 1,
+      "replay_length": 3
+    }
+  },
+  "description": "B1 agentview: record replans 1-3, then loop that fixed history segment from replan 4; the other view remains clean"
+}

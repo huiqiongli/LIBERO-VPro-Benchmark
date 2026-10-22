@@ -1,0 +1,16 @@
+<mujoco model="occupancy_block">
+  <worldbody>
+    <body>
+      <body name="object">
+
+        <geom name="occupancy_visual" type="box" pos="0 0 -0.0123790" size="0.0490752 0.0362928 0.0078776" group="1" contype="0" conaffinity="0" rgba="0.58 0.50 0.38 1"/>
+        <geom name="occupancy_visual_fold_1" type="box" pos="-0.0024538 0.0014517 0.0014067" size="0.0471122 0.0333894 0.0070336" euler="0 0 0.025" group="1" contype="0" conaffinity="0" rgba="0.72 0.65 0.52 1"/>
+        <geom name="occupancy_visual_fold_2" type="box" pos="0.0024538 -0.0010888 0.0151925" size="0.0441677 0.0304860 0.0061895" euler="0 0 -0.025" group="1" contype="0" conaffinity="0" rgba="0.64 0.57 0.45 1"/>
+        <geom name="occupancy_collision" type="box" pos="0 0 0" size="0.0490752 0.0362928 0.0281342" group="0" density="120.0000" friction="0.9500 0.3000 0.1000" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.08"/>
+      </body>
+      <site rgba="0 0 0 0" size="0.003" pos="0 0 -0.0281342" name="bottom_site"/>
+      <site rgba="0 0 0 0" size="0.003" pos="0 0 0.0281342" name="top_site"/>
+      <site rgba="0 0 0 0" size="0.003" pos="0.0490752 0.0362928 0" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

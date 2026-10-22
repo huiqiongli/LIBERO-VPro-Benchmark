@@ -1,0 +1,16 @@
+{
+  "schema_version": "wam_syncbench.cross_model.v1",
+  "scenario": "corrupt_2_model_decisions",
+  "enabled": true,
+  "trigger": "decision_indices",
+  "decision_indices": [
+    2,
+    9
+  ],
+  "random_replans": {
+    "indices": [
+      2,
+      9
+    ]
+  }
+}

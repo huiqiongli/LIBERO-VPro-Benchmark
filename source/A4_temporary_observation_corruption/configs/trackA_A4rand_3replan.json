@@ -1,0 +1,13 @@
+{
+  "schema_version": "wam_syncbench.trackA.v1",
+  "scenario": "A4_fixed_3replans",
+  "trigger": "random_replans",
+  "random_replans": {
+    "indices": [
+      2,
+      5,
+      8
+    ]
+  },
+  "description": "A4 \u4e34\u65f6\u6c61\u67d3:\u56fa\u5b9a\u6c61\u67d3\u7b2c [2, 5, 8] \u4e2areplan(\u5199\u6b7b,\u8de8\u6a21\u578b\u5b8c\u5168\u4e00\u81f4),\u5176\u4f59clean"
+}

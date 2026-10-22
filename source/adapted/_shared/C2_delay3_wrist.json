@@ -1,0 +1,11 @@
+{
+  "schema_version": "wam_syncbench.cross_model.v1",
+  "scenario": "C2_delay3_wrist",
+  "enabled": true,
+  "camera": {
+    "robot0_eye_in_hand": {
+      "mode": "delay",
+      "lag": 3
+    }
+  }
+}

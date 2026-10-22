@@ -1,0 +1,49 @@
+{
+  "schema_version": "d4_contact4_physical_3severity.v1",
+  "status": "implemented",
+  "type": "pure_external_shape_grasp_difficulty",
+  "suite": "libero_10",
+  "benchmark": "libero_10",
+  "task_id": 8,
+  "instruction": "put both moka pots on the stove",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.bddl",
+  "target_objects": [
+    "moka_pot_1",
+    "moka_pot_2"
+  ],
+  "object_scale_overrides": [
+    {
+      "object": "moka_pot_1",
+      "category": "moka_pot",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D4_target_geometry/assets/moka_pot/taper/high/moka_pot.xml",
+      "effective_strength": 2.0,
+      "effective_severity_multiplier": 2.0,
+      "apply_stage": "precompile_xml"
+    },
+    {
+      "object": "moka_pot_2",
+      "category": "moka_pot",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D4_target_geometry/assets/moka_pot/taper/high/moka_pot.xml",
+      "effective_strength": 2.0,
+      "effective_severity_multiplier": 2.0,
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "shape_intervention": {
+    "case_id": "taper_high",
+    "mechanism": "axial_slip_from_opposed_slopes",
+    "family": "taper",
+    "severity": "high",
+    "nominal_severity_multiplier": 2.0,
+    "category_adaptive_safety_scaling": true,
+    "external_shape_modified": true,
+    "visual_mesh_modified": true,
+    "collision_geometry_modified": true,
+    "friction_modified": false,
+    "mass_or_inertia_modified": false,
+    "inference_modified": false,
+    "apply_stage": "precompile_xml"
+  }
+}

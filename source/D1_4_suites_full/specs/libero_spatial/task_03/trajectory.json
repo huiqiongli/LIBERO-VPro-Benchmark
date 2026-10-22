@@ -1,0 +1,56 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "trajectory",
+  "suite": "libero_spatial",
+  "benchmark": "libero_spatial",
+  "task_id": 3,
+  "task_name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+  "instruction": "pick up the black bowl on the cookie box and place it on the plate",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_spatial/task_03/trajectory.bddl",
+  "target": "akita_black_bowl_1",
+  "target_category": "akita_black_bowl",
+  "definition": {
+    "zh": "轨迹干扰物",
+    "definition": "在容器型目标内部或非容器目标顶部放置真实碰撞方块，使其直接占据目标抓取/交互路径；方块宽度近似目标所需夹爪开度。",
+    "target": "akita_black_bowl_1",
+    "target_category": "akita_black_bowl",
+    "distractor": "trajectory_block_d1",
+    "category": "trajectory_block",
+    "construction": "target_supported_grasp_width_matched_block"
+  },
+  "settle_steps": 18,
+  "object_scale_overrides": [
+    {
+      "object": "trajectory_block_d1",
+      "category": "trajectory_block",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/shared/trajectory_block_070mm.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "trajectory_block_d1",
+      "on_top_of": "akita_black_bowl_1",
+      "support_gap_m": 0.001,
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "trajectory_calibration": {
+    "trajectory_phase": "pre-grasp/pre-interaction approach to akita_black_bowl_1",
+    "placement_mode": "inside",
+    "placement_rule": "drop into the target interior and settle on its inner support",
+    "block_side_length_m": 0.07,
+    "gripper_opening_reference_m": 0.07,
+    "gripper_opening_basis": "target graspable cross-section, capped to Panda usable opening",
+    "physical_support": "akita_black_bowl_1",
+    "floating": false
+  }
+}

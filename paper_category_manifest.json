@@ -1,0 +1,83 @@
+{
+  "paper_source": "external/paper/LIBERO_VPro_arxiv/root.tex (not bundled)",
+  "paper_facing_settings_manifest": "PAPER_FACING_SETTINGS.json",
+  "paper_facing_counts": {
+    "categories": 12,
+    "expanded_settings": 96,
+    "task_condition_cases": 3296
+  },
+  "paper_dimensions": [
+    "A: Visual Evidence Degradation",
+    "B: Camera Staleness",
+    "C: Visual Source Consistency",
+    "D: Task-Relevant Scene Variation"
+  ],
+  "categories": {
+    "Target-Object Masking": [
+      "source/A1_physical_target_object_ratio_20260822",
+      "source/A1_physical_target_object_ratio_6models_full_20260822",
+      "source/A1_timing_variants",
+      "source/adapted"
+    ],
+    "Target-Receptacle Masking": [
+      "source/A2_physical_receptacle_ratio_20260822",
+      "source/A2_physical_receptacle_ratio_6models_full_20260822",
+      "source/A2_placement_timing",
+      "source/adapted"
+    ],
+    "Interaction-Cue Masking": [
+      "source/A3_interaction_part_occlusion"
+    ],
+    "Temporary Observation Corruption": [
+      "source/A4_temporary_observation_corruption"
+    ],
+    "View Unavailability": [
+      "source/A5_single_view",
+      "source/A5_blank_view_control",
+      "source/A5_white_view_control",
+      "source/A5_view_copy"
+    ],
+    "Camera Staleness": [
+      "source/B1_camera_staleness",
+      "source/adapted"
+    ],
+    "Cross-View Contradiction": [
+      "source/C1_cross_view_20260825"
+    ],
+    "Prediction–Reality Divergence": [
+      "source/C2_prediction_reality_fastwam"
+    ],
+    "Task-Relevant Distractors": [
+      "source/D1_4_suites_full"
+    ],
+    "Task-Precondition Variation": [
+      "source/D2_D3_state_20260823"
+    ],
+    "Visual State Ambiguity": [
+      "source/D2_D3_state_20260823"
+    ],
+    "Target Geometry Variation": [
+      "source/D4_contact4_physical_3severity_40task_20260815"
+    ]
+  },
+  "normal_baseline": "source/Clean_baseline_6models_40task_10trial_20260902",
+  "shared_core": "source/_shared_core",
+  "known_alignment_limits": {
+    "D4": "Use the contact4 physical manifest; it retains Taper/Multipeak/Twist/Asymmetric and records inapplicable tasks explicitly.",
+    "D2_D3": "The result archive contains occupancy branches, but the current two-column paper comparison describes openness/object pose only; keep aggregation consistent."
+  },
+  "category_codes": {
+    "A1": "Target-Object Masking",
+    "A2": "Target-Receptacle Masking",
+    "A3": "Interaction-Cue Masking",
+    "A4": "Temporary Observation Corruption",
+    "A5": "View Unavailability",
+    "B1": "Camera Staleness",
+    "C1": "Cross-View Contradiction",
+    "C2": "Prediction–Reality Divergence",
+    "D1": "Task-Relevant Distractors",
+    "D2": "Task-Precondition Variation",
+    "D3": "Visual State Ambiguity",
+    "D4": "Target Geometry Variation"
+  }
+}

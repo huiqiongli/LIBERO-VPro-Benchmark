@@ -1,0 +1,19 @@
+<mujoco model="independent_shape_device">
+  <worldbody>
+    <body>
+      <body name="object">
+        
+        <geom name="device_body" type="box" pos="0 0 0.0137100" size="0.0401000 0.0231600 0.0137100" group="1" contype="0" conaffinity="0" rgba="0.035 0.06 0.11 1"/>
+        <geom name="device_screen" type="box" pos="0 0 0.0276700" size="0.0304760 0.0166752 0.00025" group="1" contype="0" conaffinity="0" rgba="0.06 0.52 0.82 1"/>
+        <geom name="device_icon_red" type="box" pos="-0.0136340 -0.0069480 0.0279700" size="0.0040100 0.0023160 0.00020" group="1" contype="0" conaffinity="0" rgba="0.94 0.18 0.35 1"/>
+        <geom name="device_icon_yellow" type="box" pos="0.0120300 -0.0069480 0.0279700" size="0.0040100 0.0023160 0.00020" group="1" contype="0" conaffinity="0" rgba="0.98 0.78 0.12 1"/>
+        <geom name="device_button" type="cylinder" pos="0 0.0081060 0.0282200" size="0.0023160 0.00030" group="1" contype="0" conaffinity="0" rgba="0.82 0.88 0.94 1"/>
+        <geom name="device_collision" type="box" pos="0 0 0.0137100" size="0.0401000 0.0231600 0.0137100" group="0" density="180" friction="0.95 0.3 0.1" rgba="0.8 0.8 0.8 0.2"/>
+    
+      </body>
+      <site rgba="0 0 0 0" size="0.003" pos="0 0 0" name="bottom_site"/>
+      <site rgba="0 0 0 0" size="0.003" pos="0 0 0.0274200" name="top_site"/>
+      <site rgba="0 0 0 0" size="0.003" pos="0.0401000 0.0231600 0.0137100" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

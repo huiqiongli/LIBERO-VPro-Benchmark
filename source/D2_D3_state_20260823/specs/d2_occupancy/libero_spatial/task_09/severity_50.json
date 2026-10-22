@@ -1,0 +1,47 @@
+{
+  "schema_version": "wam_syncbench.d2.occupancy.v1",
+  "status": "implemented",
+  "track": "D2",
+  "subtask": "support_region_occupancy",
+  "case_id": "libero_spatial__t09__support_region_occupancy__s50",
+  "suite": "libero_spatial",
+  "benchmark": "libero_spatial",
+  "task_id": 9,
+  "instruction": "pick up the black bowl on the wooden cabinet and place it on the plate",
+  "target": "akita_black_bowl_1",
+  "target_morphology": "open_vessel",
+  "receiver_kind": "support",
+  "physical_relation": "on",
+  "severity_pct": 50,
+  "severity_definition": "calibrated_fraction_of_maximum_feasible_neutral_block",
+  "achieved_nominal_footprint_fraction": 0.0059402197838999875,
+  "destination": {
+    "kind": "object_aabb",
+    "name": "plate_1"
+  },
+  "primary_goal_states": [
+    [
+      "on",
+      "akita_black_bowl_1",
+      "plate_1"
+    ]
+  ],
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D2_D3_state_variation/bddl_overrides/libero_spatial/task_09/occupancy.bddl",
+  "object_scale_overrides": [
+    {
+      "object": "occupancy_block_d2",
+      "category": "trajectory_block",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D2_D3_state_variation/assets/libero_spatial/task_09/occupancy_50.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "placement_probe_freeze_other_joints": true,
+  "placement_probe_steps": 5000,
+  "placement_probe_max_linear_velocity_norm": 0.002,
+  "placement_full_scene_probe_steps": 60,
+  "placement_full_scene_max_relative_drift_m": 0.02,
+  "runtime_max_relative_drift_m": 0.02,
+  "settle_steps": 120
+}

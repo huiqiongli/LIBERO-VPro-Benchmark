@@ -1,0 +1,49 @@
+{
+  "schema_version": "d4_contact4_physical_3severity.v1",
+  "status": "implemented",
+  "type": "pure_external_shape_grasp_difficulty",
+  "suite": "libero_10",
+  "benchmark": "libero_10",
+  "task_id": 0,
+  "instruction": "put both the alphabet soup and the tomato sauce in the basket",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+  "target_objects": [
+    "alphabet_soup_1",
+    "tomato_sauce_1"
+  ],
+  "object_scale_overrides": [
+    {
+      "object": "alphabet_soup_1",
+      "category": "alphabet_soup",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D4_target_geometry/assets/alphabet_soup/twist/high/alphabet_soup.xml",
+      "effective_strength": 2.0,
+      "effective_severity_multiplier": 2.0,
+      "apply_stage": "precompile_xml"
+    },
+    {
+      "object": "tomato_sauce_1",
+      "category": "tomato_sauce",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D4_target_geometry/assets/tomato_sauce/twist/high/tomato_sauce.xml",
+      "effective_strength": 2.0,
+      "effective_severity_multiplier": 2.0,
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "shape_intervention": {
+    "case_id": "twist_high",
+    "mechanism": "height_dependent_contact_normal_misalignment",
+    "family": "twist",
+    "severity": "high",
+    "nominal_severity_multiplier": 2.0,
+    "category_adaptive_safety_scaling": true,
+    "external_shape_modified": true,
+    "visual_mesh_modified": true,
+    "collision_geometry_modified": true,
+    "friction_modified": false,
+    "mass_or_inertia_modified": false,
+    "inference_modified": false,
+    "apply_stage": "precompile_xml"
+  }
+}

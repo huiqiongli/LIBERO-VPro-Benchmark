@@ -1,0 +1,1 @@
+{"schema_version":"wam_syncbench.trackA.v1","scenario":"A4_phase_3replan_once","trigger":"phase_pulse","phases":["grasp"],"replan_count":3,"once":true,"phase_diagnostics":true,"phase_detector":"task_aware_v2","phase_task_map":"../phase_task_map_40.json","pre_place_progress":0.70}

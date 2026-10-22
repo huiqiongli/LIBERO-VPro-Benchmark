@@ -1,0 +1,367 @@
+{
+  "schema_version": "wam_syncbench.phase_validation_manifest.v2",
+  "phase_detector": "task_aware_v2",
+  "task_count": 40,
+  "cases": [
+    {
+      "case_id": "phase_validation_v2__libero_object__task00",
+      "suite": "libero_object",
+      "task_id": 0,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_object__task01",
+      "suite": "libero_object",
+      "task_id": 1,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the cream cheese and place it in the basket",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_object__task02",
+      "suite": "libero_object",
+      "task_id": 2,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the salad dressing and place it in the basket",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_object__task03",
+      "suite": "libero_object",
+      "task_id": 3,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the bbq sauce and place it in the basket",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_object__task04",
+      "suite": "libero_object",
+      "task_id": 4,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the ketchup and place it in the basket",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_object__task05",
+      "suite": "libero_object",
+      "task_id": 5,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the tomato sauce and place it in the basket",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_object__task06",
+      "suite": "libero_object",
+      "task_id": 6,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the butter and place it in the basket",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_object__task07",
+      "suite": "libero_object",
+      "task_id": 7,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the milk and place it in the basket",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_object__task08",
+      "suite": "libero_object",
+      "task_id": 8,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the chocolate pudding and place it in the basket",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_object__task09",
+      "suite": "libero_object",
+      "task_id": 9,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the orange juice and place it in the basket",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_spatial__task00",
+      "suite": "libero_spatial",
+      "task_id": 0,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_spatial__task01",
+      "suite": "libero_spatial",
+      "task_id": 1,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_spatial__task02",
+      "suite": "libero_spatial",
+      "task_id": 2,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the black bowl from table center and place it on the plate",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_spatial__task03",
+      "suite": "libero_spatial",
+      "task_id": 3,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the black bowl on the cookie box and place it on the plate",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_spatial__task04",
+      "suite": "libero_spatial",
+      "task_id": 4,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_spatial__task05",
+      "suite": "libero_spatial",
+      "task_id": 5,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the black bowl on the ramekin and place it on the plate",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_spatial__task06",
+      "suite": "libero_spatial",
+      "task_id": 6,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the black bowl next to the cookie box and place it on the plate",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_spatial__task07",
+      "suite": "libero_spatial",
+      "task_id": 7,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the black bowl on the stove and place it on the plate",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_spatial__task08",
+      "suite": "libero_spatial",
+      "task_id": 8,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the black bowl next to the plate and place it on the plate",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_spatial__task09",
+      "suite": "libero_spatial",
+      "task_id": 9,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_goal__task00",
+      "suite": "libero_goal",
+      "task_id": 0,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "open the middle drawer of the cabinet",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_goal__task01",
+      "suite": "libero_goal",
+      "task_id": 1,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "put the bowl on the stove",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_goal__task02",
+      "suite": "libero_goal",
+      "task_id": 2,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "put the wine bottle on top of the cabinet",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_goal__task03",
+      "suite": "libero_goal",
+      "task_id": 3,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "open the top drawer and put the bowl inside",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_goal__task04",
+      "suite": "libero_goal",
+      "task_id": 4,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "put the bowl on top of the cabinet",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_goal__task05",
+      "suite": "libero_goal",
+      "task_id": 5,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "push the plate to the front of the stove",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_goal__task06",
+      "suite": "libero_goal",
+      "task_id": 6,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "put the cream cheese in the bowl",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_goal__task07",
+      "suite": "libero_goal",
+      "task_id": 7,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "turn on the stove",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_goal__task08",
+      "suite": "libero_goal",
+      "task_id": 8,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "put the bowl on the plate",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_goal__task09",
+      "suite": "libero_goal",
+      "task_id": 9,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "put the wine bottle on the rack",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_10__task00",
+      "suite": "libero_10",
+      "task_id": 0,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "put both the alphabet soup and the tomato sauce in the basket",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_10__task01",
+      "suite": "libero_10",
+      "task_id": 1,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "put both the cream cheese box and the butter in the basket",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_10__task02",
+      "suite": "libero_10",
+      "task_id": 2,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "turn on the stove and put the moka pot on it",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_10__task03",
+      "suite": "libero_10",
+      "task_id": 3,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "put the black bowl in the bottom drawer of the cabinet and close it",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_10__task04",
+      "suite": "libero_10",
+      "task_id": 4,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_10__task05",
+      "suite": "libero_10",
+      "task_id": 5,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "pick up the book and place it in the back compartment of the caddy",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_10__task06",
+      "suite": "libero_10",
+      "task_id": 6,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_10__task07",
+      "suite": "libero_10",
+      "task_id": 7,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "put both the alphabet soup and the cream cheese box in the basket",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_10__task08",
+      "suite": "libero_10",
+      "task_id": 8,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "put both moka pots on the stove",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    },
+    {
+      "case_id": "phase_validation_v2__libero_10__task09",
+      "suite": "libero_10",
+      "task_id": 9,
+      "trial_index": 0,
+      "condition": "clean_phase_validation",
+      "instruction": "put the yellow and white mug in the microwave and close it",
+      "spec": "/home/huiqiongli/Sim/release/source/A4_temporary_observation_corruption/configs/empty_env_edit.json"
+    }
+  ]
+}

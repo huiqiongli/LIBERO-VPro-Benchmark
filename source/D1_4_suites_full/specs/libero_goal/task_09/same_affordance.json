@@ -1,0 +1,60 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_affordance",
+  "suite": "libero_goal",
+  "benchmark": "libero_goal",
+  "task_id": 9,
+  "task_name": "put_the_wine_bottle_on_the_rack",
+  "instruction": "put the wine bottle on the rack",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_goal/put_the_wine_bottle_on_the_rack.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_goal/task_09/same_affordance.bddl",
+  "target": "wine_bottle_1",
+  "target_category": "wine_bottle",
+  "definition": {
+    "zh": "同可供性干扰物",
+    "definition": "不同类别但同样提供容纳功能的篮子",
+    "target": "wine_rack_1",
+    "target_category": "wine_rack",
+    "distractor": "basket_d1_affordance",
+    "category": "basket",
+    "construction": "different_category_same_function"
+  },
+  "settle_steps": 18,
+  "object_pose_overrides": [
+    {
+      "object": "basket_d1_affordance",
+      "relative_to": "wine_rack_1",
+      "candidate_offsets": [
+        [
+          -0.14,
+          0.36,
+          0.0
+        ]
+      ],
+      "candidate_selection": "first_clear",
+      "avoid_objects": [
+        "akita_black_bowl_1",
+        "cream_cheese_1",
+        "wine_bottle_1",
+        "plate_1",
+        "main_table",
+        "wooden_cabinet_1",
+        "flat_stove_1",
+        "wine_rack_1"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.48,
+          0.48
+        ],
+        [
+          -0.36,
+          0.38
+        ]
+      ],
+      "min_distance_from_others": 0.045,
+      "z_from": "wine_rack_1"
+    }
+  ]
+}

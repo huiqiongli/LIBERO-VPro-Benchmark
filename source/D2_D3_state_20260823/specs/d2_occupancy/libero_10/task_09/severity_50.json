@@ -1,0 +1,39 @@
+{
+  "schema_version": "wam_syncbench.d2.occupancy.v1",
+  "status": "implemented",
+  "track": "D2",
+  "subtask": "receptacle_occupancy",
+  "case_id": "libero_10__t09__receptacle_occupancy__s50",
+  "suite": "libero_10",
+  "benchmark": "libero_10",
+  "task_id": 9,
+  "instruction": "KITCHEN SCENE6 put the yellow and white mug in the microwave and close it",
+  "target": "white_yellow_mug_1",
+  "receiver_kind": "enclosed",
+  "severity_pct": 50,
+  "severity_definition": "calibrated_fraction_of_maximum_feasible_neutral_block",
+  "achieved_nominal_footprint_fraction": 0.008083832335329342,
+  "destination": {
+    "kind": "site",
+    "name": "microwave_1_heating_region"
+  },
+  "primary_goal_states": [
+    [
+      "in",
+      "white_yellow_mug_1",
+      "microwave_1_heating_region"
+    ]
+  ],
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D2_D3_state_variation/bddl_overrides/libero_10/task_09/occupancy.bddl",
+  "object_scale_overrides": [
+    {
+      "object": "occupancy_block_d2",
+      "category": "trajectory_block",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D2_D3_state_variation/assets/libero_10/task_09/occupancy_50.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "settle_steps": 120
+}

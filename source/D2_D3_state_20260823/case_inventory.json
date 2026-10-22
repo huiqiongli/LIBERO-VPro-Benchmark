@@ -1,0 +1,2550 @@
+{
+  "schema_version": "wam_syncbench.d2_d3.inventory.v1",
+  "source_manifest": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/manifest.json",
+  "destination_source": "external/source_snapshot/A2_placement_phase_6models_20260822/validation/target_validation.json",
+  "suite_count": 4,
+  "task_count": 40,
+  "articulation_task_count": 7,
+  "object_support_task_count": 38,
+  "enclosed_occupancy_task_count": 18,
+  "support_occupancy_task_count": 19,
+  "tasks": [
+    {
+      "suite": "libero_object",
+      "task_id": 0,
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "target": "alphabet_soup_1",
+      "target_category": "alphabet_soup",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "destination_tokens": [
+        "basket_1_contain_region"
+      ],
+      "destination_entities": [
+        "basket_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "receptacle_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ],
+          "destination_entities": [
+            "basket_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "enclosed",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 1,
+      "instruction": "pick up the cream cheese and place it in the basket",
+      "target": "cream_cheese_1",
+      "target_category": "cream_cheese",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "destination_tokens": [
+        "basket_1_contain_region"
+      ],
+      "destination_entities": [
+        "basket_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "box",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "receptacle_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ],
+          "destination_entities": [
+            "basket_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "box",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "enclosed",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 2,
+      "instruction": "pick up the salad dressing and place it in the basket",
+      "target": "salad_dressing_1",
+      "target_category": "salad_dressing",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "destination_tokens": [
+        "basket_1_contain_region"
+      ],
+      "destination_entities": [
+        "basket_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "receptacle_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ],
+          "destination_entities": [
+            "basket_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "enclosed",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 3,
+      "instruction": "pick up the bbq sauce and place it in the basket",
+      "target": "bbq_sauce_1",
+      "target_category": "bbq_sauce",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "destination_tokens": [
+        "basket_1_contain_region"
+      ],
+      "destination_entities": [
+        "basket_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "receptacle_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ],
+          "destination_entities": [
+            "basket_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "enclosed",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 4,
+      "instruction": "pick up the ketchup and place it in the basket",
+      "target": "ketchup_1",
+      "target_category": "ketchup",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "destination_tokens": [
+        "basket_1_contain_region"
+      ],
+      "destination_entities": [
+        "basket_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "receptacle_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ],
+          "destination_entities": [
+            "basket_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "enclosed",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 5,
+      "instruction": "pick up the tomato sauce and place it in the basket",
+      "target": "tomato_sauce_1",
+      "target_category": "tomato_sauce",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "destination_tokens": [
+        "basket_1_contain_region"
+      ],
+      "destination_entities": [
+        "basket_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "receptacle_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ],
+          "destination_entities": [
+            "basket_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "enclosed",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 6,
+      "instruction": "pick up the butter and place it in the basket",
+      "target": "butter_1",
+      "target_category": "butter",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "destination_tokens": [
+        "basket_1_contain_region"
+      ],
+      "destination_entities": [
+        "basket_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "box",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "receptacle_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ],
+          "destination_entities": [
+            "basket_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "box",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "enclosed",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 7,
+      "instruction": "pick up the milk and place it in the basket",
+      "target": "milk_1",
+      "target_category": "milk",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "destination_tokens": [
+        "basket_1_contain_region"
+      ],
+      "destination_entities": [
+        "basket_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "receptacle_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ],
+          "destination_entities": [
+            "basket_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "enclosed",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 8,
+      "instruction": "pick up the chocolate pudding and place it in the basket",
+      "target": "chocolate_pudding_1",
+      "target_category": "chocolate_pudding",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "destination_tokens": [
+        "basket_1_contain_region"
+      ],
+      "destination_entities": [
+        "basket_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "receptacle_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ],
+          "destination_entities": [
+            "basket_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "enclosed",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 9,
+      "instruction": "pick up the orange juice and place it in the basket",
+      "target": "orange_juice_1",
+      "target_category": "orange_juice",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "destination_tokens": [
+        "basket_1_contain_region"
+      ],
+      "destination_entities": [
+        "basket_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "receptacle_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ],
+          "destination_entities": [
+            "basket_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "enclosed",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 0,
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "destination_tokens": [
+        "plate_1"
+      ],
+      "destination_entities": [
+        "plate_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "states": [
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ],
+          "destination_entities": [
+            "plate_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 1,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "destination_tokens": [
+        "plate_1"
+      ],
+      "destination_entities": [
+        "plate_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "states": [
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ],
+          "destination_entities": [
+            "plate_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 2,
+      "instruction": "pick up the black bowl from table center and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "destination_tokens": [
+        "plate_1"
+      ],
+      "destination_entities": [
+        "plate_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "states": [
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ],
+          "destination_entities": [
+            "plate_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 3,
+      "instruction": "pick up the black bowl on the cookie box and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "destination_tokens": [
+        "plate_1"
+      ],
+      "destination_entities": [
+        "plate_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "states": [
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ],
+          "destination_entities": [
+            "plate_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 4,
+      "instruction": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "destination_tokens": [
+        "plate_1"
+      ],
+      "destination_entities": [
+        "plate_1"
+      ],
+      "d2": {
+        "articulation_precondition": {
+          "applicable": true,
+          "joint": "wooden_cabinet_1_top_level",
+          "joint_family": "drawer",
+          "open_fractions_pct": [
+            20,
+            50,
+            90
+          ]
+        },
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "states": [
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ],
+          "destination_entities": [
+            "plate_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "articulation_state_ambiguity": {
+          "applicable": true,
+          "joint": "wooden_cabinet_1_top_level",
+          "truth_states": [
+            "closed",
+            "open"
+          ]
+        },
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 5,
+      "instruction": "pick up the black bowl on the ramekin and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "destination_tokens": [
+        "plate_1"
+      ],
+      "destination_entities": [
+        "plate_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "states": [
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ],
+          "destination_entities": [
+            "plate_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 6,
+      "instruction": "pick up the black bowl next to the cookie box and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "destination_tokens": [
+        "plate_1"
+      ],
+      "destination_entities": [
+        "plate_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "states": [
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ],
+          "destination_entities": [
+            "plate_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 7,
+      "instruction": "pick up the black bowl on the stove and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "destination_tokens": [
+        "plate_1"
+      ],
+      "destination_entities": [
+        "plate_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "states": [
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ],
+          "destination_entities": [
+            "plate_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 8,
+      "instruction": "pick up the black bowl next to the plate and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "destination_tokens": [
+        "plate_1"
+      ],
+      "destination_entities": [
+        "plate_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "states": [
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ],
+          "destination_entities": [
+            "plate_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 9,
+      "instruction": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "destination_tokens": [
+        "plate_1"
+      ],
+      "destination_entities": [
+        "plate_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "states": [
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ],
+          "destination_entities": [
+            "plate_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 0,
+      "instruction": "open the middle drawer of the cabinet",
+      "target": "wooden_cabinet_1",
+      "target_category": "wooden_cabinet",
+      "target_is_fixture": true,
+      "receiver": "wooden_cabinet_1",
+      "receiver_category": "wooden_cabinet",
+      "destination_tokens": [
+        "wooden_cabinet_1_middle_region"
+      ],
+      "destination_entities": [
+        "wooden_cabinet_1"
+      ],
+      "d2": {
+        "articulation_precondition": {
+          "applicable": true,
+          "joint": "wooden_cabinet_1_middle_level",
+          "joint_family": "drawer",
+          "open_fractions_pct": [
+            20,
+            50,
+            85
+          ]
+        }
+      },
+      "d3": {
+        "articulation_state_ambiguity": {
+          "applicable": true,
+          "joint": "wooden_cabinet_1_middle_level",
+          "truth_states": [
+            "closed",
+            "open"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 1,
+      "instruction": "put the bowl on the stove",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "flat_stove_1",
+      "receiver_category": "flat_stove",
+      "destination_tokens": [
+        "flat_stove_1_cook_region"
+      ],
+      "destination_entities": [
+        "flat_stove_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "states": [
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "flat_stove_1_cook_region"
+          ],
+          "destination_entities": [
+            "flat_stove_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "flat_stove_1_cook_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 2,
+      "instruction": "put the wine bottle on top of the cabinet",
+      "target": "wine_bottle_1",
+      "target_category": "wine_bottle",
+      "target_is_fixture": false,
+      "receiver": "wooden_cabinet_1",
+      "receiver_category": "wooden_cabinet",
+      "destination_tokens": [
+        "wooden_cabinet_1_top_side"
+      ],
+      "destination_entities": [
+        "wooden_cabinet_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "states": [
+            "adjacent_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "wooden_cabinet_1_top_side"
+          ],
+          "destination_entities": [
+            "wooden_cabinet_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "wooden_cabinet_1_top_side"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 3,
+      "instruction": "open the top drawer and put the bowl inside",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "wooden_cabinet_1",
+      "receiver_category": "wooden_cabinet",
+      "destination_tokens": [
+        "wooden_cabinet_1_top_region"
+      ],
+      "destination_entities": [
+        "wooden_cabinet_1"
+      ],
+      "d2": {
+        "articulation_precondition": {
+          "applicable": true,
+          "joint": "wooden_cabinet_1_top_level",
+          "joint_family": "drawer",
+          "open_fractions_pct": [
+            20,
+            50,
+            90
+          ]
+        },
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "states": [
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "receptacle_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "wooden_cabinet_1_top_region"
+          ],
+          "destination_entities": [
+            "wooden_cabinet_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "articulation_state_ambiguity": {
+          "applicable": true,
+          "joint": "wooden_cabinet_1_top_level",
+          "truth_states": [
+            "closed",
+            "open"
+          ]
+        },
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "enclosed",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "wooden_cabinet_1_top_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 4,
+      "instruction": "put the bowl on top of the cabinet",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "wooden_cabinet_1",
+      "receiver_category": "wooden_cabinet",
+      "destination_tokens": [
+        "wooden_cabinet_1_top_side"
+      ],
+      "destination_entities": [
+        "wooden_cabinet_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "states": [
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "wooden_cabinet_1_top_side"
+          ],
+          "destination_entities": [
+            "wooden_cabinet_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "wooden_cabinet_1_top_side"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 5,
+      "instruction": "push the plate to the front of the stove",
+      "target": "plate_1",
+      "target_category": "plate",
+      "target_is_fixture": false,
+      "receiver": "flat_stove_1",
+      "receiver_category": "flat_stove",
+      "destination_tokens": [
+        "main_table_stove_front_region"
+      ],
+      "destination_entities": [
+        "flat_stove_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "planar",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "main_table_stove_front_region"
+          ],
+          "destination_entities": [
+            "flat_stove_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "planar",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "main_table_stove_front_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 6,
+      "instruction": "put the cream cheese in the bowl",
+      "target": "cream_cheese_1",
+      "target_category": "cream_cheese",
+      "target_is_fixture": false,
+      "receiver": "akita_black_bowl_1",
+      "receiver_category": "akita_black_bowl",
+      "destination_tokens": [
+        "akita_black_bowl_1"
+      ],
+      "destination_entities": [
+        "akita_black_bowl_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "box",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "receptacle_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "akita_black_bowl_1"
+          ],
+          "destination_entities": [
+            "akita_black_bowl_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "box",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "enclosed",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "akita_black_bowl_1"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 7,
+      "instruction": "turn on the stove",
+      "target": "flat_stove_1",
+      "target_category": "flat_stove",
+      "target_is_fixture": true,
+      "receiver": "flat_stove_1",
+      "receiver_category": "flat_stove",
+      "destination_tokens": [
+        "flat_stove_1"
+      ],
+      "destination_entities": [
+        "flat_stove_1"
+      ],
+      "d2": {
+        "articulation_precondition": {
+          "applicable": true,
+          "joint": "flat_stove_1_button",
+          "joint_family": "stove_button",
+          "open_fractions_pct": [
+            5,
+            12,
+            20
+          ]
+        }
+      },
+      "d3": {
+        "articulation_state_ambiguity": {
+          "applicable": true,
+          "joint": "flat_stove_1_button",
+          "truth_states": [
+            "closed",
+            "open"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 8,
+      "instruction": "put the bowl on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "destination_tokens": [
+        "plate_1"
+      ],
+      "destination_entities": [
+        "plate_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "states": [
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ],
+          "destination_entities": [
+            "plate_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "plate_1"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 9,
+      "instruction": "put the wine bottle on the rack",
+      "target": "wine_bottle_1",
+      "target_category": "wine_bottle",
+      "target_is_fixture": false,
+      "receiver": "wine_rack_1",
+      "receiver_category": "wine_rack",
+      "destination_tokens": [
+        "wine_rack_1_top_region"
+      ],
+      "destination_entities": [
+        "wine_rack_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "states": [
+            "adjacent_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "receptacle_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "wine_rack_1_top_region"
+          ],
+          "destination_entities": [
+            "wine_rack_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "enclosed",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "wine_rack_1_top_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 0,
+      "instruction": "LIVING ROOM SCENE2 put both the alphabet soup and the tomato sauce in the basket",
+      "target": "alphabet_soup_1",
+      "target_category": "alphabet_soup",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "destination_tokens": [
+        "basket_1_contain_region"
+      ],
+      "destination_entities": [
+        "basket_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "receptacle_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ],
+          "destination_entities": [
+            "basket_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "enclosed",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 1,
+      "instruction": "LIVING ROOM SCENE2 put both the cream cheese box and the butter in the basket",
+      "target": "cream_cheese_1",
+      "target_category": "cream_cheese",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "destination_tokens": [
+        "basket_1_contain_region"
+      ],
+      "destination_entities": [
+        "basket_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "box",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "receptacle_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ],
+          "destination_entities": [
+            "basket_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "box",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "enclosed",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 2,
+      "instruction": "KITCHEN SCENE3 turn on the stove and put the moka pot on it",
+      "target": "moka_pot_1",
+      "target_category": "moka_pot",
+      "target_is_fixture": false,
+      "receiver": "flat_stove_1",
+      "receiver_category": "flat_stove",
+      "destination_tokens": [
+        "flat_stove_1",
+        "flat_stove_1_cook_region"
+      ],
+      "destination_entities": [
+        "flat_stove_1"
+      ],
+      "d2": {
+        "articulation_precondition": {
+          "applicable": true,
+          "joint": "flat_stove_1_button",
+          "joint_family": "stove_button",
+          "open_fractions_pct": [
+            20,
+            50,
+            90
+          ]
+        },
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "handled_vessel",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "flat_stove_1",
+            "flat_stove_1_cook_region"
+          ],
+          "destination_entities": [
+            "flat_stove_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "articulation_state_ambiguity": {
+          "applicable": true,
+          "joint": "flat_stove_1_button",
+          "truth_states": [
+            "closed",
+            "open"
+          ]
+        },
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "handled_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "flat_stove_1",
+            "flat_stove_1_cook_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 3,
+      "instruction": "KITCHEN SCENE4 put the black bowl in the bottom drawer of the cabinet and close it",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "white_cabinet_1",
+      "receiver_category": "white_cabinet",
+      "destination_tokens": [
+        "white_cabinet_1_bottom_region"
+      ],
+      "destination_entities": [
+        "white_cabinet_1"
+      ],
+      "d2": {
+        "articulation_precondition": {
+          "applicable": true,
+          "joint": "white_cabinet_1_bottom_level",
+          "joint_family": "drawer",
+          "open_fractions_pct": [
+            20,
+            50,
+            90
+          ]
+        },
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "states": [
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "receptacle_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "white_cabinet_1_bottom_region"
+          ],
+          "destination_entities": [
+            "white_cabinet_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "articulation_state_ambiguity": {
+          "applicable": true,
+          "joint": "white_cabinet_1_bottom_level",
+          "truth_states": [
+            "closed",
+            "open"
+          ]
+        },
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "open_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "enclosed",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "white_cabinet_1_bottom_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 4,
+      "instruction": "LIVING ROOM SCENE5 put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "target": "porcelain_mug_1",
+      "target_category": "porcelain_mug",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "destination_tokens": [
+        "plate_1",
+        "plate_2"
+      ],
+      "destination_entities": [
+        "plate_1",
+        "plate_2"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "handled_vessel",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "plate_1",
+            "plate_2"
+          ],
+          "destination_entities": [
+            "plate_1",
+            "plate_2"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "handled_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "plate_1",
+            "plate_2"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 5,
+      "instruction": "STUDY SCENE1 pick up the book and place it in the back compartment of the caddy",
+      "target": "black_book_1",
+      "target_category": "black_book",
+      "target_is_fixture": false,
+      "receiver": "desk_caddy_1",
+      "receiver_category": "desk_caddy",
+      "destination_tokens": [
+        "desk_caddy_1_back_contain_region"
+      ],
+      "destination_entities": [
+        "desk_caddy_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "planar",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "receptacle_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "desk_caddy_1_back_contain_region"
+          ],
+          "destination_entities": [
+            "desk_caddy_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "planar",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "enclosed",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "desk_caddy_1_back_contain_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 6,
+      "instruction": "LIVING ROOM SCENE6 put the white mug on the plate and put the chocolate pudding to the right of the plate",
+      "target": "porcelain_mug_1",
+      "target_category": "porcelain_mug",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "destination_tokens": [
+        "plate_1",
+        "living_room_table_plate_right_region"
+      ],
+      "destination_entities": [
+        "plate_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "handled_vessel",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "plate_1",
+            "living_room_table_plate_right_region"
+          ],
+          "destination_entities": [
+            "plate_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "handled_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "plate_1",
+            "living_room_table_plate_right_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 7,
+      "instruction": "LIVING ROOM SCENE1 put both the alphabet soup and the cream cheese box in the basket",
+      "target": "alphabet_soup_1",
+      "target_category": "alphabet_soup",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "destination_tokens": [
+        "basket_1_contain_region"
+      ],
+      "destination_entities": [
+        "basket_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "receptacle_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ],
+          "destination_entities": [
+            "basket_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "axial_container",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "enclosed",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "basket_1_contain_region"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 8,
+      "instruction": "KITCHEN SCENE8 put both moka pots on the stove",
+      "target": "moka_pot_1",
+      "target_category": "moka_pot",
+      "target_is_fixture": false,
+      "receiver": "flat_stove_1",
+      "receiver_category": "flat_stove",
+      "destination_tokens": [
+        "flat_stove_1_cook_region",
+        "flat_stove_1"
+      ],
+      "destination_entities": [
+        "flat_stove_1"
+      ],
+      "d2": {
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "handled_vessel",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        },
+        "support_region_occupancy": {
+          "applicable": true,
+          "occupancy_fractions_pct": [
+            25,
+            50,
+            75
+          ],
+          "destination_tokens": [
+            "flat_stove_1_cook_region",
+            "flat_stove_1"
+          ],
+          "destination_entities": [
+            "flat_stove_1"
+          ],
+          "must_remain_feasible": true
+        }
+      },
+      "d3": {
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "handled_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        },
+        "receptacle_occupancy_ambiguity": {
+          "applicable": true,
+          "receiver_kind": "support",
+          "truth_states": [
+            "empty",
+            "occupied"
+          ],
+          "destination_tokens": [
+            "flat_stove_1_cook_region",
+            "flat_stove_1"
+          ]
+        }
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 9,
+      "instruction": "KITCHEN SCENE6 put the yellow and white mug in the microwave and close it",
+      "target": "white_yellow_mug_1",
+      "target_category": "white_yellow_mug",
+      "target_is_fixture": false,
+      "receiver": "microwave_1",
+      "receiver_category": "microwave",
+      "destination_tokens": [
+        "microwave_1_heating_region",
+        "microwave_1"
+      ],
+      "destination_entities": [
+        "microwave_1"
+      ],
+      "d2": {
+        "articulation_precondition": {
+          "applicable": true,
+          "joint": "microwave_1_microjoint",
+          "joint_family": "microwave_door",
+          "open_fractions_pct": [
+            20,
+            50,
+            90
+          ]
+        },
+        "object_support_state": {
+          "applicable": true,
+          "morphology": "handled_vessel",
+          "states": [
+            "adjacent_support_face",
+            "opposite_support_face"
+          ],
+          "requires_settle_validation": true
+        }
+      },
+      "d3": {
+        "articulation_state_ambiguity": {
+          "applicable": true,
+          "joint": "microwave_1_microjoint",
+          "truth_states": [
+            "closed",
+            "open"
+          ]
+        },
+        "object_support_state_ambiguity": {
+          "applicable": true,
+          "morphology": "handled_vessel",
+          "truth_states": [
+            "official",
+            "alternate_stable_support"
+          ]
+        }
+      },
+      "occupancy_exclusion": {
+        "applicable": false,
+        "reason": "microwave containment region is vertically disjoint from its physical floor for a neutral free object; no stable block can remain In(region) without changing the task fixture or using an artificial support",
+        "validation_basis": "physical_stability_and_official_predicate_conflict"
+      }
+    }
+  ]
+}

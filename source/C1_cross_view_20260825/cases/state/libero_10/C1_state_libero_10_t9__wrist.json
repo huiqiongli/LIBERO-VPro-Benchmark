@@ -1,0 +1,39 @@
+{
+  "schema_version": "wam_syncbench.c1_cross_view.v2",
+  "status": "validated_semantic_definition",
+  "track": "C1",
+  "subtask": "state",
+  "case_id": "C1_state_libero_10_t9__wrist",
+  "semantic_case_id": "C1_state_libero_10_t9",
+  "suite": "libero_10",
+  "task_id": 9,
+  "instruction": "put the yellow and white mug in the microwave and close it",
+  "bddl_file": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it.bddl",
+  "direction": "wrist",
+  "enabled": true,
+  "observation_mode": "perturbed",
+  "target_policy": "object_edit",
+  "mask_source": "object_edit",
+  "render_mode": "temporary_counterfactual_simulator_branch",
+  "views": [
+    "robot0_eye_in_hand"
+  ],
+  "corrupted_view": "robot0_eye_in_hand",
+  "truth_view": "agentview",
+  "target": "microwave_1_microjoint",
+  "object_edits": [
+    {
+      "op": "state",
+      "joint": "microwave_1_microjoint",
+      "value_mode": "farthest_joint_limit"
+    }
+  ],
+  "save_masked_video": true,
+  "visual_input_contract": "official_dual_camera",
+  "simulator_state_contract": {
+    "physical_rollout_unchanged": true,
+    "temporary_edit_restored_after_render": true
+  },
+  "source_validation_status": "existing_full",
+  "existing_scenario": "trackC_C3state_libero_10_t9_microwave_door_agent-libero_10-t9"
+}

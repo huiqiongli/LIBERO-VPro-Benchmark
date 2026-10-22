@@ -1,0 +1,26 @@
+{
+  "schema_version": "libero_vpro.runnable_setting.v1",
+  "setting_id": "C1.state.wrist",
+  "category": "C1",
+  "trials_per_case": 10,
+  "backend": "c1_manifest",
+  "source_roots": [
+    "source/C1_cross_view_20260825"
+  ],
+  "config_files": [
+    "source/C1_cross_view_20260825/episode_manifests/full/all.json",
+    "source/C1_cross_view_20260825/cases/state"
+  ],
+  "asset_contract_schema": "libero_vpro.asset_contract.v1",
+  "asset_mode": "runtime_observation_transform",
+  "asset_roots": [
+    "source/C1_cross_view_20260825/cases",
+    "source/C1_cross_view_20260825/episode_manifests"
+  ],
+  "external_dependencies": [
+    "unmodified LIBERO bddl_files and init_files",
+    "MuJoCo and the selected model backend/checkpoint"
+  ],
+  "full_result_source": "external/full_results/by_experiment_subclass_model/C1/state.wrist",
+  "manifest": "manifest.json"
+}

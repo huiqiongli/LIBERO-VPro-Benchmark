@@ -1,0 +1,38 @@
+{
+  "schema_version": "wam_syncbench.c1_cross_view.v2",
+  "status": "validated_semantic_definition",
+  "track": "C1",
+  "subtask": "count",
+  "case_id": "C1_count_libero_10_t8__agent",
+  "semantic_case_id": "C1_count_libero_10_t8",
+  "suite": "libero_10",
+  "task_id": 8,
+  "instruction": "put both moka pots on the stove",
+  "bddl_file": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.bddl",
+  "direction": "agent",
+  "enabled": true,
+  "observation_mode": "perturbed",
+  "target_policy": "object_edit",
+  "mask_source": "object_edit",
+  "render_mode": "temporary_counterfactual_simulator_branch",
+  "views": [
+    "agentview"
+  ],
+  "corrupted_view": "agentview",
+  "truth_view": "robot0_eye_in_hand",
+  "target": "moka_pot_2",
+  "object_edits": [
+    {
+      "op": "disappear",
+      "object": "moka_pot_2"
+    }
+  ],
+  "save_masked_video": true,
+  "visual_input_contract": "official_dual_camera",
+  "simulator_state_contract": {
+    "physical_rollout_unchanged": true,
+    "temporary_edit_restored_after_render": true
+  },
+  "source_validation_status": "existing_full",
+  "existing_scenario": "trackC_C3count2_libero_10_t8_agent-libero_10-t8"
+}

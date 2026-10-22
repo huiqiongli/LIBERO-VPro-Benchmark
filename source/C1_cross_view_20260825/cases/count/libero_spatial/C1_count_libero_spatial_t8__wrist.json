@@ -1,0 +1,38 @@
+{
+  "schema_version": "wam_syncbench.c1_cross_view.v2",
+  "status": "validated_semantic_definition",
+  "track": "C1",
+  "subtask": "count",
+  "case_id": "C1_count_libero_spatial_t8__wrist",
+  "semantic_case_id": "C1_count_libero_spatial_t8",
+  "suite": "libero_spatial",
+  "task_id": 8,
+  "instruction": "pick up the black bowl next to the plate and place it on the plate",
+  "bddl_file": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate.bddl",
+  "direction": "wrist",
+  "enabled": true,
+  "observation_mode": "perturbed",
+  "target_policy": "object_edit",
+  "mask_source": "object_edit",
+  "render_mode": "temporary_counterfactual_simulator_branch",
+  "views": [
+    "robot0_eye_in_hand"
+  ],
+  "corrupted_view": "robot0_eye_in_hand",
+  "truth_view": "agentview",
+  "target": "akita_black_bowl_2",
+  "object_edits": [
+    {
+      "op": "disappear",
+      "object": "akita_black_bowl_2"
+    }
+  ],
+  "save_masked_video": true,
+  "visual_input_contract": "official_dual_camera",
+  "simulator_state_contract": {
+    "physical_rollout_unchanged": true,
+    "temporary_edit_restored_after_render": true
+  },
+  "source_validation_status": "existing_full",
+  "existing_scenario": "trackC_C3count2_libero_spatial_t8_agent-libero_spatial-t8"
+}

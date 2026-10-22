@@ -1,0 +1,1475 @@
+{
+  "schema_version": "libero_vpro.dataset_hierarchy.v1",
+  "source": "external/full_results/by_experiment_subclass_model plus release-specified A4 duration and target-region noise settings",
+  "case_definition": "unique suite + task + subclass + perturbation parameter; model/trial/path are not case identity",
+  "counting_scope": "Unique suite-task-setting combinations defined by the release manifests; D2 includes articulation and object-support variants, and D3 includes truth-A obfuscated articulation and object-support variants. Model metadata describes the evaluation coverage recorded in the source results.",
+  "category_count": 12,
+  "setting_count": 96,
+  "case_count": 3296,
+  "categories": [
+    {
+      "code": "A1",
+      "name": "Target-Object Masking",
+      "subcategory_count": 2,
+      "setting_count": 8,
+      "case_count": 320,
+      "model_count": 6,
+      "models": [
+        "FastWAM",
+        "LaWAM",
+        "LingBot-VA",
+        "OpenVLA-OFT",
+        "Pi0-LIBERO",
+        "Pi0.5-LIBERO"
+      ],
+      "model_coverage_source": "organized result-tree model directories",
+      "leaf_settings": [
+        {
+          "subcategory": "physical_target_object_ratio",
+          "parameter": "ratio_100pct",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 4800,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "physical_target_object_ratio",
+          "parameter": "ratio_25pct",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 4804,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "physical_target_object_ratio",
+          "parameter": "ratio_50pct",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 4800,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "physical_target_object_ratio",
+          "parameter": "ratio_75pct",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 4800,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "timing",
+          "parameter": "initially_occluded_then_revealed",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1200,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "timing",
+          "parameter": "initially_visible_then_occluded",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1200,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "timing",
+          "parameter": "post_grasp",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1200,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "timing",
+          "parameter": "pre_grasp",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1200,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "A2",
+      "name": "Target-Receptacle Masking",
+      "subcategory_count": 2,
+      "setting_count": 8,
+      "case_count": 320,
+      "model_count": 6,
+      "models": [
+        "FastWAM",
+        "LaWAM",
+        "LingBot-VA",
+        "OpenVLA-OFT",
+        "Pi0-LIBERO",
+        "Pi0.5-LIBERO"
+      ],
+      "model_coverage_source": "organized result-tree model directories",
+      "leaf_settings": [
+        {
+          "subcategory": "physical_target_receptacle_ratio",
+          "parameter": "ratio_100pct",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 4800,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "physical_target_receptacle_ratio",
+          "parameter": "ratio_25pct",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 4804,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "physical_target_receptacle_ratio",
+          "parameter": "ratio_50pct",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 4800,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "physical_target_receptacle_ratio",
+          "parameter": "ratio_75pct",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 4800,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "timing",
+          "parameter": "initially_occluded_then_revealed",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1200,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "timing",
+          "parameter": "initially_visible_then_occluded",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1200,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "timing",
+          "parameter": "post_place",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1200,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "timing",
+          "parameter": "pre_place",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1200,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "A3",
+      "name": "Interaction-Cue Masking",
+      "subcategory_count": 1,
+      "setting_count": 4,
+      "case_count": 69,
+      "model_count": 6,
+      "models": [
+        "FastWAM",
+        "LaWAM",
+        "LingBot-VA",
+        "OpenVLA-OFT",
+        "Pi0-LIBERO",
+        "Pi0.5-LIBERO"
+      ],
+      "model_coverage_source": "A3 launch_manifest.json + full-result inventory",
+      "leaf_settings": [
+        {
+          "subcategory": "interaction_part",
+          "parameter": "gripper",
+          "unique_episode_count": 2400,
+          "raw_complete_record_count": 2400,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "interaction_part",
+          "parameter": "target_contact",
+          "unique_episode_count": 600,
+          "raw_complete_record_count": 600,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "interaction_part",
+          "parameter": "fixture_contact",
+          "unique_episode_count": 360,
+          "raw_complete_record_count": 360,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "interaction_part",
+          "parameter": "bounded_receiver",
+          "unique_episode_count": 780,
+          "raw_complete_record_count": 780,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "A4",
+      "name": "Temporary Observation Corruption",
+      "subcategory_count": 2,
+      "setting_count": 21,
+      "case_count": 840,
+      "model_count": 6,
+      "models": [
+        "FastWAM",
+        "LaWAM",
+        "LingBot-VA",
+        "OpenVLA-OFT",
+        "Pi0-LIBERO",
+        "Pi0.5-LIBERO"
+      ],
+      "model_coverage_source": "organized result-tree model directories",
+      "leaf_settings": [
+        {
+          "subcategory": "observation_corruption",
+          "parameter": "black_N1",
+          "unique_episode_count": 2400,
+          "raw_complete_record_count": 2400,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "observation_corruption",
+          "parameter": "black_N2",
+          "unique_episode_count": 2400,
+          "raw_complete_record_count": 2400,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "observation_corruption",
+          "parameter": "black_N3",
+          "unique_episode_count": 2400,
+          "raw_complete_record_count": 2400,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "observation_corruption",
+          "parameter": "noise_N1",
+          "unique_episode_count": 2400,
+          "raw_complete_record_count": 2400,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "observation_corruption",
+          "parameter": "noise_N2",
+          "unique_episode_count": 2400,
+          "raw_complete_record_count": 2400,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "observation_corruption",
+          "parameter": "noise_N3",
+          "unique_episode_count": 2400,
+          "raw_complete_record_count": 2400,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "observation_corruption",
+          "parameter": "target_region_noise",
+          "model_count": 2,
+          "models": [
+            "FastWAM",
+            "LingBot-VA"
+          ]
+        },
+        {
+          "subcategory": "observation_corruption",
+          "parameter": "black_D2",
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "observation_corruption",
+          "parameter": "black_D3",
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "observation_corruption",
+          "parameter": "noise_D2",
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "observation_corruption",
+          "parameter": "noise_D3",
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "phase_observation_corruption",
+          "parameter": "black_reach_3replan_once",
+          "unique_episode_count": 2400,
+          "raw_complete_record_count": 2400,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "phase_observation_corruption",
+          "parameter": "black_pre_grasp_3replan_once",
+          "unique_episode_count": 2400,
+          "raw_complete_record_count": 2400,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "phase_observation_corruption",
+          "parameter": "black_grasp_3replan_once",
+          "unique_episode_count": 2400,
+          "raw_complete_record_count": 2400,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "phase_observation_corruption",
+          "parameter": "black_transport_3replan_once",
+          "unique_episode_count": 2400,
+          "raw_complete_record_count": 2400,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "phase_observation_corruption",
+          "parameter": "black_pre_place_3replan_once",
+          "unique_episode_count": 2400,
+          "raw_complete_record_count": 2400,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "phase_observation_corruption",
+          "parameter": "noise_reach_3replan_once",
+          "unique_episode_count": 2400,
+          "raw_complete_record_count": 2400,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "phase_observation_corruption",
+          "parameter": "noise_pre_grasp_3replan_once",
+          "unique_episode_count": 2400,
+          "raw_complete_record_count": 2400,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "phase_observation_corruption",
+          "parameter": "noise_grasp_3replan_once",
+          "unique_episode_count": 2400,
+          "raw_complete_record_count": 2400,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "phase_observation_corruption",
+          "parameter": "noise_transport_3replan_once",
+          "unique_episode_count": 2400,
+          "raw_complete_record_count": 2400,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "phase_observation_corruption",
+          "parameter": "noise_pre_place_3replan_once",
+          "unique_episode_count": 2400,
+          "raw_complete_record_count": 2400,
+          "model_count": 6,
+          "models": [
+            "FastWAM",
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "A5",
+      "name": "View Unavailability",
+      "subcategory_count": 1,
+      "setting_count": 8,
+      "case_count": 320,
+      "model_count": 6,
+      "models": [
+        "FastWAM",
+        "LaWAM",
+        "LingBot-VA",
+        "OpenVLA-OFT",
+        "Pi0-LIBERO",
+        "Pi0.5-LIBERO"
+      ],
+      "model_coverage_source": "organized result-tree model directories",
+      "leaf_settings": [
+        {
+          "subcategory": "view_condition",
+          "parameter": "agent_only_direct",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1600,
+          "model_count": 2,
+          "models": [
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "view_condition",
+          "parameter": "agent_plus_black_wrist",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1200,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "view_condition",
+          "parameter": "agent_plus_white_wrist",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1200,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "view_condition",
+          "parameter": "agentview_copy_to_dual",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1600,
+          "model_count": 2,
+          "models": [
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "view_condition",
+          "parameter": "wrist_copy_to_dual",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1600,
+          "model_count": 2,
+          "models": [
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "view_condition",
+          "parameter": "wrist_only_direct",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1600,
+          "model_count": 2,
+          "models": [
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "view_condition",
+          "parameter": "wrist_plus_black_agent",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1200,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "view_condition",
+          "parameter": "wrist_plus_white_agent",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1200,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "B1",
+      "name": "Camera Staleness",
+      "subcategory_count": 1,
+      "setting_count": 10,
+      "case_count": 400,
+      "model_count": 6,
+      "models": [
+        "FastWAM",
+        "LaWAM",
+        "LingBot-VA",
+        "OpenVLA-OFT",
+        "Pi0-LIBERO",
+        "Pi0.5-LIBERO"
+      ],
+      "model_coverage_source": "organized result-tree model directories",
+      "leaf_settings": [
+        {
+          "subcategory": "staleness",
+          "parameter": "delay1_agent",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 8000,
+          "model_count": 2,
+          "models": [
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "staleness",
+          "parameter": "delay1_wrist",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 8000,
+          "model_count": 2,
+          "models": [
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "staleness",
+          "parameter": "delay3_agent",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 8000,
+          "model_count": 2,
+          "models": [
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "staleness",
+          "parameter": "delay3_wrist",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 8000,
+          "model_count": 2,
+          "models": [
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "staleness",
+          "parameter": "delay5_agent",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 8000,
+          "model_count": 2,
+          "models": [
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "staleness",
+          "parameter": "delay5_wrist",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 8000,
+          "model_count": 2,
+          "models": [
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "staleness",
+          "parameter": "freeze_agent",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 8000,
+          "model_count": 2,
+          "models": [
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "staleness",
+          "parameter": "freeze_wrist",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 8000,
+          "model_count": 2,
+          "models": [
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "staleness",
+          "parameter": "replay_agent",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 8000,
+          "model_count": 2,
+          "models": [
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "staleness",
+          "parameter": "replay_wrist",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 8000,
+          "model_count": 2,
+          "models": [
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "C1",
+      "name": "Cross-View Contradiction",
+      "subcategory_count": 4,
+      "setting_count": 8,
+      "case_count": 190,
+      "model_count": 6,
+      "models": [
+        "FastWAM",
+        "LaWAM",
+        "LingBot-VA",
+        "OpenVLA-OFT",
+        "Pi0-LIBERO",
+        "Pi0.5-LIBERO"
+      ],
+      "model_coverage_source": "organized result-tree model directories",
+      "leaf_settings": [
+        {
+          "subcategory": "count",
+          "parameter": "agent",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 2400,
+          "model_count": 5,
+          "models": [
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "count",
+          "parameter": "wrist",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 2400,
+          "model_count": 5,
+          "models": [
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "existence",
+          "parameter": "agent",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 7600,
+          "model_count": 5,
+          "models": [
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "existence",
+          "parameter": "wrist",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 7600,
+          "model_count": 5,
+          "models": [
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "position",
+          "parameter": "agent",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 7604,
+          "model_count": 5,
+          "models": [
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "position",
+          "parameter": "wrist",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 7600,
+          "model_count": 5,
+          "models": [
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "state",
+          "parameter": "agent",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1400,
+          "model_count": 5,
+          "models": [
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "state",
+          "parameter": "wrist",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1400,
+          "model_count": 5,
+          "models": [
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "C2",
+      "name": "Prediction–Reality Divergence",
+      "subcategory_count": 1,
+      "setting_count": 1,
+      "case_count": 40,
+      "model_count": 2,
+      "models": [
+        "FastWAM",
+        "LingBot-VA"
+      ],
+      "model_coverage_source": "organized result-tree model directories",
+      "leaf_settings": [
+        {
+          "subcategory": "recursive_self_prediction",
+          "parameter": "all_steps",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 800,
+          "model_count": 2,
+          "models": [
+            "FastWAM",
+            "LingBot-VA"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "D1",
+      "name": "Task-Relevant Distractors",
+      "subcategory_count": 1,
+      "setting_count": 6,
+      "case_count": 240,
+      "model_count": 6,
+      "models": [
+        "FastWAM",
+        "LaWAM",
+        "LingBot-VA",
+        "OpenVLA-OFT",
+        "Pi0-LIBERO",
+        "Pi0.5-LIBERO"
+      ],
+      "model_coverage_source": "organized result-tree model directories",
+      "leaf_settings": [
+        {
+          "subcategory": "semantic_distractor",
+          "parameter": "same_affordance",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 7200,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "semantic_distractor",
+          "parameter": "same_category",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 7200,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "semantic_distractor",
+          "parameter": "same_color",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 7200,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "semantic_distractor",
+          "parameter": "same_position",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 7200,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "semantic_distractor",
+          "parameter": "same_shape",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 7200,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "semantic_distractor",
+          "parameter": "trajectory",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 7200,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "D2",
+      "name": "Task-Precondition Variation",
+      "subcategory_count": 2,
+      "setting_count": 8,
+      "case_count": 80,
+      "model_count": 6,
+      "models": [
+        "FastWAM",
+        "LaWAM",
+        "LingBot-VA",
+        "OpenVLA-OFT",
+        "Pi0-LIBERO",
+        "Pi0.5-LIBERO"
+      ],
+      "model_coverage_source": "organized result-tree model directories",
+      "leaf_settings": [
+        {
+          "subcategory": "articulation_precondition",
+          "parameter": "open_12pct",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 200,
+          "model_count": 5,
+          "models": [
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "articulation_precondition",
+          "parameter": "open_20pct",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1400,
+          "model_count": 5,
+          "models": [
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "articulation_precondition",
+          "parameter": "open_50pct",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1200,
+          "model_count": 5,
+          "models": [
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "articulation_precondition",
+          "parameter": "open_5pct",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 200,
+          "model_count": 5,
+          "models": [
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "articulation_precondition",
+          "parameter": "open_85pct",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 200,
+          "model_count": 5,
+          "models": [
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "articulation_precondition",
+          "parameter": "open_90pct",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1000,
+          "model_count": 5,
+          "models": [
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "object_support_state",
+          "parameter": "adjacent_support_face",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 4600,
+          "model_count": 5,
+          "models": [
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "object_support_state",
+          "parameter": "opposite_support_face",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 7200,
+          "model_count": 5,
+          "models": [
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "D3",
+      "name": "Visual State Ambiguity",
+      "subcategory_count": 2,
+      "setting_count": 2,
+      "case_count": 45,
+      "model_count": 6,
+      "models": [
+        "FastWAM",
+        "LaWAM",
+        "LingBot-VA",
+        "OpenVLA-OFT",
+        "Pi0-LIBERO",
+        "Pi0.5-LIBERO"
+      ],
+      "model_coverage_source": "organized result-tree model directories",
+      "leaf_settings": [
+        {
+          "subcategory": "articulation_state_ambiguity",
+          "parameter": "truth_a_obfuscated",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1050,
+          "model_count": 5,
+          "models": [
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "object_support_state_ambiguity",
+          "parameter": "truth_a_obfuscated",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 5700,
+          "model_count": 5,
+          "models": [
+            "LaWAM",
+            "LingBot-VA",
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "D4",
+      "name": "Target Geometry Variation",
+      "subcategory_count": 4,
+      "setting_count": 12,
+      "case_count": 432,
+      "model_count": 6,
+      "models": [
+        "FastWAM",
+        "LaWAM",
+        "LingBot-VA",
+        "OpenVLA-OFT",
+        "Pi0-LIBERO",
+        "Pi0.5-LIBERO"
+      ],
+      "model_coverage_source": "organized result-tree model directories",
+      "leaf_settings": [
+        {
+          "subcategory": "asymmetric",
+          "parameter": "high",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1080,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "asymmetric",
+          "parameter": "low",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1080,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "asymmetric",
+          "parameter": "medium",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1080,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "multipeak",
+          "parameter": "high",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1080,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "multipeak",
+          "parameter": "low",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1080,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "multipeak",
+          "parameter": "medium",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1080,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "taper",
+          "parameter": "high",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1080,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "taper",
+          "parameter": "low",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1080,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "taper",
+          "parameter": "medium",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1080,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "twist",
+          "parameter": "high",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1080,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "twist",
+          "parameter": "low",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1080,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        },
+        {
+          "subcategory": "twist",
+          "parameter": "medium",
+          "unique_episode_count": 0,
+          "raw_complete_record_count": 1080,
+          "model_count": 3,
+          "models": [
+            "OpenVLA-OFT",
+            "Pi0-LIBERO",
+            "Pi0.5-LIBERO"
+          ]
+        }
+      ]
+    }
+  ],
+  "dimension_codes": {
+    "A": "Visual Evidence Degradation",
+    "B": "Camera Staleness",
+    "C": "Visual Source Consistency",
+    "D": "Task-Relevant Scene Variation"
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "schema_version": "wam_syncbench.trackA.a3.v5.semantic_shape_candidate.fixture_controls",
+  "description": "Instruction-selected Fixture blur over the named drawer handle, stove control decoration, or complete microwave opening.",
+  "selection_policy": "include a fixture only when the natural-language instruction explicitly commands an articulated fixture action; select the named drawer layer/control, not another fixture merely present in the scene",
+  "tasks": {
+    "libero_goal/0": {
+      "target": "wooden_cabinet_1_middle_region",
+      "receptacle": "__unary_control__",
+      "instruction": "open the middle drawer of the cabinet",
+      "instruction_action": "open",
+      "instruction_control": "middle drawer",
+      "selection_basis": "explicit natural-language fixture action",
+      "object_contact_template": "wooden_cabinet_middle_handle_blur_region"
+    },
+    "libero_goal/3": {
+      "target": "akita_black_bowl_1",
+      "receptacle": "wooden_cabinet_1_top_region",
+      "instruction": "open the top drawer and put the bowl inside",
+      "instruction_action": "open",
+      "instruction_control": "top drawer",
+      "selection_basis": "explicit natural-language fixture action",
+      "object_contact_template": "wooden_cabinet_top_handle_blur_region"
+    },
+    "libero_10/3": {
+      "target": "akita_black_bowl_1",
+      "receptacle": "white_cabinet_1_bottom_region",
+      "instruction": "put the black bowl in the bottom drawer of the cabinet and close it",
+      "instruction_action": "close",
+      "instruction_control": "bottom drawer handle",
+      "selection_basis": "explicit natural-language fixture action",
+      "object_contact_template": "white_cabinet_bottom_handle_blur_region"
+    },
+    "libero_goal/7": {
+      "target": "flat_stove_1",
+      "receptacle": "__unary_control__",
+      "instruction": "turn on the stove",
+      "instruction_action": "turn on",
+      "instruction_control": "stove button",
+      "selection_basis": "explicit natural-language fixture action",
+      "object_contact_template": "flat_stove_button_blur_region"
+    },
+    "libero_10/2": {
+      "target": "moka_pot_1",
+      "receptacle": "flat_stove_1_cook_region",
+      "instruction": "turn on the stove and put the moka pot on it",
+      "instruction_action": "turn on",
+      "instruction_control": "stove button",
+      "selection_basis": "explicit natural-language fixture action",
+      "object_contact_template": "flat_stove_button_blur_region"
+    },
+    "libero_10/9": {
+      "target": "white_yellow_mug_1",
+      "receptacle": "microwave_1_heating_region",
+      "instruction": "put the yellow and white mug in the microwave and close it",
+      "instruction_action": "close",
+      "instruction_control": "microwave opening",
+      "selection_basis": "explicit natural-language fixture action",
+      "object_contact_template": "microwave_complete_opening_blur_plane"
+    }
+  },
+  "templates": {
+    "wooden_cabinet_middle_handle_blur_region": {
+      "role": "target",
+      "body_name": "wooden_cabinet_1_cabinet_middle",
+      "geom_type": "box",
+      "entity_type": "drawer_handle",
+      "occluder_style": "exact_accepted_black_handle_bar_geometry_with_blurred_contents",
+      "placement_mode": "exact_black_bar_non_colliding_handle_cover_sleeve_projection",
+      "source_visual_geom": "wooden_cabinet_1_g28",
+      "source_interaction_geom_names": [
+        "wooden_cabinet_1_g28",
+        "wooden_cabinet_1_g29"
+      ],
+      "minimum_surface_clearance_m": 0.0,
+      "semantic_region": "middle_drawer_handle",
+      "patches": [
+        {
+          "pos": [
+            -0.0026,
+            -0.09146,
+            0.11046
+          ],
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "tangent_y": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "size": [
+            0.05,
+            0.0125,
+            0.022
+          ]
+        }
+      ]
+    },
+    "wooden_cabinet_top_handle_blur_region": {
+      "role": "target",
+      "body_name": "wooden_cabinet_1_cabinet_top",
+      "geom_type": "box",
+      "entity_type": "drawer_handle",
+      "occluder_style": "exact_accepted_black_handle_bar_geometry_with_blurred_contents",
+      "placement_mode": "exact_black_bar_non_colliding_handle_cover_sleeve_projection",
+      "source_visual_geom": "wooden_cabinet_1_g17",
+      "source_interaction_geom_names": [
+        "wooden_cabinet_1_g17",
+        "wooden_cabinet_1_g18"
+      ],
+      "minimum_surface_clearance_m": 0.0,
+      "semantic_region": "top_drawer_handle",
+      "patches": [
+        {
+          "pos": [
+            -0.0026,
+            -0.09146,
+            0.18392
+          ],
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "tangent_y": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "size": [
+            0.05,
+            0.0125,
+            0.022
+          ]
+        }
+      ]
+    },
+    "white_cabinet_bottom_handle_blur_region": {
+      "role": "target",
+      "body_name": "white_cabinet_1_cabinet_bottom",
+      "geom_type": "box",
+      "entity_type": "drawer_handle",
+      "occluder_style": "exact_handle_aabb_bar_geometry_with_blurred_contents",
+      "placement_mode": "drawer_body_local_handle_cover_sleeve_projection",
+      "source_visual_geom": "white_cabinet_1_g39",
+      "source_interaction_geom_names": [
+        "white_cabinet_1_g39",
+        "white_cabinet_1_g40",
+        "white_cabinet_1_g41",
+        "white_cabinet_1_g42"
+      ],
+      "source_interaction_geom_semantics": "bottom drawer handle visual mesh plus its three collision pieces",
+      "instruction_action": "close",
+      "source_visual_aabb_center_body_local_m": [
+        -0.002603,
+        -0.091462,
+        0.041555
+      ],
+      "source_visual_aabb_half_extents_body_local_m": [
+        0.044435,
+        0.018801,
+        0.008233
+      ],
+      "minimum_surface_clearance_m": 0.0,
+      "semantic_region": "bottom_drawer_handle",
+      "patches": [
+        {
+          "pos": [
+            -0.002603,
+            -0.091462,
+            0.041555
+          ],
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "tangent_y": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "size": [
+            0.05,
+            0.0125,
+            0.022
+          ]
+        }
+      ]
+    },
+    "flat_stove_button_blur_region": {
+      "role": "target",
+      "body_name": "flat_stove_1_button",
+      "geom_type": "box",
+      "entity_type": "stove_button",
+      "occluder_style": "target_visible_gaussian_blur_over_rotating_top_decoration",
+      "placement_mode": "body_local_projected_decoration_region",
+      "source_visual_geom": "flat_stove_1_g4",
+      "source_decoration_visual_aabb_low_m": [
+        -0.0139,
+        -0.0065,
+        0.0164
+      ],
+      "source_decoration_visual_aabb_high_m": [
+        0.015,
+        0.0495,
+        0.0539
+      ],
+      "source_outward_support_coordinate_m": 0.0539,
+      "minimum_surface_clearance_m": 0.0025,
+      "semantic_region": "stove_button_rotating_top_decoration_only",
+      "patches": [
+        {
+          "pos": [
+            0.00055,
+            0.0215,
+            0.058
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tangent_y": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "size": [
+            0.015,
+            0.029,
+            0.0015
+          ]
+        }
+      ]
+    },
+    "microwave_complete_opening_blur_plane": {
+      "role": "target",
+      "body_name": "microwave_1_main",
+      "geom_type": "box",
+      "entity_type": "microwave_opening",
+      "occluder_style": "gaussian_blur_over_complete_microwave_opening",
+      "placement_mode": "fixed_main_body_opening_plane_at_front_inner_boundary",
+      "source_opening_boundary_collision_geoms": [
+        "microwave_1_g3",
+        "microwave_1_g4",
+        "microwave_1_g6",
+        "microwave_1_g7"
+      ],
+      "source_opening_inner_x_bounds_m": [
+        -0.1435,
+        0.0635
+      ],
+      "source_opening_inner_z_bounds_m": [
+        0.024,
+        0.168
+      ],
+      "source_opening_front_y_m": -0.088,
+      "instruction_action": "close",
+      "minimum_surface_clearance_m": 0.0,
+      "semantic_region": "complete_microwave_opening_plane",
+      "blur_region_kind": "complete_bounded_opening_plane",
+      "patches": [
+        {
+          "pos": [
+            -0.04,
+            -0.088,
+            0.096
+          ],
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "tangent_y": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "size": [
+            0.1065,
+            0.075,
+            0.001
+          ]
+        }
+      ]
+    }
+  }
+}

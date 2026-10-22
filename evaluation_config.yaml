@@ -1,0 +1,27 @@
+schema_version: libero_vpro.evaluation_config.v1
+
+release:
+  paper_manifest: PAPER_FACING_SETTINGS.json
+  statistics_manifest: PAPER_FACING_STATISTICS.json
+  settings_index: runnable_settings/index.json
+
+# LIBERO and model checkpoints are intentionally external.  Set these
+# variables before evaluation; the values below are only portable defaults.
+external:
+  sim_root: "${LIBERO_VPRO_SIM_ROOT:-}"
+  fastwam_root: "${FASTWAM_ROOT:-}"
+  fastwam_python: "${FASTWAM_PYTHON:-}"
+  fastwam_checkpoint: "${FASTWAM_CHECKPOINT:-}"
+  fastwam_stats: "${FASTWAM_DATASET_STATS:-}"
+  libero_root: "${LIBERO_VPRO_LIBERO_ROOT:-}"
+  libero_assets_root: "${LIBERO_VPRO_LIBERO_ASSETS_ROOT:-}"
+  data_root: "${LIBERO_VPRO_DATA_ROOT:-}"
+  bddl_subdir: bddl_files
+  init_subdir: init_files
+
+evaluation:
+  # Without --suite, run all suites declared by the selected setting.
+  default_suite: null
+  trials_per_case: 10
+  output_root: "${LIBERO_VPRO_OUTPUT_ROOT:-../Outputs/libero_vpro}"
+  default_gpu: "0"

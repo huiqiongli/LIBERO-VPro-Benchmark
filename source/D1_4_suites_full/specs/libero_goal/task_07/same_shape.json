@@ -1,0 +1,88 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_shape",
+  "suite": "libero_goal",
+  "benchmark": "libero_goal",
+  "task_id": 7,
+  "task_name": "turn_on_the_stove",
+  "instruction": "turn on the stove",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_goal/turn_on_the_stove.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_goal/task_07/same_shape.bddl",
+  "target": "flat_stove_1",
+  "target_category": "flat_stove",
+  "definition": {
+    "zh": "同形状干扰物",
+    "definition": "匹配目标轮廓和尺度、具有独立功能结构的不同语义类别代理。",
+    "target": "flat_stove_1",
+    "target_category": "flat_stove",
+    "distractor": "flat_stove_d1_same_shape",
+    "category": "computer_keyboard",
+    "registry_category": "flat_stove",
+    "proxy_identity": "computer_keyboard",
+    "construction": "different_category_outline_matched_proxy",
+    "appearance_change": "native_proxy_identity"
+  },
+  "settle_steps": 18,
+  "object_scale_overrides": [
+    {
+      "object": "flat_stove_d1_same_shape",
+      "category": "flat_stove",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/shared/same_shape_proxy/flat_stove/computer_keyboard/computer_keyboard.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "flat_stove_d1_same_shape",
+      "relative_to": "flat_stove_1",
+      "candidate_offsets": [
+        [
+          0.0,
+          0.34,
+          0.0
+        ],
+        [
+          0.34,
+          0.0,
+          0.0
+        ],
+        [
+          -0.34,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.34,
+          0.0
+        ]
+      ],
+      "candidate_selection": "max_clearance",
+      "avoid_objects": [
+        "akita_black_bowl_1",
+        "cream_cheese_1",
+        "wine_bottle_1",
+        "plate_1",
+        "main_table",
+        "wooden_cabinet_1",
+        "flat_stove_1",
+        "wine_rack_1"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.48,
+          0.48
+        ],
+        [
+          -0.36,
+          0.38
+        ]
+      ],
+      "min_distance_from_others": 0.18,
+      "preserve_z": true,
+      "fixed_fixture": true
+    }
+  ]
+}

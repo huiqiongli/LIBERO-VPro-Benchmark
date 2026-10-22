@@ -1,0 +1,39 @@
+{
+  "schema_version": "wam_syncbench.c1_cross_view.v2",
+  "status": "validated_semantic_definition",
+  "track": "C1",
+  "subtask": "state",
+  "case_id": "C1_state_libero_goal_t0__wrist",
+  "semantic_case_id": "C1_state_libero_goal_t0",
+  "suite": "libero_goal",
+  "task_id": 0,
+  "instruction": "open the middle drawer of the cabinet",
+  "bddl_file": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_goal/open_the_middle_drawer_of_the_cabinet.bddl",
+  "direction": "wrist",
+  "enabled": true,
+  "observation_mode": "perturbed",
+  "target_policy": "object_edit",
+  "mask_source": "object_edit",
+  "render_mode": "temporary_counterfactual_simulator_branch",
+  "views": [
+    "robot0_eye_in_hand"
+  ],
+  "corrupted_view": "robot0_eye_in_hand",
+  "truth_view": "agentview",
+  "target": "wooden_cabinet_1_middle_level",
+  "object_edits": [
+    {
+      "op": "state",
+      "joint": "wooden_cabinet_1_middle_level",
+      "value_mode": "joint_range_mirror"
+    }
+  ],
+  "save_masked_video": true,
+  "visual_input_contract": "official_dual_camera",
+  "simulator_state_contract": {
+    "physical_rollout_unchanged": true,
+    "temporary_edit_restored_after_render": true
+  },
+  "source_validation_status": "existing_full",
+  "existing_scenario": "trackC_C3state_libero_goal_t0_drawer_middle_agent-libero_goal-t0"
+}

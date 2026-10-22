@@ -1,0 +1,486 @@
+{
+  "schema_version": "libero_vpro.runnable_settings.v1",
+  "setting_count": 96,
+  "settings": [
+    {
+      "id": "A1.ratio_25pct",
+      "path": "settings/A1/ratio_25pct",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "A1.ratio_50pct",
+      "path": "settings/A1/ratio_50pct",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "A1.ratio_75pct",
+      "path": "settings/A1/ratio_75pct",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "A1.ratio_100pct",
+      "path": "settings/A1/ratio_100pct",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "A1.initially_occluded_then_revealed",
+      "path": "settings/A1/initially_occluded_then_revealed",
+      "backend": "timing_client"
+    },
+    {
+      "id": "A1.initially_visible_then_occluded",
+      "path": "settings/A1/initially_visible_then_occluded",
+      "backend": "timing_client"
+    },
+    {
+      "id": "A1.pre_grasp",
+      "path": "settings/A1/pre_grasp",
+      "backend": "timing_client"
+    },
+    {
+      "id": "A1.post_grasp",
+      "path": "settings/A1/post_grasp",
+      "backend": "timing_client"
+    },
+    {
+      "id": "A2.ratio_25pct",
+      "path": "settings/A2/ratio_25pct",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "A2.ratio_50pct",
+      "path": "settings/A2/ratio_50pct",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "A2.ratio_75pct",
+      "path": "settings/A2/ratio_75pct",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "A2.ratio_100pct",
+      "path": "settings/A2/ratio_100pct",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "A2.initially_occluded_then_revealed",
+      "path": "settings/A2/initially_occluded_then_revealed",
+      "backend": "timing_client"
+    },
+    {
+      "id": "A2.initially_visible_then_occluded",
+      "path": "settings/A2/initially_visible_then_occluded",
+      "backend": "timing_client"
+    },
+    {
+      "id": "A2.pre_place",
+      "path": "settings/A2/pre_place",
+      "backend": "timing_client"
+    },
+    {
+      "id": "A2.post_place",
+      "path": "settings/A2/post_place",
+      "backend": "timing_client"
+    },
+    {
+      "id": "A3.gripper",
+      "path": "settings/A3/gripper",
+      "backend": "a3_manifest"
+    },
+    {
+      "id": "A3.target_contact",
+      "path": "settings/A3/target_contact",
+      "backend": "a3_manifest"
+    },
+    {
+      "id": "A3.fixture_contact",
+      "path": "settings/A3/fixture_contact",
+      "backend": "a3_manifest"
+    },
+    {
+      "id": "A3.bounded_receiver",
+      "path": "settings/A3/bounded_receiver",
+      "backend": "a3_manifest"
+    },
+    {
+      "id": "A4.black_N1",
+      "path": "settings/A4/black_N1",
+      "backend": "a4_fixed"
+    },
+    {
+      "id": "A4.black_N2",
+      "path": "settings/A4/black_N2",
+      "backend": "a4_fixed"
+    },
+    {
+      "id": "A4.black_N3",
+      "path": "settings/A4/black_N3",
+      "backend": "a4_fixed"
+    },
+    {
+      "id": "A4.noise_N1",
+      "path": "settings/A4/noise_N1",
+      "backend": "a4_fixed"
+    },
+    {
+      "id": "A4.noise_N2",
+      "path": "settings/A4/noise_N2",
+      "backend": "a4_fixed"
+    },
+    {
+      "id": "A4.noise_N3",
+      "path": "settings/A4/noise_N3",
+      "backend": "a4_fixed"
+    },
+    {
+      "id": "A4.target_region_noise",
+      "path": "settings/A4/target_region_noise",
+      "backend": "a4_target_region_noise"
+    },
+    {
+      "id": "A4.black_D2",
+      "path": "settings/A4/black_D2",
+      "backend": "a4_duration"
+    },
+    {
+      "id": "A4.black_D3",
+      "path": "settings/A4/black_D3",
+      "backend": "a4_duration"
+    },
+    {
+      "id": "A4.noise_D2",
+      "path": "settings/A4/noise_D2",
+      "backend": "a4_duration"
+    },
+    {
+      "id": "A4.noise_D3",
+      "path": "settings/A4/noise_D3",
+      "backend": "a4_duration"
+    },
+    {
+      "id": "A4.black_reach_3replan_once",
+      "path": "settings/A4/black_reach_3replan_once",
+      "backend": "a4_phase"
+    },
+    {
+      "id": "A4.black_pre_grasp_3replan_once",
+      "path": "settings/A4/black_pre_grasp_3replan_once",
+      "backend": "a4_phase"
+    },
+    {
+      "id": "A4.black_grasp_3replan_once",
+      "path": "settings/A4/black_grasp_3replan_once",
+      "backend": "a4_phase"
+    },
+    {
+      "id": "A4.black_transport_3replan_once",
+      "path": "settings/A4/black_transport_3replan_once",
+      "backend": "a4_phase"
+    },
+    {
+      "id": "A4.black_pre_place_3replan_once",
+      "path": "settings/A4/black_pre_place_3replan_once",
+      "backend": "a4_phase"
+    },
+    {
+      "id": "A4.noise_reach_3replan_once",
+      "path": "settings/A4/noise_reach_3replan_once",
+      "backend": "a4_phase"
+    },
+    {
+      "id": "A4.noise_pre_grasp_3replan_once",
+      "path": "settings/A4/noise_pre_grasp_3replan_once",
+      "backend": "a4_phase"
+    },
+    {
+      "id": "A4.noise_grasp_3replan_once",
+      "path": "settings/A4/noise_grasp_3replan_once",
+      "backend": "a4_phase"
+    },
+    {
+      "id": "A4.noise_transport_3replan_once",
+      "path": "settings/A4/noise_transport_3replan_once",
+      "backend": "a4_phase"
+    },
+    {
+      "id": "A4.noise_pre_place_3replan_once",
+      "path": "settings/A4/noise_pre_place_3replan_once",
+      "backend": "a4_phase"
+    },
+    {
+      "id": "A5.agent_only_direct",
+      "path": "settings/A5/agent_only_direct",
+      "backend": "a5_condition"
+    },
+    {
+      "id": "A5.wrist_only_direct",
+      "path": "settings/A5/wrist_only_direct",
+      "backend": "a5_condition"
+    },
+    {
+      "id": "A5.agentview_copy_to_dual",
+      "path": "settings/A5/agentview_copy_to_dual",
+      "backend": "a5_condition"
+    },
+    {
+      "id": "A5.wrist_copy_to_dual",
+      "path": "settings/A5/wrist_copy_to_dual",
+      "backend": "a5_condition"
+    },
+    {
+      "id": "A5.agent_plus_black_wrist",
+      "path": "settings/A5/agent_plus_black_wrist",
+      "backend": "a5_condition"
+    },
+    {
+      "id": "A5.wrist_plus_black_agent",
+      "path": "settings/A5/wrist_plus_black_agent",
+      "backend": "a5_condition"
+    },
+    {
+      "id": "A5.agent_plus_white_wrist",
+      "path": "settings/A5/agent_plus_white_wrist",
+      "backend": "a5_condition"
+    },
+    {
+      "id": "A5.wrist_plus_white_agent",
+      "path": "settings/A5/wrist_plus_white_agent",
+      "backend": "a5_condition"
+    },
+    {
+      "id": "B1.delay1_agent",
+      "path": "settings/B1/delay1_agent",
+      "backend": "b1_condition"
+    },
+    {
+      "id": "B1.delay1_wrist",
+      "path": "settings/B1/delay1_wrist",
+      "backend": "b1_condition"
+    },
+    {
+      "id": "B1.delay3_agent",
+      "path": "settings/B1/delay3_agent",
+      "backend": "b1_condition"
+    },
+    {
+      "id": "B1.delay3_wrist",
+      "path": "settings/B1/delay3_wrist",
+      "backend": "b1_condition"
+    },
+    {
+      "id": "B1.delay5_agent",
+      "path": "settings/B1/delay5_agent",
+      "backend": "b1_condition"
+    },
+    {
+      "id": "B1.delay5_wrist",
+      "path": "settings/B1/delay5_wrist",
+      "backend": "b1_condition"
+    },
+    {
+      "id": "B1.freeze_agent",
+      "path": "settings/B1/freeze_agent",
+      "backend": "b1_condition"
+    },
+    {
+      "id": "B1.freeze_wrist",
+      "path": "settings/B1/freeze_wrist",
+      "backend": "b1_condition"
+    },
+    {
+      "id": "B1.replay_agent",
+      "path": "settings/B1/replay_agent",
+      "backend": "b1_condition"
+    },
+    {
+      "id": "B1.replay_wrist",
+      "path": "settings/B1/replay_wrist",
+      "backend": "b1_condition"
+    },
+    {
+      "id": "C1.count.agent",
+      "path": "settings/C1/count.agent",
+      "backend": "c1_manifest"
+    },
+    {
+      "id": "C1.count.wrist",
+      "path": "settings/C1/count.wrist",
+      "backend": "c1_manifest"
+    },
+    {
+      "id": "C1.existence.agent",
+      "path": "settings/C1/existence.agent",
+      "backend": "c1_manifest"
+    },
+    {
+      "id": "C1.existence.wrist",
+      "path": "settings/C1/existence.wrist",
+      "backend": "c1_manifest"
+    },
+    {
+      "id": "C1.position.agent",
+      "path": "settings/C1/position.agent",
+      "backend": "c1_manifest"
+    },
+    {
+      "id": "C1.position.wrist",
+      "path": "settings/C1/position.wrist",
+      "backend": "c1_manifest"
+    },
+    {
+      "id": "C1.state.agent",
+      "path": "settings/C1/state.agent",
+      "backend": "c1_manifest"
+    },
+    {
+      "id": "C1.state.wrist",
+      "path": "settings/C1/state.wrist",
+      "backend": "c1_manifest"
+    },
+    {
+      "id": "C2.recursive_self_prediction.all_steps",
+      "path": "settings/C2/recursive_self_prediction.all_steps",
+      "backend": "c2_feedback"
+    },
+    {
+      "id": "D1.same_category",
+      "path": "settings/D1/same_category",
+      "backend": "suite_condition"
+    },
+    {
+      "id": "D1.same_color",
+      "path": "settings/D1/same_color",
+      "backend": "suite_condition"
+    },
+    {
+      "id": "D1.same_shape",
+      "path": "settings/D1/same_shape",
+      "backend": "suite_condition"
+    },
+    {
+      "id": "D1.same_affordance",
+      "path": "settings/D1/same_affordance",
+      "backend": "suite_condition"
+    },
+    {
+      "id": "D1.same_position",
+      "path": "settings/D1/same_position",
+      "backend": "suite_condition"
+    },
+    {
+      "id": "D1.trajectory",
+      "path": "settings/D1/trajectory",
+      "backend": "suite_condition"
+    },
+    {
+      "id": "D2.open_5pct",
+      "path": "settings/D2/open_5pct",
+      "backend": "state_manifest"
+    },
+    {
+      "id": "D2.open_12pct",
+      "path": "settings/D2/open_12pct",
+      "backend": "state_manifest"
+    },
+    {
+      "id": "D2.open_20pct",
+      "path": "settings/D2/open_20pct",
+      "backend": "state_manifest"
+    },
+    {
+      "id": "D2.open_50pct",
+      "path": "settings/D2/open_50pct",
+      "backend": "state_manifest"
+    },
+    {
+      "id": "D2.open_85pct",
+      "path": "settings/D2/open_85pct",
+      "backend": "state_manifest"
+    },
+    {
+      "id": "D2.open_90pct",
+      "path": "settings/D2/open_90pct",
+      "backend": "state_manifest"
+    },
+    {
+      "id": "D2.adjacent_support_face",
+      "path": "settings/D2/adjacent_support_face",
+      "backend": "state_manifest"
+    },
+    {
+      "id": "D2.opposite_support_face",
+      "path": "settings/D2/opposite_support_face",
+      "backend": "state_manifest"
+    },
+    {
+      "id": "D3.articulation_state_ambiguity.truth_a_obfuscated",
+      "path": "settings/D3/articulation_state_ambiguity.truth_a_obfuscated",
+      "backend": "state_manifest"
+    },
+    {
+      "id": "D3.object_support_state_ambiguity.truth_a_obfuscated",
+      "path": "settings/D3/object_support_state_ambiguity.truth_a_obfuscated",
+      "backend": "state_manifest"
+    },
+    {
+      "id": "D4.taper.low",
+      "path": "settings/D4/taper.low",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "D4.taper.medium",
+      "path": "settings/D4/taper.medium",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "D4.taper.high",
+      "path": "settings/D4/taper.high",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "D4.multipeak.low",
+      "path": "settings/D4/multipeak.low",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "D4.multipeak.medium",
+      "path": "settings/D4/multipeak.medium",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "D4.multipeak.high",
+      "path": "settings/D4/multipeak.high",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "D4.twist.low",
+      "path": "settings/D4/twist.low",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "D4.twist.medium",
+      "path": "settings/D4/twist.medium",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "D4.twist.high",
+      "path": "settings/D4/twist.high",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "D4.asymmetric.low",
+      "path": "settings/D4/asymmetric.low",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "D4.asymmetric.medium",
+      "path": "settings/D4/asymmetric.medium",
+      "backend": "manifest_worker"
+    },
+    {
+      "id": "D4.asymmetric.high",
+      "path": "settings/D4/asymmetric.high",
+      "backend": "manifest_worker"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+<mujoco model="a4_tablet_device">
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom name="tablet_frame_visual" type="box" pos="0 0 0" size="0.0115 0.051 0.067" group="1" contype="0" conaffinity="0" rgba="0.16 0.20 0.22 1"/>
+        <geom name="tablet_screen_visual" type="box" pos="0.012 0 0" size="0.0015 0.040 0.056" group="1" contype="0" conaffinity="0" rgba="0.05 0.42 0.52 1"/>
+        <geom name="tablet_screen_back_visual" type="box" pos="-0.012 0 0" size="0.0015 0.040 0.056" group="1" contype="0" conaffinity="0" rgba="0.05 0.42 0.52 1"/>
+        <geom name="tablet_button_visual" type="cylinder" pos="0.014 -0.044 0" quat="0.7071 0 0.7071 0" size="0.004 0.0015" group="1" contype="0" conaffinity="0" rgba="0.85 0.85 0.82 1"/>
+        <geom name="tablet_collision" type="box" pos="0 0 0" size="0.0115 0.051 0.067" group="0" density="90" friction="0.90 0.3 0.1" rgba="0.8 0.8 0.8 0.2"/>
+      </body>
+      <site rgba="0 0 0 0" size="0.003" pos="0 0 -0.067" name="bottom_site"/>
+      <site rgba="0 0 0 0" size="0.003" pos="0 0 0.067" name="top_site"/>
+      <site rgba="0 0 0 0" size="0.003" pos="0.015 0.051 0" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

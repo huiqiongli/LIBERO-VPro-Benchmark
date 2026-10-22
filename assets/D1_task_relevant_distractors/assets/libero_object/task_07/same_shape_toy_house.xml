@@ -1,0 +1,23 @@
+<mujoco model="independent_shape_toy_house">
+  <asset><mesh name="house_roof_mesh" file="same_shape_toy_house_roof.obj"/></asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom name="house_body" type="box" pos="0 0 0.0498522" size="0.0262500 0.0265350 0.0498522" group="1" contype="0" conaffinity="0" rgba="0.82 0.58 0.30 1"/>
+        <geom name="house_roof" type="mesh" mesh="house_roof_mesh" group="1" contype="0" conaffinity="0" rgba="0.46 0.12 0.08 1"/>
+        <geom name="house_door" type="box" pos="0 -0.0268350 0.0279172" size="0.0063000 0.00030 0.0279172" group="1" contype="0" conaffinity="0" rgba="0.20 0.10 0.055 1"/>
+        <geom name="house_window_left" type="box" pos="-0.0136500 -0.0269850 0.0638108" size="0.0047250 0.00025 0.0129616" group="1" contype="0" conaffinity="0" rgba="0.22 0.70 0.92 1"/>
+        <geom name="house_window_right" type="box" pos="0.0136500 -0.0269850 0.0638108" size="0.0047250 0.00025 0.0129616" group="1" contype="0" conaffinity="0" rgba="0.22 0.70 0.92 1"/>
+        <geom name="house_back_door" type="box" pos="0 0.0268350 0.0279172" size="0.0063000 0.00030 0.0279172" group="1" contype="0" conaffinity="0" rgba="0.20 0.10 0.055 1"/>
+        <geom name="house_back_window_left" type="box" pos="-0.0136500 0.0269850 0.0638108" size="0.0047250 0.00025 0.0129616" group="1" contype="0" conaffinity="0" rgba="0.22 0.70 0.92 1"/>
+        <geom name="house_back_window_right" type="box" pos="0.0136500 0.0269850 0.0638108" size="0.0047250 0.00025 0.0129616" group="1" contype="0" conaffinity="0" rgba="0.22 0.70 0.92 1"/>
+        <geom name="house_side_window_left" type="box" pos="-0.0266000 0 0.0618167" size="0.00025 0.0079605 0.0139586" group="1" contype="0" conaffinity="0" rgba="0.22 0.70 0.92 1"/>
+        <geom name="house_side_window_right" type="box" pos="0.0266000 0 0.0618167" size="0.00025 0.0079605 0.0139586" group="1" contype="0" conaffinity="0" rgba="0.22 0.70 0.92 1"/>
+        <geom name="house_collision" type="box" pos="0 0 0.0655950" size="0.0262500 0.0265350 0.0655950" group="0" density="180" friction="0.95 0.3 0.1" rgba="0.8 0.8 0.8 0.2"/>
+    </body>
+      <site rgba="0 0 0 0" size="0.003" pos="0 0 0" name="bottom_site"/>
+      <site rgba="0 0 0 0" size="0.003" pos="0 0 0.1311900" name="top_site"/>
+      <site rgba="0 0 0 0" size="0.003" pos="0.0262500 0.0265350 0.0655950" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

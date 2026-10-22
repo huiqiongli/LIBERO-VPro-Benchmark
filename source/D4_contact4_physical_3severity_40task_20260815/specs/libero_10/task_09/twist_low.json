@@ -1,0 +1,39 @@
+{
+  "schema_version": "d4_contact4_physical_3severity.v1",
+  "status": "implemented",
+  "type": "pure_external_shape_grasp_difficulty",
+  "suite": "libero_10",
+  "benchmark": "libero_10",
+  "task_id": 9,
+  "instruction": "put the yellow and white mug in the microwave and close it",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it.bddl",
+  "target_objects": [
+    "white_yellow_mug_1"
+  ],
+  "object_scale_overrides": [
+    {
+      "object": "white_yellow_mug_1",
+      "category": "white_yellow_mug",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D4_target_geometry/assets/white_yellow_mug/twist/low/white_yellow_mug.xml",
+      "effective_strength": 1.0,
+      "effective_severity_multiplier": 1.0,
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "shape_intervention": {
+    "case_id": "twist_low",
+    "mechanism": "height_dependent_contact_normal_misalignment",
+    "family": "twist",
+    "severity": "low",
+    "nominal_severity_multiplier": 1.0,
+    "category_adaptive_safety_scaling": true,
+    "external_shape_modified": true,
+    "visual_mesh_modified": true,
+    "collision_geometry_modified": true,
+    "friction_modified": false,
+    "mass_or_inertia_modified": false,
+    "inference_modified": false,
+    "apply_stage": "precompile_xml"
+  }
+}

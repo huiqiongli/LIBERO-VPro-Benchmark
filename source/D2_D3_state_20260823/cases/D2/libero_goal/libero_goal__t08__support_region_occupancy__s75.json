@@ -1,0 +1,46 @@
+{
+  "schema_version": "wam_syncbench.d2.occupancy.v1",
+  "status": "implemented",
+  "track": "D2",
+  "subtask": "support_region_occupancy",
+  "case_id": "libero_goal__t08__support_region_occupancy__s75",
+  "suite": "libero_goal",
+  "benchmark": "libero_goal",
+  "task_id": 8,
+  "instruction": "put the bowl on the plate",
+  "target": "akita_black_bowl_1",
+  "target_morphology": "open_vessel",
+  "receiver_kind": "support",
+  "physical_relation": "on",
+  "severity_pct": 75,
+  "severity_definition": "calibrated_fraction_of_maximum_feasible_neutral_block",
+  "achieved_nominal_footprint_fraction": 0.011301250480665853,
+  "destination": {
+    "kind": "object_aabb",
+    "name": "plate_1"
+  },
+  "primary_goal_states": [
+    [
+      "on",
+      "akita_black_bowl_1",
+      "plate_1"
+    ]
+  ],
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_goal/put_the_bowl_on_the_plate.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D2_D3_state_variation/bddl_overrides/libero_goal/task_08/occupancy.bddl",
+  "object_scale_overrides": [
+    {
+      "object": "occupancy_block_d2",
+      "category": "trajectory_block",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D2_D3_state_variation/assets/libero_goal/task_08/occupancy_75.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "placement_probe_steps": 500,
+  "settle_steps": 120,
+  "spec_path": "/home/huiqiongli/Sim/release/source/D2_D3_state_20260823/specs/d2_occupancy/libero_goal/task_08/severity_75.json",
+  "visual_input_contract": "official_dual_camera",
+  "perturbation_scope": "physical_simulator_state_full_episode",
+  "case_path": "/home/huiqiongli/Sim/release/source/D2_D3_state_20260823/cases/D2/libero_goal/libero_goal__t08__support_region_occupancy__s75.json"
+}

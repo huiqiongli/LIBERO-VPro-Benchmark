@@ -1,0 +1,88 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_category",
+  "suite": "libero_10",
+  "benchmark": "libero_10",
+  "task_id": 9,
+  "task_name": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+  "instruction": "KITCHEN SCENE6 put the yellow and white mug in the microwave and close it",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_10/task_09/same_category.bddl",
+  "target": "white_yellow_mug_1",
+  "target_category": "white_yellow_mug",
+  "definition": {
+    "zh": "同类别干扰物",
+    "definition": "保持与目标完全相同的类别和几何结构，但使用明显不同的颜色，并紧挨目标放置。",
+    "target": "white_yellow_mug_1",
+    "target_category": "white_yellow_mug",
+    "distractor": "white_yellow_mug_d1_same_category",
+    "category": "white_yellow_mug",
+    "construction": "same_category_exact_geometry_recolored",
+    "appearance_change": "color_changed",
+    "color_tint_rgba": [
+      0.95,
+      0.12,
+      0.72,
+      1.0
+    ]
+  },
+  "settle_steps": 18,
+  "object_scale_overrides": [
+    {
+      "object": "white_yellow_mug_d1_same_category",
+      "category": "white_yellow_mug",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/shared/same_shape/white_yellow_mug/242_31_184/white_yellow_mug_d1_exact_shape_color_copy.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "white_yellow_mug_d1_same_category",
+      "relative_to": "white_yellow_mug_1",
+      "candidate_offsets": [
+        [
+          0.0,
+          0.13,
+          0.0
+        ],
+        [
+          0.13,
+          0.0,
+          0.0
+        ],
+        [
+          -0.13,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.13,
+          0.0
+        ]
+      ],
+      "candidate_selection": "max_clearance",
+      "avoid_objects": [
+        "porcelain_mug_1",
+        "white_yellow_mug_1",
+        "kitchen_table",
+        "microwave_1"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.36,
+          0.36
+        ],
+        [
+          -0.35,
+          0.35
+        ]
+      ],
+      "min_distance_from_others": 0.045,
+      "z_from": "white_yellow_mug_1",
+      "quat_from": "white_yellow_mug_1"
+    }
+  ]
+}

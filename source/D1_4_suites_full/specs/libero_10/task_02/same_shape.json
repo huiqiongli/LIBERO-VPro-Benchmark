@@ -1,0 +1,84 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_shape",
+  "suite": "libero_10",
+  "benchmark": "libero_10",
+  "task_id": 2,
+  "task_name": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+  "instruction": "KITCHEN SCENE3 turn on the stove and put the moka pot on it",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_10/KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_10/task_02/same_shape.bddl",
+  "target": "moka_pot_1",
+  "target_category": "moka_pot",
+  "definition": {
+    "zh": "同形状干扰物",
+    "definition": "匹配目标轮廓和尺度、具有独立功能结构的不同语义类别代理。",
+    "target": "moka_pot_1",
+    "target_category": "moka_pot",
+    "distractor": "red_coffee_mug_d1_same_shape",
+    "category": "handled_signal_lamp",
+    "registry_category": "red_coffee_mug",
+    "proxy_identity": "handled_signal_lamp",
+    "construction": "different_category_outline_matched_proxy",
+    "appearance_change": "native_proxy_identity"
+  },
+  "settle_steps": 18,
+  "object_scale_overrides": [
+    {
+      "object": "red_coffee_mug_d1_same_shape",
+      "category": "red_coffee_mug",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/shared/same_shape_proxy/moka_pot/handled_signal_lamp.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "red_coffee_mug_d1_same_shape",
+      "relative_to": "moka_pot_1",
+      "candidate_offsets": [
+        [
+          0.0,
+          0.145,
+          0.0
+        ],
+        [
+          0.145,
+          0.0,
+          0.0
+        ],
+        [
+          -0.145,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.145,
+          0.0
+        ]
+      ],
+      "candidate_selection": "max_clearance",
+      "avoid_objects": [
+        "chefmate_8_frypan_1",
+        "moka_pot_1",
+        "kitchen_table",
+        "flat_stove_1"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.36,
+          0.36
+        ],
+        [
+          -0.35,
+          0.35
+        ]
+      ],
+      "min_distance_from_others": 0.045,
+      "z_from": "moka_pot_1",
+      "quat_from": "moka_pot_1"
+    }
+  ]
+}

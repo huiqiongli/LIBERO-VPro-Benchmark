@@ -1,0 +1,11 @@
+{
+  "schema_version": "wam_syncbench.cross_model.v1",
+  "scenario": "C2_freeze_agent",
+  "enabled": true,
+  "camera": {
+    "agentview": {
+      "mode": "freeze",
+      "freeze_at": 2
+    }
+  }
+}

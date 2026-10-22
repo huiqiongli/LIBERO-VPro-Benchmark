@@ -1,0 +1,111 @@
+{
+  "schema_version": "wam_syncbench.A1.physical_surface.v1",
+  "track": "A1",
+  "scenario": "A1_physical_target_object_ratio",
+  "variant": "physical_surface_black_25pct",
+  "description": "Blacken the requested fraction of the task target object's complete three-dimensional render surface. A contiguous camera-aligned slice is cut from the full surface, including inner, rear, initially hidden, and later revealed regions that fall inside that slice.",
+  "status": "implemented",
+  "enabled": true,
+  "suite": "libero_10",
+  "coverage_definition": "complete_3d_render_surface_area",
+  "coverage": 0.25,
+  "selection_axis": "agentview_aligned_complete_surface_slice",
+  "render_edit_only": true,
+  "collision_unchanged": true,
+  "pose_unchanged": true,
+  "observation_pixel_masking": false,
+  "require_task_match": true,
+  "task_id": 1,
+  "object_surface_black_fraction_overrides": [
+    {
+      "object": "cream_cheese_1",
+      "coverage": 0.25,
+      "coverage_definition": "complete_3d_render_surface_area",
+      "selection_axis": "agentview_aligned_complete_surface_slice",
+      "rgba": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "require_exact": true,
+      "surface_overlay_prefix": "a1_",
+      "precompiled_surface_audit": {
+        "object": "cream_cheese_1",
+        "mode": "precompiled_visual_surface_partition",
+        "coverage_definition": "complete_3d_render_surface_area",
+        "requested_surface_coverage": 0.25,
+        "actual_surface_coverage": 0.24999999999962685,
+        "surface_area_total": 0.010930759279131156,
+        "surface_area_black": 0.00273268981977871,
+        "selected_face_count": 4523,
+        "total_face_count": 16237,
+        "selection_axis": "screen_y",
+        "screen_cutoff_px": 194.85974187688896,
+        "selection_side": "low_coordinate_prefix",
+        "baseline_agentview_target_pixels": 630,
+        "predicted_agentview_black_pixels": 146,
+        "predicted_agentview_visible_coverage": 0.23174603174603176,
+        "surface_enumeration": "mujoco_render_geometries",
+        "brightness_independent_surface_enumeration": true,
+        "includes_initially_hidden_surface": true,
+        "includes_inner_and_rear_surface": true,
+        "collision_unchanged": true,
+        "pose_unchanged": true
+      }
+    },
+    {
+      "object": "butter_1",
+      "coverage": 0.25,
+      "coverage_definition": "complete_3d_render_surface_area",
+      "selection_axis": "agentview_aligned_complete_surface_slice",
+      "rgba": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "require_exact": true,
+      "surface_overlay_prefix": "a1_",
+      "precompiled_surface_audit": {
+        "object": "butter_1",
+        "mode": "precompiled_visual_surface_partition",
+        "coverage_definition": "complete_3d_render_surface_area",
+        "requested_surface_coverage": 0.25,
+        "actual_surface_coverage": 0.24999999999971523,
+        "surface_area_total": 0.00947523595035787,
+        "surface_area_black": 0.0023688089875867693,
+        "selected_face_count": 4175,
+        "total_face_count": 14395,
+        "selection_axis": "screen_y",
+        "screen_cutoff_px": 182.38003002986795,
+        "selection_side": "low_coordinate_prefix",
+        "baseline_agentview_target_pixels": 424,
+        "predicted_agentview_black_pixels": 112,
+        "predicted_agentview_visible_coverage": 0.2641509433962264,
+        "surface_enumeration": "mujoco_render_geometries",
+        "brightness_independent_surface_enumeration": true,
+        "includes_initially_hidden_surface": true,
+        "includes_inner_and_rear_surface": true,
+        "collision_unchanged": true,
+        "pose_unchanged": true
+      }
+    }
+  ],
+  "object_scale_overrides": [
+    {
+      "object": "cream_cheese_1",
+      "category": "cream_cheese",
+      "scale": 1.0,
+      "scale_mode": "precompile_xml",
+      "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_01/cream_cheese_1/25pct/cream_cheese.xml"
+    },
+    {
+      "object": "butter_1",
+      "category": "butter",
+      "scale": 1.0,
+      "scale_mode": "precompile_xml",
+      "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_01/butter_1/25pct/butter.xml"
+    }
+  ]
+}

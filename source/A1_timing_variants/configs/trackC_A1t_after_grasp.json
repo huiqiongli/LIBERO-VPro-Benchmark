@@ -1,0 +1,10 @@
+{
+  "schema_version": "wam_syncbench.trackC.v1",
+  "scenario": "A1_timing_after_grasp",
+  "trigger": "grasp_pulse",
+  "grasp_pulse": {
+    "side": "after",
+    "n_frames": 40
+  },
+  "description": "\u6293\u53d6\u540e\u906e(\u8109\u51b240\u5e27,\u66f4\u4e45)"
+}

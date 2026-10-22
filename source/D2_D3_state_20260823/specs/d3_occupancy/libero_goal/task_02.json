@@ -1,0 +1,59 @@
+{
+  "schema_version": "wam_syncbench.d3.occupancy_truth.v1",
+  "status": "implemented",
+  "track": "D3",
+  "subtask": "receptacle_occupancy_truth_state",
+  "case_id": "libero_goal__t02__d3_occupancy_truth_b",
+  "suite": "libero_goal",
+  "benchmark": "libero_goal",
+  "task_id": 2,
+  "instruction": "put the wine bottle on top of the cabinet",
+  "target": "wine_bottle_1",
+  "target_morphology": "axial_container",
+  "receiver_kind": "support",
+  "physical_relation": "on",
+  "severity_pct": 75,
+  "severity_definition": "calibrated_fraction_of_maximum_feasible_neutral_block",
+  "achieved_nominal_footprint_fraction": 0.0077906340145776146,
+  "destination": {
+    "kind": "site",
+    "name": "wooden_cabinet_1_top_side"
+  },
+  "primary_goal_states": [
+    [
+      "on",
+      "wine_bottle_1",
+      "wooden_cabinet_1_top_side"
+    ]
+  ],
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D2_D3_state_variation/bddl_overrides/libero_goal/task_02/occupancy.bddl",
+  "object_scale_overrides": [
+    {
+      "object": "occupancy_block_d2",
+      "category": "trajectory_block",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D2_D3_state_variation/assets/d3_occupancy/libero_goal/task_02.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "placement_probe_freeze_other_joints": true,
+  "placement_probe_steps": 5000,
+  "placement_probe_max_linear_velocity_norm": 0.002,
+  "placement_full_scene_probe_steps": 20,
+  "placement_full_scene_max_relative_drift_m": 0.008,
+  "runtime_max_relative_drift_m": 0.008,
+  "settle_steps": 120,
+  "d3_visual_evidence_design": {
+    "contract": "visibly_distinct_clean_truth_b_while_goal_remains_feasible",
+    "half_extents_m": [
+      0.009600000000000001,
+      0.009600000000000001,
+      0.004
+    ],
+    "asset_kind": "cork_pad",
+    "appearance": "small_square_cork_coaster_or_trivet",
+    "real_world_scenario": "small_cork_pad_left_on_the_target_support_region",
+    "footprint_source": "validated_d2_severity_75"
+  }
+}

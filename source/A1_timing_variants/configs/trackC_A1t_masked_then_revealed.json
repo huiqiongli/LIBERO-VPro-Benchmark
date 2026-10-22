@@ -1,0 +1,10 @@
+{
+  "schema_version": "wam_syncbench.trackC.v1",
+  "scenario": "A1_timing_masked_then_revealed",
+  "trigger": "time_window",
+  "time_window": {
+    "start": 0,
+    "end": 80
+  },
+  "description": "\u7269\u4f53\u5148\u906e,t=80\u540e\u63ed\u793a"
+}

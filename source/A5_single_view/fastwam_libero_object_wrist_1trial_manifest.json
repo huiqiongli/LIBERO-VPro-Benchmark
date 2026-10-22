@@ -1,0 +1,76 @@
+{
+  "schema_version": "a5_single_view_batch.v1",
+  "single_view": "wrist",
+  "cases": [
+    {
+      "case_id": "libero_object_task00_wrist",
+      "suite": "libero_object",
+      "task_id": 0,
+      "condition": "A5_wrist_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    },
+    {
+      "case_id": "libero_object_task01_wrist",
+      "suite": "libero_object",
+      "task_id": 1,
+      "condition": "A5_wrist_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    },
+    {
+      "case_id": "libero_object_task02_wrist",
+      "suite": "libero_object",
+      "task_id": 2,
+      "condition": "A5_wrist_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    },
+    {
+      "case_id": "libero_object_task03_wrist",
+      "suite": "libero_object",
+      "task_id": 3,
+      "condition": "A5_wrist_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    },
+    {
+      "case_id": "libero_object_task04_wrist",
+      "suite": "libero_object",
+      "task_id": 4,
+      "condition": "A5_wrist_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    },
+    {
+      "case_id": "libero_object_task05_wrist",
+      "suite": "libero_object",
+      "task_id": 5,
+      "condition": "A5_wrist_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    },
+    {
+      "case_id": "libero_object_task06_wrist",
+      "suite": "libero_object",
+      "task_id": 6,
+      "condition": "A5_wrist_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    },
+    {
+      "case_id": "libero_object_task07_wrist",
+      "suite": "libero_object",
+      "task_id": 7,
+      "condition": "A5_wrist_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    },
+    {
+      "case_id": "libero_object_task08_wrist",
+      "suite": "libero_object",
+      "task_id": 8,
+      "condition": "A5_wrist_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    },
+    {
+      "case_id": "libero_object_task09_wrist",
+      "suite": "libero_object",
+      "task_id": 9,
+      "condition": "A5_wrist_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    }
+  ]
+}

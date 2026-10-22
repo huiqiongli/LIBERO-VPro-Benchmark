@@ -1,0 +1,13 @@
+{
+  "schema_version": "wam_syncbench.A2.replan_timing.v1",
+  "scenario": "A2_masked_then_revealed_replan5",
+  "enabled": true,
+  "trigger": "replan_window",
+  "replan_window": {
+    "start_replan": 0,
+    "num_replans": 4
+  },
+  "switch_replan_index_zero_based": 4,
+  "switch_replan_number_one_based": 5,
+  "description": "Mask target receptacle for replans 1-4; reveal it from replan 5 onward."
+}

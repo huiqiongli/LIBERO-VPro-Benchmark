@@ -1,0 +1,210 @@
+{
+  "schema_version": "wam_syncbench.A2.physical_surface.v1",
+  "track": "A2",
+  "scenario": "A2_physical_target_receptacle_ratio",
+  "variant": "physical_surface_black_100pct",
+  "description": "Blacken the requested fraction of the target receptacle's complete three-dimensional render surface. A contiguous camera-aligned slice is cut from the full surface, including inner, rear, initially hidden, and later revealed regions that fall inside that slice.",
+  "status": "implemented",
+  "enabled": true,
+  "suite": "libero_spatial",
+  "coverage_definition": "complete_3d_render_surface_area",
+  "coverage": 1.0,
+  "selection_axis": "agentview_aligned_complete_surface_slice",
+  "render_edit_only": true,
+  "collision_unchanged": true,
+  "pose_unchanged": true,
+  "observation_pixel_masking": false,
+  "require_task_match": true,
+  "task_env_edits": [
+    {
+      "suite": "libero_spatial",
+      "task_id": 0,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "plate_1",
+          "coverage": 1.0,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true
+        }
+      ]
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 1,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "plate_1",
+          "coverage": 1.0,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true
+        }
+      ]
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 2,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "plate_1",
+          "coverage": 1.0,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true
+        }
+      ]
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 3,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "plate_1",
+          "coverage": 1.0,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true
+        }
+      ]
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 4,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "plate_1",
+          "coverage": 1.0,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true
+        }
+      ]
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 5,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "plate_1",
+          "coverage": 1.0,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true
+        }
+      ]
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 6,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "plate_1",
+          "coverage": 1.0,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true
+        }
+      ]
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 7,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "plate_1",
+          "coverage": 1.0,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true
+        }
+      ]
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 8,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "plate_1",
+          "coverage": 1.0,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true
+        }
+      ]
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 9,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "plate_1",
+          "coverage": 1.0,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true
+        }
+      ]
+    }
+  ]
+}

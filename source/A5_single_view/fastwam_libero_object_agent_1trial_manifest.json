@@ -1,0 +1,76 @@
+{
+  "schema_version": "a5_single_view_batch.v1",
+  "single_view": "agentview",
+  "cases": [
+    {
+      "case_id": "libero_object_task00_agent",
+      "suite": "libero_object",
+      "task_id": 0,
+      "condition": "A5_agent_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    },
+    {
+      "case_id": "libero_object_task01_agent",
+      "suite": "libero_object",
+      "task_id": 1,
+      "condition": "A5_agent_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    },
+    {
+      "case_id": "libero_object_task02_agent",
+      "suite": "libero_object",
+      "task_id": 2,
+      "condition": "A5_agent_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    },
+    {
+      "case_id": "libero_object_task03_agent",
+      "suite": "libero_object",
+      "task_id": 3,
+      "condition": "A5_agent_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    },
+    {
+      "case_id": "libero_object_task04_agent",
+      "suite": "libero_object",
+      "task_id": 4,
+      "condition": "A5_agent_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    },
+    {
+      "case_id": "libero_object_task05_agent",
+      "suite": "libero_object",
+      "task_id": 5,
+      "condition": "A5_agent_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    },
+    {
+      "case_id": "libero_object_task06_agent",
+      "suite": "libero_object",
+      "task_id": 6,
+      "condition": "A5_agent_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    },
+    {
+      "case_id": "libero_object_task07_agent",
+      "suite": "libero_object",
+      "task_id": 7,
+      "condition": "A5_agent_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    },
+    {
+      "case_id": "libero_object_task08_agent",
+      "suite": "libero_object",
+      "task_id": 8,
+      "condition": "A5_agent_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    },
+    {
+      "case_id": "libero_object_task09_agent",
+      "suite": "libero_object",
+      "task_id": 9,
+      "condition": "A5_agent_only_direct",
+      "spec": "/home/huiqiongli/Sim/release/source/A5_single_view/empty_env_edit.json"
+    }
+  ]
+}

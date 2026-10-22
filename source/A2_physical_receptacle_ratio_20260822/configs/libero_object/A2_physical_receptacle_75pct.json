@@ -1,0 +1,530 @@
+{
+  "schema_version": "wam_syncbench.A2.physical_surface.v1",
+  "track": "A2",
+  "scenario": "A2_physical_target_receptacle_ratio",
+  "variant": "physical_surface_black_75pct",
+  "description": "Blacken the requested fraction of the target receptacle's complete three-dimensional render surface. A contiguous camera-aligned slice is cut from the full surface, including inner, rear, initially hidden, and later revealed regions that fall inside that slice.",
+  "status": "implemented",
+  "enabled": true,
+  "suite": "libero_object",
+  "coverage_definition": "complete_3d_render_surface_area",
+  "coverage": 0.75,
+  "selection_axis": "agentview_aligned_complete_surface_slice",
+  "render_edit_only": true,
+  "collision_unchanged": true,
+  "pose_unchanged": true,
+  "observation_pixel_masking": false,
+  "require_task_match": true,
+  "task_env_edits": [
+    {
+      "suite": "libero_object",
+      "task_id": 0,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "basket_1",
+          "coverage": 0.75,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "precompiled_surface_audit": {
+            "object": "basket_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.75,
+            "actual_surface_coverage": 0.7500000000002442,
+            "surface_area_total": 0.21577416265489396,
+            "surface_area_black": 0.16183062199122317,
+            "selected_face_count": 49131,
+            "total_face_count": 66390,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 219.7168218879853,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 3197,
+            "predicted_agentview_black_pixels": 2456,
+            "predicted_agentview_visible_coverage": 0.7682202064435408,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "basket_1",
+          "category": "basket",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A2_target_receptacle/precompiled_variants_full_surface_v3/libero_object/task_00/basket_1/75pct/basket.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 1,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "basket_1",
+          "coverage": 0.75,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "precompiled_surface_audit": {
+            "object": "basket_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.75,
+            "actual_surface_coverage": 0.7499999999999604,
+            "surface_area_total": 0.21577416265489396,
+            "surface_area_black": 0.1618306219911619,
+            "selected_face_count": 49174,
+            "total_face_count": 66390,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 222.37153890628886,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 3085,
+            "predicted_agentview_black_pixels": 2391,
+            "predicted_agentview_visible_coverage": 0.7750405186385737,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "basket_1",
+          "category": "basket",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A2_target_receptacle/precompiled_variants_full_surface_v3/libero_object/task_01/basket_1/75pct/basket.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 2,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "basket_1",
+          "coverage": 0.75,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "precompiled_surface_audit": {
+            "object": "basket_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.75,
+            "actual_surface_coverage": 0.7499999999995505,
+            "surface_area_total": 0.21577416265489396,
+            "surface_area_black": 0.16183062199107348,
+            "selected_face_count": 49170,
+            "total_face_count": 66390,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 222.19169990433426,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 3085,
+            "predicted_agentview_black_pixels": 2402,
+            "predicted_agentview_visible_coverage": 0.7786061588330632,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "basket_1",
+          "category": "basket",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A2_target_receptacle/precompiled_variants_full_surface_v3/libero_object/task_02/basket_1/75pct/basket.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 3,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "basket_1",
+          "coverage": 0.75,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "precompiled_surface_audit": {
+            "object": "basket_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.75,
+            "actual_surface_coverage": 0.7499999999996905,
+            "surface_area_total": 0.21577416265489396,
+            "surface_area_black": 0.16183062199110368,
+            "selected_face_count": 49122,
+            "total_face_count": 66390,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 218.9837466482001,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 3112,
+            "predicted_agentview_black_pixels": 2386,
+            "predicted_agentview_visible_coverage": 0.7667095115681234,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "basket_1",
+          "category": "basket",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A2_target_receptacle/precompiled_variants_full_surface_v3/libero_object/task_03/basket_1/75pct/basket.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 4,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "basket_1",
+          "coverage": 0.75,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "precompiled_surface_audit": {
+            "object": "basket_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.75,
+            "actual_surface_coverage": 0.7500000000003997,
+            "surface_area_total": 0.21577416265489396,
+            "surface_area_black": 0.16183062199125672,
+            "selected_face_count": 49200,
+            "total_face_count": 66390,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 223.37269848566066,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 3146,
+            "predicted_agentview_black_pixels": 2435,
+            "predicted_agentview_visible_coverage": 0.7739987285441831,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "basket_1",
+          "category": "basket",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A2_target_receptacle/precompiled_variants_full_surface_v3/libero_object/task_04/basket_1/75pct/basket.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 5,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "basket_1",
+          "coverage": 0.75,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "precompiled_surface_audit": {
+            "object": "basket_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.75,
+            "actual_surface_coverage": 0.749999999999811,
+            "surface_area_total": 0.215774162654894,
+            "surface_area_black": 0.16183062199112971,
+            "selected_face_count": 49168,
+            "total_face_count": 66390,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 221.80072590434568,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 3119,
+            "predicted_agentview_black_pixels": 2389,
+            "predicted_agentview_visible_coverage": 0.7659506252003847,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "basket_1",
+          "category": "basket",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A2_target_receptacle/precompiled_variants_full_surface_v3/libero_object/task_05/basket_1/75pct/basket.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 6,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "basket_1",
+          "coverage": 0.75,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "precompiled_surface_audit": {
+            "object": "basket_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.75,
+            "actual_surface_coverage": 0.7500000000005251,
+            "surface_area_total": 0.21577416265489396,
+            "surface_area_black": 0.16183062199128379,
+            "selected_face_count": 49193,
+            "total_face_count": 66390,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 223.0314252267746,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 3211,
+            "predicted_agentview_black_pixels": 2508,
+            "predicted_agentview_visible_coverage": 0.7810650887573964,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "basket_1",
+          "category": "basket",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A2_target_receptacle/precompiled_variants_full_surface_v3/libero_object/task_06/basket_1/75pct/basket.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 7,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "basket_1",
+          "coverage": 0.75,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "precompiled_surface_audit": {
+            "object": "basket_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.75,
+            "actual_surface_coverage": 0.7499999999995715,
+            "surface_area_total": 0.21577416265489396,
+            "surface_area_black": 0.161830621991078,
+            "selected_face_count": 49212,
+            "total_face_count": 66390,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 224.39826893153713,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 3224,
+            "predicted_agentview_black_pixels": 2491,
+            "predicted_agentview_visible_coverage": 0.7726426799007444,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "basket_1",
+          "category": "basket",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A2_target_receptacle/precompiled_variants_full_surface_v3/libero_object/task_07/basket_1/75pct/basket.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 8,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "basket_1",
+          "coverage": 0.75,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "precompiled_surface_audit": {
+            "object": "basket_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.75,
+            "actual_surface_coverage": 0.7500000000002203,
+            "surface_area_total": 0.21577416265489396,
+            "surface_area_black": 0.161830621991218,
+            "selected_face_count": 49128,
+            "total_face_count": 66390,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 219.19874775551725,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 3184,
+            "predicted_agentview_black_pixels": 2484,
+            "predicted_agentview_visible_coverage": 0.7801507537688442,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "basket_1",
+          "category": "basket",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A2_target_receptacle/precompiled_variants_full_surface_v3/libero_object/task_08/basket_1/75pct/basket.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 9,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "basket_1",
+          "coverage": 0.75,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "precompiled_surface_audit": {
+            "object": "basket_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.75,
+            "actual_surface_coverage": 0.7499999999999823,
+            "surface_area_total": 0.21577416265489396,
+            "surface_area_black": 0.16183062199116666,
+            "selected_face_count": 49114,
+            "total_face_count": 66390,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 217.91677706325882,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 3099,
+            "predicted_agentview_black_pixels": 2380,
+            "predicted_agentview_visible_coverage": 0.7679896740884156,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "basket_1",
+          "category": "basket",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A2_target_receptacle/precompiled_variants_full_surface_v3/libero_object/task_09/basket_1/75pct/basket.xml"
+        }
+      ]
+    }
+  ]
+}

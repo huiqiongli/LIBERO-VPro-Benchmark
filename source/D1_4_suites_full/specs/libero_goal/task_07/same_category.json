@@ -1,0 +1,98 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_category",
+  "suite": "libero_goal",
+  "benchmark": "libero_goal",
+  "task_id": 7,
+  "task_name": "turn_on_the_stove",
+  "instruction": "turn on the stove",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_goal/turn_on_the_stove.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_goal/task_07/same_category.bddl",
+  "target": "flat_stove_1",
+  "target_category": "flat_stove",
+  "definition": {
+    "zh": "同类别干扰物",
+    "definition": "保持与目标完全相同的类别和几何结构，但使用明显不同的颜色，并紧挨目标放置。",
+    "target": "flat_stove_1",
+    "target_category": "flat_stove",
+    "distractor": "flat_stove_d1_same_category",
+    "category": "flat_stove",
+    "construction": "same_category_exact_geometry_recolored",
+    "appearance_change": "color_changed",
+    "color_tint_rgba": [
+      0.35,
+      0.22,
+      0.95,
+      1.0
+    ]
+  },
+  "settle_steps": 18,
+  "geom_color_overrides": [
+    {
+      "body_name_contains": [
+        "flat_stove_d1_same_category"
+      ],
+      "rgba": [
+        0.35,
+        0.22,
+        0.95,
+        1.0
+      ],
+      "mesh_only": false,
+      "include_descendants": true
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "flat_stove_d1_same_category",
+      "relative_to": "flat_stove_1",
+      "candidate_offsets": [
+        [
+          0.0,
+          0.34,
+          0.0
+        ],
+        [
+          0.34,
+          0.0,
+          0.0
+        ],
+        [
+          -0.34,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.34,
+          0.0
+        ]
+      ],
+      "candidate_selection": "max_clearance",
+      "avoid_objects": [
+        "akita_black_bowl_1",
+        "cream_cheese_1",
+        "wine_bottle_1",
+        "plate_1",
+        "main_table",
+        "wooden_cabinet_1",
+        "flat_stove_1",
+        "wine_rack_1"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.48,
+          0.48
+        ],
+        [
+          -0.36,
+          0.38
+        ]
+      ],
+      "min_distance_from_others": 0.18,
+      "preserve_z": true,
+      "fixed_fixture": true
+    }
+  ]
+}

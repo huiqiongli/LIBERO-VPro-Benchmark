@@ -1,0 +1,105 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_category",
+  "suite": "libero_object",
+  "benchmark": "libero_object",
+  "task_id": 3,
+  "task_name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+  "instruction": "pick up the bbq sauce and place it in the basket",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_object/task_03/same_category.bddl",
+  "definition": {
+    "zh": "同类别干扰物",
+    "definition": "保持与目标完全相同的类别和几何结构，但使用明显不同的颜色，并紧挨目标放置。",
+    "target": "bbq_sauce_1",
+    "target_category": "bbq_sauce",
+    "distractor": "bbq_sauce_2",
+    "category": "bbq_sauce",
+    "construction": "same_category_exact_geometry_recolored",
+    "source_xml": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/assets/stable_hope_objects/bbq_sauce/bbq_sauce.xml",
+    "appearance_change": "color_changed",
+    "color_tint_rgba": [
+      0.05,
+      0.85,
+      1.0,
+      1.0
+    ]
+  },
+  "target_geometry": {
+    "collision_aabb_extents_m": [
+      0.02911,
+      0.04698,
+      0.1071
+    ],
+    "top_offset_from_body_m": 0.05246,
+    "mass_kg": 0.01218031,
+    "friction": [
+      0.95,
+      0.3,
+      0.1
+    ],
+    "calibration_init_state": 0
+  },
+  "settle_steps": 18,
+  "object_scale_overrides": [
+    {
+      "object": "bbq_sauce_2",
+      "category": "bbq_sauce",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/libero_object/task_03/same_category_color_copy/bbq_sauce_exact_shape_color_copy.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "bbq_sauce_2",
+      "relative_to": "bbq_sauce_1",
+      "candidate_offsets": [
+        [
+          0.0,
+          0.075,
+          0.0
+        ],
+        [
+          0.075,
+          0.0,
+          0.0
+        ],
+        [
+          -0.075,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.075,
+          0.0
+        ]
+      ],
+      "candidate_selection": "max_clearance",
+      "avoid_objects": [
+        "bbq_sauce_1",
+        "basket_1",
+        "chocolate_pudding_1",
+        "ketchup_1",
+        "salad_dressing_1",
+        "alphabet_soup_1",
+        "cream_cheese_1"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.32,
+          0.32
+        ],
+        [
+          -0.32,
+          0.34
+        ]
+      ],
+      "min_distance_from_others": 0.045,
+      "z_from": "bbq_sauce_1",
+      "quat_from": "bbq_sauce_1"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "d4_contact4_physical_3severity.v1",
+  "status": "implemented",
+  "type": "pure_external_shape_grasp_difficulty",
+  "suite": "libero_object",
+  "benchmark": "libero_object",
+  "task_id": 3,
+  "instruction": "pick up the bbq sauce and place it in the basket",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.bddl",
+  "target_objects": [
+    "bbq_sauce_1"
+  ],
+  "object_scale_overrides": [
+    {
+      "object": "bbq_sauce_1",
+      "category": "bbq_sauce",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D4_target_geometry/assets/bbq_sauce/twist/low/bbq_sauce.xml",
+      "effective_strength": 1.0,
+      "effective_severity_multiplier": 1.0,
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "shape_intervention": {
+    "case_id": "twist_low",
+    "mechanism": "height_dependent_contact_normal_misalignment",
+    "family": "twist",
+    "severity": "low",
+    "nominal_severity_multiplier": 1.0,
+    "category_adaptive_safety_scaling": true,
+    "external_shape_modified": true,
+    "visual_mesh_modified": true,
+    "collision_geometry_modified": true,
+    "friction_modified": false,
+    "mass_or_inertia_modified": false,
+    "inference_modified": false,
+    "apply_stage": "precompile_xml"
+  }
+}

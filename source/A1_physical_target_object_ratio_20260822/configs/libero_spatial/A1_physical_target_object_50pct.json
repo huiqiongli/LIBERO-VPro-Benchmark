@@ -1,0 +1,540 @@
+{
+  "schema_version": "wam_syncbench.A1.physical_surface.v1",
+  "track": "A1",
+  "scenario": "A1_physical_target_object_ratio",
+  "variant": "physical_surface_black_50pct",
+  "description": "Blacken the requested fraction of the task target object's complete three-dimensional render surface. A contiguous camera-aligned slice is cut from the full surface, including inner, rear, initially hidden, and later revealed regions that fall inside that slice.",
+  "status": "implemented",
+  "enabled": true,
+  "suite": "libero_spatial",
+  "coverage_definition": "complete_3d_render_surface_area",
+  "coverage": 0.5,
+  "selection_axis": "agentview_aligned_complete_surface_slice",
+  "render_edit_only": true,
+  "collision_unchanged": true,
+  "pose_unchanged": true,
+  "observation_pixel_masking": false,
+  "require_task_match": true,
+  "task_env_edits": [
+    {
+      "suite": "libero_spatial",
+      "task_id": 0,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "coverage": 0.5,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "akita_black_bowl_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.5,
+            "actual_surface_coverage": 0.4999999999994994,
+            "surface_area_total": 0.03523426958638165,
+            "surface_area_black": 0.017617134793173186,
+            "selected_face_count": 21942,
+            "total_face_count": 42522,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 193.81900706443167,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 831,
+            "predicted_agentview_black_pixels": 393,
+            "predicted_agentview_visible_coverage": 0.4729241877256318,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "category": "akita_black_bowl",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_spatial/task_00/akita_black_bowl_1/50pct/akita_black_bowl.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 1,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "coverage": 0.5,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "akita_black_bowl_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.5,
+            "actual_surface_coverage": 0.4999999999995321,
+            "surface_area_total": 0.03523426958638165,
+            "surface_area_black": 0.01761713479317434,
+            "selected_face_count": 21931,
+            "total_face_count": 42522,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 220.64528485588352,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 659,
+            "predicted_agentview_black_pixels": 310,
+            "predicted_agentview_visible_coverage": 0.47040971168437024,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "category": "akita_black_bowl",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_spatial/task_01/akita_black_bowl_1/50pct/akita_black_bowl.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 2,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "coverage": 0.5,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "akita_black_bowl_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.5,
+            "actual_surface_coverage": 0.5000000000002227,
+            "surface_area_total": 0.03523426958638165,
+            "surface_area_black": 0.017617134793198673,
+            "selected_face_count": 21950,
+            "total_face_count": 42522,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 132.9856115194554,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 794,
+            "predicted_agentview_black_pixels": 397,
+            "predicted_agentview_visible_coverage": 0.5,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "category": "akita_black_bowl",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_spatial/task_02/akita_black_bowl_1/50pct/akita_black_bowl.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 3,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "coverage": 0.5,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "akita_black_bowl_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.5,
+            "actual_surface_coverage": 0.4999999999998286,
+            "surface_area_total": 0.03523426958638165,
+            "surface_area_black": 0.017617134793184785,
+            "selected_face_count": 21942,
+            "total_face_count": 42522,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 137.66857118034426,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 1209,
+            "predicted_agentview_black_pixels": 612,
+            "predicted_agentview_visible_coverage": 0.5062034739454094,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "category": "akita_black_bowl",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_spatial/task_03/akita_black_bowl_1/50pct/akita_black_bowl.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 4,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "coverage": 0.5,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "akita_black_bowl_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.5,
+            "actual_surface_coverage": 0.500000000000353,
+            "surface_area_total": 0.03523426958638165,
+            "surface_area_black": 0.017617134793203267,
+            "selected_face_count": 22031,
+            "total_face_count": 42522,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 72.58276343554525,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 1381,
+            "predicted_agentview_black_pixels": 753,
+            "predicted_agentview_visible_coverage": 0.5452570601013759,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "category": "akita_black_bowl",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_spatial/task_04/akita_black_bowl_1/50pct/akita_black_bowl.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 5,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "coverage": 0.5,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "akita_black_bowl_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.5,
+            "actual_surface_coverage": 0.4999999999998034,
+            "surface_area_total": 0.03523426958638165,
+            "surface_area_black": 0.017617134793183897,
+            "selected_face_count": 21931,
+            "total_face_count": 42522,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 191.40317955689585,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 706,
+            "predicted_agentview_black_pixels": 350,
+            "predicted_agentview_visible_coverage": 0.49575070821529743,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "category": "akita_black_bowl",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_spatial/task_05/akita_black_bowl_1/50pct/akita_black_bowl.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 6,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "coverage": 0.5,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "akita_black_bowl_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.5,
+            "actual_surface_coverage": 0.49999999999986894,
+            "surface_area_total": 0.03523426958638165,
+            "surface_area_black": 0.017617134793186207,
+            "selected_face_count": 22052,
+            "total_face_count": 42522,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 100.80263684005068,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 1280,
+            "predicted_agentview_black_pixels": 674,
+            "predicted_agentview_visible_coverage": 0.5265625,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "category": "akita_black_bowl",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_spatial/task_06/akita_black_bowl_1/50pct/akita_black_bowl.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 7,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "coverage": 0.5,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "akita_black_bowl_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.5,
+            "actual_surface_coverage": 0.4999999999995325,
+            "surface_area_total": 0.03523426958638165,
+            "surface_area_black": 0.017617134793174352,
+            "selected_face_count": 22062,
+            "total_face_count": 42522,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 90.55745953836822,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 587,
+            "predicted_agentview_black_pixels": 315,
+            "predicted_agentview_visible_coverage": 0.5366269165247018,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "category": "akita_black_bowl",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_spatial/task_07/akita_black_bowl_1/50pct/akita_black_bowl.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 8,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "coverage": 0.5,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "akita_black_bowl_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.5,
+            "actual_surface_coverage": 0.4999999999999403,
+            "surface_area_total": 0.03523426958638165,
+            "surface_area_black": 0.017617134793188723,
+            "selected_face_count": 21867,
+            "total_face_count": 42522,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 231.03978689471592,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 971,
+            "predicted_agentview_black_pixels": 463,
+            "predicted_agentview_visible_coverage": 0.4768280123583934,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "category": "akita_black_bowl",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_spatial/task_08/akita_black_bowl_1/50pct/akita_black_bowl.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 9,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "coverage": 0.5,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "akita_black_bowl_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.5,
+            "actual_surface_coverage": 0.5000000000003915,
+            "surface_area_total": 0.03523426958638165,
+            "surface_area_black": 0.01761713479320462,
+            "selected_face_count": 23039,
+            "total_face_count": 42522,
+            "selection_axis": "screen_y",
+            "screen_cutoff_px": 78.93538817133631,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 1052,
+            "predicted_agentview_black_pixels": 720,
+            "predicted_agentview_visible_coverage": 0.6844106463878327,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "category": "akita_black_bowl",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_spatial/task_09/akita_black_bowl_1/50pct/akita_black_bowl.xml"
+        }
+      ]
+    }
+  ]
+}

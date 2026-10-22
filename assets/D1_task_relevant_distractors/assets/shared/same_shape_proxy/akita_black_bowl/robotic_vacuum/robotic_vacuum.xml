@@ -1,0 +1,23 @@
+<mujoco model="a4_robotic_vacuum">
+  <!--Flat circular visual and collision geometry, lidar turret, and status button establish a robotic-vacuum identity.-->
+  <asset>
+    <texture file="texture.png" name="tex-glazed_rim_porcelain_ramekin" type="2d" />
+    <material name="glazed_rim_porcelain_ramekin" reflectance="0.5" texrepeat="1 1" texture="tex-glazed_rim_porcelain_ramekin" texuniform="false" />
+    <mesh file="visual/glazed_rim_porcelain_ramekin_vis.msh" name="glazed_rim_porcelain_ramekin_vis" scale="1.0 1.0 1.0" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom name="vacuum_body_visual" type="cylinder" pos="0 0 0.013" size="0.043 0.015" group="1" contype="0" conaffinity="0" rgba="0.12 0.15 0.18 1" />
+        <geom name="vacuum_top_visual" type="cylinder" pos="0 0 0.029" size="0.039 0.002" group="1" contype="0" conaffinity="0" rgba="0.20 0.24 0.27 1" />
+        <geom name="vacuum_lidar_visual" type="cylinder" pos="0.014 0.008 0.033" size="0.009 0.004" group="1" contype="0" conaffinity="0" rgba="0.04 0.05 0.06 1" />
+        <geom name="vacuum_button_visual" type="cylinder" pos="-0.015 -0.007 0.032" size="0.005 0.002" group="1" contype="0" conaffinity="0" rgba="0.08 0.70 0.78 1" />
+        <geom name="vacuum_base_collision" type="cylinder" pos="0 0 0.002" size="0.043 0.004" group="0" density="520" friction="1.20 0.4 0.1" rgba="0.8 0.8 0.8 0.2" />
+        <geom name="vacuum_upper_collision" type="cylinder" pos="0 0 0.023" size="0.039 0.017" group="0" density="24" friction="1.20 0.4 0.1" rgba="0.8 0.8 0.8 0.2" />
+      </body>
+      <site rgba="0 0 0 0" size="0.005" pos="0 0 -0.002" name="bottom_site" />
+      <site rgba="0 0 0 0" size="0.005" pos="0 0 0.037" name="top_site" />
+      <site rgba="0 0 0 0" size="0.005" pos="0.043 0.043 0" name="horizontal_radius_site" />
+    </body>
+  </worldbody>
+</mujoco>

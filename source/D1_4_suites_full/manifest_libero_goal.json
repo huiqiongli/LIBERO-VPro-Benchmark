@@ -1,0 +1,205 @@
+{
+  "suite": "libero_goal",
+  "conditions": [
+    "same_category",
+    "same_color",
+    "same_shape",
+    "same_affordance",
+    "same_position",
+    "trajectory"
+  ],
+  "task_count": 10,
+  "case_count": 60,
+  "tasks": [
+    {
+      "task_id": 0,
+      "task_name": "open_the_middle_drawer_of_the_cabinet",
+      "instruction": "open the middle drawer of the cabinet",
+      "target": "wooden_cabinet_1",
+      "target_category": "wooden_cabinet",
+      "target_is_fixture": true,
+      "receiver": "wooden_cabinet_1",
+      "receiver_category": "wooden_cabinet",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_00/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_00/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_00/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_00/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_00/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_00/trajectory.json"
+      }
+    },
+    {
+      "task_id": 1,
+      "task_name": "put_the_bowl_on_the_stove",
+      "instruction": "put the bowl on the stove",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "flat_stove_1",
+      "receiver_category": "flat_stove",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_01/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_01/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_01/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_01/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_01/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_01/trajectory.json"
+      }
+    },
+    {
+      "task_id": 2,
+      "task_name": "put_the_wine_bottle_on_top_of_the_cabinet",
+      "instruction": "put the wine bottle on top of the cabinet",
+      "target": "wine_bottle_1",
+      "target_category": "wine_bottle",
+      "target_is_fixture": false,
+      "receiver": "wooden_cabinet_1",
+      "receiver_category": "wooden_cabinet",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_02/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_02/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_02/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_02/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_02/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_02/trajectory.json"
+      }
+    },
+    {
+      "task_id": 3,
+      "task_name": "open_the_top_drawer_and_put_the_bowl_inside",
+      "instruction": "open the top drawer and put the bowl inside",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "wooden_cabinet_1",
+      "receiver_category": "wooden_cabinet",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_03/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_03/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_03/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_03/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_03/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_03/trajectory.json"
+      }
+    },
+    {
+      "task_id": 4,
+      "task_name": "put_the_bowl_on_top_of_the_cabinet",
+      "instruction": "put the bowl on top of the cabinet",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "wooden_cabinet_1",
+      "receiver_category": "wooden_cabinet",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_04/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_04/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_04/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_04/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_04/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_04/trajectory.json"
+      }
+    },
+    {
+      "task_id": 5,
+      "task_name": "push_the_plate_to_the_front_of_the_stove",
+      "instruction": "push the plate to the front of the stove",
+      "target": "plate_1",
+      "target_category": "plate",
+      "target_is_fixture": false,
+      "receiver": "flat_stove_1",
+      "receiver_category": "flat_stove",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_05/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_05/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_05/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_05/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_05/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_05/trajectory.json"
+      }
+    },
+    {
+      "task_id": 6,
+      "task_name": "put_the_cream_cheese_in_the_bowl",
+      "instruction": "put the cream cheese in the bowl",
+      "target": "cream_cheese_1",
+      "target_category": "cream_cheese",
+      "target_is_fixture": false,
+      "receiver": "akita_black_bowl_1",
+      "receiver_category": "akita_black_bowl",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_06/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_06/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_06/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_06/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_06/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_06/trajectory.json"
+      }
+    },
+    {
+      "task_id": 7,
+      "task_name": "turn_on_the_stove",
+      "instruction": "turn on the stove",
+      "target": "flat_stove_1",
+      "target_category": "flat_stove",
+      "target_is_fixture": true,
+      "receiver": "flat_stove_1",
+      "receiver_category": "flat_stove",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_07/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_07/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_07/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_07/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_07/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_07/trajectory.json"
+      }
+    },
+    {
+      "task_id": 8,
+      "task_name": "put_the_bowl_on_the_plate",
+      "instruction": "put the bowl on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_08/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_08/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_08/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_08/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_08/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_08/trajectory.json"
+      }
+    },
+    {
+      "task_id": 9,
+      "task_name": "put_the_wine_bottle_on_the_rack",
+      "instruction": "put the wine bottle on the rack",
+      "target": "wine_bottle_1",
+      "target_category": "wine_bottle",
+      "target_is_fixture": false,
+      "receiver": "wine_rack_1",
+      "receiver_category": "wine_rack",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_09/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_09/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_09/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_09/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_09/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_goal/task_09/trajectory.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "libero_vpro.runnable_setting.v1",
+  "setting_id": "D4.taper.high",
+  "category": "D4",
+  "trials_per_case": 10,
+  "backend": "manifest_worker",
+  "source_roots": [
+    "source/D4_contact4_physical_3severity_40task_20260815"
+  ],
+  "config_files": [
+    "source/D4_contact4_physical_3severity_40task_20260815/manifest.json"
+  ],
+  "asset_contract_schema": "libero_vpro.asset_contract.v1",
+  "asset_mode": "bundled_environment_assets",
+  "asset_roots": [
+    "assets/D4_target_geometry/assets"
+  ],
+  "external_dependencies": [
+    "unmodified LIBERO bddl_files and init_files",
+    "MuJoCo and the selected model backend/checkpoint"
+  ],
+  "full_result_source": "external/full_results/by_experiment_subclass_model/D4/taper.high",
+  "worker": "source/D4_contact4_physical_3severity_40task_20260815/eval_6models/run_fastwam_worker.sh",
+  "manifest": "manifest.json",
+  "batch_manifest": "batch_manifest.json"
+}

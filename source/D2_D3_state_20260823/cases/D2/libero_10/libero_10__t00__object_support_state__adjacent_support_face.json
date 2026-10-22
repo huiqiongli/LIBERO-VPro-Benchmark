@@ -1,0 +1,16 @@
+{
+  "schema_version": "wam_syncbench.d2.case.v1",
+  "status": "implemented",
+  "track": "D2",
+  "suite": "libero_10",
+  "task_id": 0,
+  "instruction": "LIVING ROOM SCENE2 put both the alphabet soup and the tomato sauce in the basket",
+  "target": "alphabet_soup_1",
+  "visual_input_contract": "official_dual_camera",
+  "perturbation_scope": "physical_simulator_state_full_episode",
+  "case_id": "libero_10__t00__object_support_state__adjacent_support_face",
+  "subtask": "object_support_state",
+  "morphology": "axial_container",
+  "support_state": "adjacent_support_face",
+  "case_path": "/home/huiqiongli/Sim/release/source/D2_D3_state_20260823/cases/D2/libero_10/libero_10__t00__object_support_state__adjacent_support_face.json"
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": "wam_syncbench.trackA.v1",
+  "scenario": "A4_phase_3replan_once",
+  "trigger": "phase_pulse",
+  "phases": ["pre_grasp"],
+  "replan_count": 3,
+  "once": true,
+  "description": "A4 阶段性临时观测污染：在策略重规划边界首次观测到目标阶段时触发，随后连续污染 3 个 replan；窗口可跨阶段，之后不再触发。公开设置使用 reach/pre_grasp/grasp/transport/pre_place；initial/release 仅为调度器阶段标签。"
+}

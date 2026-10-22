@@ -1,0 +1,21 @@
+<mujoco model="a4_lighthouse_figurine">
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom name="tower_white_visual" type="cylinder" pos="0 0 -0.0172624" size="0.0212966 0.0612029" group="1" contype="0" conaffinity="0" rgba="0.94 0.92 0.84 1"/>
+        <geom name="tower_red_lower_visual" type="cylinder" pos="0 0 -0.0470792" size="0.0213392 0.0086312" group="1" contype="0" conaffinity="0" rgba="0.78 0.06 0.08 1"/>
+        <geom name="tower_red_upper_visual" type="cylinder" pos="0 0 0.0031386" size="0.0213392 0.0086312" group="1" contype="0" conaffinity="0" rgba="0.78 0.06 0.08 1"/>
+        <geom name="lantern_room_visual" type="cylinder" pos="0 0 0.0502178" size="0.0144817 0.0156931" group="1" contype="0" conaffinity="0" rgba="0.20 0.68 0.86 1"/>
+        <geom name="lantern_window_x_visual" type="box" pos="0 0 0.0502178" size="0.0025556 0.0149076 0.0156931" group="1" contype="0" conaffinity="0" rgba="0.05 0.08 0.10 1"/>
+        <geom name="lantern_window_y_visual" type="box" pos="0 0 0.0502178" size="0.0149076 0.0025556 0.0156931" group="1" contype="0" conaffinity="0" rgba="0.05 0.08 0.10 1"/>
+        <geom name="lighthouse_roof_visual" type="cylinder" pos="0 0 0.0698341" size="0.0212966 0.0070619" group="1" contype="0" conaffinity="0" rgba="0.10 0.12 0.14 1"/>
+        <geom name="tower_collision" type="cylinder" pos="0 0 -0.0172624" size="0.0212966 0.0612029" group="0" density="120" friction="0.95 0.3 0.1" rgba="0.8 0.8 0.8 0.2"/>
+        <geom name="lantern_collision" type="cylinder" pos="0 0 0.0502178" size="0.0144817 0.0156931" group="0" density="80" friction="0.95 0.3 0.1" rgba="0.8 0.8 0.8 0.2"/>
+        <geom name="roof_collision" type="cylinder" pos="0 0 0.0698341" size="0.0212966 0.0070619" group="0" density="80" friction="0.95 0.3 0.1" rgba="0.8 0.8 0.8 0.2"/>
+      </body>
+      <site rgba="0 0 0 0" size="0.003" pos="0 0 -0.0784653" name="bottom_site"/>
+      <site rgba="0 0 0 0" size="0.003" pos="0 0 0.0784653" name="top_site"/>
+      <site rgba="0 0 0 0" size="0.003" pos="0.0212966 0.0221198 0" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

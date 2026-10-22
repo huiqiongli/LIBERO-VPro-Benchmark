@@ -1,0 +1,75 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_affordance",
+  "suite": "libero_goal",
+  "benchmark": "libero_goal",
+  "task_id": 3,
+  "task_name": "open_the_top_drawer_and_put_the_bowl_inside",
+  "instruction": "open the top drawer and put the bowl inside",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_goal/open_the_top_drawer_and_put_the_bowl_inside.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_goal/task_03/same_affordance.bddl",
+  "target": "akita_black_bowl_1",
+  "target_category": "akita_black_bowl",
+  "definition": {
+    "zh": "同可供性干扰物",
+    "definition": "不同类别但同样提供容纳/放置功能的篮子",
+    "target": "wooden_cabinet_1",
+    "target_category": "wooden_cabinet",
+    "distractor": "basket_d1_affordance",
+    "category": "basket",
+    "construction": "different_category_same_function"
+  },
+  "settle_steps": 18,
+  "object_pose_overrides": [
+    {
+      "object": "basket_d1_affordance",
+      "relative_to": "wooden_cabinet_1",
+      "candidate_offsets": [
+        [
+          0.0,
+          0.34,
+          0.0
+        ],
+        [
+          0.34,
+          0.0,
+          0.0
+        ],
+        [
+          -0.34,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.34,
+          0.0
+        ]
+      ],
+      "candidate_selection": "max_clearance",
+      "avoid_objects": [
+        "akita_black_bowl_1",
+        "cream_cheese_1",
+        "wine_bottle_1",
+        "plate_1",
+        "main_table",
+        "wooden_cabinet_1",
+        "flat_stove_1",
+        "wine_rack_1"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.48,
+          0.48
+        ],
+        [
+          -0.36,
+          0.38
+        ]
+      ],
+      "min_distance_from_others": 0.045,
+      "z_from": "wooden_cabinet_1"
+    }
+  ]
+}

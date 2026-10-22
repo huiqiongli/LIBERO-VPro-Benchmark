@@ -1,0 +1,38 @@
+{
+  "schema_version": "wam_syncbench.c1_cross_view.v2",
+  "status": "validated_semantic_definition",
+  "track": "C1",
+  "subtask": "existence",
+  "case_id": "C1_existence_libero_object_t6__agent",
+  "semantic_case_id": "C1_existence_libero_object_t6",
+  "suite": "libero_object",
+  "task_id": 6,
+  "instruction": "pick up the butter and place it in the basket",
+  "bddl_file": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_object/pick_up_the_butter_and_place_it_in_the_basket.bddl",
+  "direction": "agent",
+  "enabled": true,
+  "observation_mode": "perturbed",
+  "target_policy": "object_edit",
+  "mask_source": "object_edit",
+  "render_mode": "temporary_counterfactual_simulator_branch",
+  "views": [
+    "agentview"
+  ],
+  "corrupted_view": "agentview",
+  "truth_view": "robot0_eye_in_hand",
+  "target": "butter_1",
+  "object_edits": [
+    {
+      "op": "disappear",
+      "object": "butter_1"
+    }
+  ],
+  "save_masked_video": true,
+  "visual_input_contract": "official_dual_camera",
+  "simulator_state_contract": {
+    "physical_rollout_unchanged": true,
+    "temporary_edit_restored_after_render": true
+  },
+  "source_validation_status": "existing_full",
+  "existing_scenario": "trackC_C3ext2_libero_object_t6_existence_agent-libero_object-t6"
+}

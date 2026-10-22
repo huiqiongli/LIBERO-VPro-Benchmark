@@ -1,0 +1,84 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_affordance",
+  "suite": "libero_spatial",
+  "benchmark": "libero_spatial",
+  "task_id": 1,
+  "task_name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate",
+  "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_spatial/task_01/same_affordance.bddl",
+  "target": "akita_black_bowl_1",
+  "target_category": "akita_black_bowl",
+  "definition": {
+    "zh": "同可供性干扰物",
+    "definition": "不同类别但同样提供承放功能的木托盘",
+    "target": "plate_1",
+    "target_category": "plate",
+    "distractor": "wooden_tray_d1_affordance",
+    "category": "wooden_tray",
+    "construction": "different_category_same_function"
+  },
+  "settle_steps": 18,
+  "object_scale_overrides": [
+    {
+      "object": "wooden_tray_d1_affordance",
+      "category": "wooden_tray",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/shared/wooden_tray_scaled.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "wooden_tray_d1_affordance",
+      "relative_to": "plate_1",
+      "candidate_offsets": [
+        [
+          0.0,
+          0.2,
+          0.0
+        ],
+        [
+          0.2,
+          0.0,
+          0.0
+        ],
+        [
+          -0.2,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.2,
+          0.0
+        ]
+      ],
+      "candidate_selection": "max_clearance",
+      "avoid_objects": [
+        "akita_black_bowl_1",
+        "akita_black_bowl_2",
+        "cookies_1",
+        "glazed_rim_porcelain_ramekin_1",
+        "plate_1",
+        "main_table",
+        "wooden_cabinet_1",
+        "flat_stove_1"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.48,
+          0.48
+        ],
+        [
+          -0.36,
+          0.38
+        ]
+      ],
+      "min_distance_from_others": 0.045,
+      "z_from": "plate_1"
+    }
+  ]
+}

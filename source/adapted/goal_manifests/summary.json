@@ -1,0 +1,26 @@
+{
+  "lingbot_va": {
+    "cases": 329,
+    "experiments": 39,
+    "by_family": {
+      "A1_occlusion_ratio": 40,
+      "A1_timing_calibrated": 59,
+      "A2_receptacle_ratio": 40,
+      "A2_timing_calibrated": 30,
+      "A4_temporary_observation_corruption": 60,
+      "B1_camera_staleness": 100
+    }
+  },
+  "fastwam": {
+    "cases": 329,
+    "experiments": 39,
+    "by_family": {
+      "A1_occlusion_ratio": 40,
+      "A1_timing_calibrated": 59,
+      "A2_receptacle_ratio": 40,
+      "A2_timing_calibrated": 30,
+      "A4_temporary_observation_corruption": 60,
+      "B1_camera_staleness": 100
+    }
+  }
+}

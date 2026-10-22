@@ -1,0 +1,79 @@
+{
+  "manipulated": {
+    "0": [
+      "akita_black_bowl_1"
+    ],
+    "1": [
+      "akita_black_bowl_1"
+    ],
+    "2": [
+      "akita_black_bowl_1"
+    ],
+    "3": [
+      "akita_black_bowl_1"
+    ],
+    "4": [
+      "akita_black_bowl_1"
+    ],
+    "5": [
+      "akita_black_bowl_1"
+    ],
+    "6": [
+      "akita_black_bowl_1"
+    ],
+    "7": [
+      "akita_black_bowl_1"
+    ],
+    "8": [
+      "akita_black_bowl_1"
+    ],
+    "9": [
+      "akita_black_bowl_1"
+    ]
+  },
+  "receptacle": {
+    "0": [
+      "plate_1"
+    ],
+    "1": [
+      "plate_1"
+    ],
+    "2": [
+      "plate_1"
+    ],
+    "3": [
+      "plate_1"
+    ],
+    "4": [
+      "plate_1"
+    ],
+    "5": [
+      "plate_1"
+    ],
+    "6": [
+      "plate_1"
+    ],
+    "7": [
+      "plate_1"
+    ],
+    "8": [
+      "plate_1"
+    ],
+    "9": [
+      "plate_1"
+    ]
+  },
+  "pick_place_tasks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "special_tasks": {}
+}

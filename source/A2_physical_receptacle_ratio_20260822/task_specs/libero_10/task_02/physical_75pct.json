@@ -1,0 +1,66 @@
+{
+  "schema_version": "wam_syncbench.A2.physical_surface.v1",
+  "track": "A2",
+  "scenario": "A2_physical_target_receptacle_ratio",
+  "variant": "physical_surface_black_75pct",
+  "description": "Blacken the requested fraction of the target receptacle's complete three-dimensional render surface. A contiguous camera-aligned slice is cut from the full surface, including inner, rear, initially hidden, and later revealed regions that fall inside that slice.",
+  "status": "implemented",
+  "enabled": true,
+  "suite": "libero_10",
+  "coverage_definition": "complete_3d_render_surface_area",
+  "coverage": 0.75,
+  "selection_axis": "agentview_aligned_complete_surface_slice",
+  "render_edit_only": true,
+  "collision_unchanged": true,
+  "pose_unchanged": true,
+  "observation_pixel_masking": false,
+  "require_task_match": true,
+  "task_id": 2,
+  "object_surface_black_fraction_overrides": [
+    {
+      "object": "flat_stove_1",
+      "coverage": 0.75,
+      "coverage_definition": "complete_3d_render_surface_area",
+      "selection_axis": "agentview_aligned_complete_surface_slice",
+      "rgba": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "require_exact": true,
+      "precompiled_surface_audit": {
+        "object": "flat_stove_1",
+        "mode": "precompiled_visual_surface_partition",
+        "coverage_definition": "complete_3d_render_surface_area",
+        "requested_surface_coverage": 0.75,
+        "actual_surface_coverage": 0.7499999999993691,
+        "surface_area_total": 0.17152055841266045,
+        "surface_area_black": 0.12864041880938712,
+        "selected_face_count": 1041,
+        "total_face_count": 1038,
+        "selection_axis": "screen_y",
+        "screen_cutoff_px": 168.49840276110902,
+        "selection_side": "low_coordinate_prefix",
+        "baseline_agentview_target_pixels": 3413,
+        "predicted_agentview_black_pixels": 2311,
+        "predicted_agentview_visible_coverage": 0.6771169059478465,
+        "surface_enumeration": "mujoco_render_geometries",
+        "brightness_independent_surface_enumeration": true,
+        "includes_initially_hidden_surface": true,
+        "includes_inner_and_rear_surface": true,
+        "collision_unchanged": true,
+        "pose_unchanged": true
+      }
+    }
+  ],
+  "object_scale_overrides": [
+    {
+      "object": "flat_stove_1",
+      "category": "flat_stove",
+      "scale": 1.0,
+      "scale_mode": "precompile_xml",
+      "xml_path": "/home/huiqiongli/Sim/release/assets/A2_target_receptacle/precompiled_variants_full_surface_v3/libero_10/task_02/flat_stove_1/75pct/flat_stove.xml"
+    }
+  ]
+}

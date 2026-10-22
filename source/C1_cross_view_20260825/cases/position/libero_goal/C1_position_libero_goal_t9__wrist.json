@@ -1,0 +1,43 @@
+{
+  "schema_version": "wam_syncbench.c1_cross_view.v2",
+  "status": "validated_semantic_definition",
+  "track": "C1",
+  "subtask": "position",
+  "case_id": "C1_position_libero_goal_t9__wrist",
+  "semantic_case_id": "C1_position_libero_goal_t9",
+  "suite": "libero_goal",
+  "task_id": 9,
+  "instruction": "put the wine bottle on the rack",
+  "bddl_file": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_goal/put_the_wine_bottle_on_the_rack.bddl",
+  "direction": "wrist",
+  "enabled": true,
+  "observation_mode": "perturbed",
+  "target_policy": "object_edit",
+  "mask_source": "object_edit",
+  "render_mode": "temporary_counterfactual_simulator_branch",
+  "views": [
+    "robot0_eye_in_hand"
+  ],
+  "corrupted_view": "robot0_eye_in_hand",
+  "truth_view": "agentview",
+  "target": "wine_bottle_1",
+  "object_edits": [
+    {
+      "op": "relocate",
+      "object": "wine_bottle_1",
+      "offset": [
+        0.0,
+        0.08,
+        0.0
+      ]
+    }
+  ],
+  "save_masked_video": true,
+  "visual_input_contract": "official_dual_camera",
+  "simulator_state_contract": {
+    "physical_rollout_unchanged": true,
+    "temporary_edit_restored_after_render": true
+  },
+  "source_validation_status": "existing_full",
+  "existing_scenario": "trackC_C3ext3_libero_goal_t9_position_agent-libero_goal-t9"
+}

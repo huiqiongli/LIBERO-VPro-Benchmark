@@ -1,0 +1,27 @@
+{
+  "schema_version": "wam_syncbench.phase_decisions.v1",
+  "suite": "libero_goal",
+  "model": "lingbot_va",
+  "task_id": 4,
+  "scenario": "completion_before_2_model_decisions",
+  "enabled": true,
+  "trigger": "decision_indices",
+  "decision_indices": [
+    4,
+    5
+  ],
+  "random_replans": {
+    "indices": [
+      4,
+      5
+    ]
+  },
+  "calibration": {
+    "event": "completion",
+    "side": "before",
+    "event_decision": 6,
+    "requested_decisions": 2,
+    "actual_decisions": 2,
+    "index_semantics": "zero-based consumer inference index"
+  }
+}

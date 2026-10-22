@@ -1,0 +1,39 @@
+{
+  "schema_version": "d4_contact4_physical_3severity.v1",
+  "status": "implemented",
+  "type": "pure_external_shape_grasp_difficulty",
+  "suite": "libero_object",
+  "benchmark": "libero_object",
+  "task_id": 1,
+  "instruction": "pick up the cream cheese and place it in the basket",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+  "target_objects": [
+    "cream_cheese_1"
+  ],
+  "object_scale_overrides": [
+    {
+      "object": "cream_cheese_1",
+      "category": "cream_cheese",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D4_target_geometry/assets/cream_cheese/taper/high/cream_cheese.xml",
+      "effective_strength": 2.0,
+      "effective_severity_multiplier": 2.0,
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "shape_intervention": {
+    "case_id": "taper_high",
+    "mechanism": "axial_slip_from_opposed_slopes",
+    "family": "taper",
+    "severity": "high",
+    "nominal_severity_multiplier": 2.0,
+    "category_adaptive_safety_scaling": true,
+    "external_shape_modified": true,
+    "visual_mesh_modified": true,
+    "collision_geometry_modified": true,
+    "friction_modified": false,
+    "mass_or_inertia_modified": false,
+    "inference_modified": false,
+    "apply_stage": "precompile_xml"
+  }
+}

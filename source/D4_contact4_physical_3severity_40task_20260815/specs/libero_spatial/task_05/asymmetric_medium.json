@@ -1,0 +1,39 @@
+{
+  "schema_version": "d4_contact4_physical_3severity.v1",
+  "status": "implemented",
+  "type": "pure_external_shape_grasp_difficulty",
+  "suite": "libero_spatial",
+  "benchmark": "libero_spatial",
+  "task_id": 5,
+  "instruction": "pick up the black bowl on the ramekin and place it on the plate",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate.bddl",
+  "target_objects": [
+    "akita_black_bowl_1"
+  ],
+  "object_scale_overrides": [
+    {
+      "object": "akita_black_bowl_1",
+      "category": "akita_black_bowl",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D4_target_geometry/assets/akita_black_bowl/asymmetric/medium/akita_black_bowl.xml",
+      "effective_strength": 0.55,
+      "effective_severity_multiplier": 1.2222222222222223,
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "shape_intervention": {
+    "case_id": "asymmetric_medium",
+    "mechanism": "left_right_asymmetric_contact_band",
+    "family": "asymmetric",
+    "severity": "medium",
+    "nominal_severity_multiplier": 1.5,
+    "category_adaptive_safety_scaling": true,
+    "external_shape_modified": true,
+    "visual_mesh_modified": true,
+    "collision_geometry_modified": true,
+    "friction_modified": false,
+    "mass_or_inertia_modified": false,
+    "inference_modified": false,
+    "apply_stage": "precompile_xml"
+  }
+}

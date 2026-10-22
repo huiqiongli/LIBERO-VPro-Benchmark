@@ -1,0 +1,24 @@
+{
+  "schema_version": "libero_vpro.runnable_setting.v1",
+  "setting_id": "D1.same_shape",
+  "category": "D1",
+  "trials_per_case": 10,
+  "backend": "suite_condition",
+  "source_roots": [
+    "source/D1_4_suites_full"
+  ],
+  "config_files": [
+    "source/D1_4_suites_full/specs/{suite}/{task}/same_shape.json"
+  ],
+  "asset_contract_schema": "libero_vpro.asset_contract.v1",
+  "asset_mode": "bundled_environment_assets_and_bddl",
+  "asset_roots": [
+    "assets/D1_task_relevant_distractors/assets",
+    "assets/D1_task_relevant_distractors/bddl_overrides"
+  ],
+  "external_dependencies": [
+    "unmodified LIBERO bddl_files and init_files",
+    "MuJoCo and the selected model backend/checkpoint"
+  ],
+  "full_result_source": "external/full_results/by_experiment_subclass_model/D1/same_shape"
+}

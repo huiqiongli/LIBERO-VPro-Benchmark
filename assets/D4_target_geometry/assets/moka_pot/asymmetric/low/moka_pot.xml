@@ -1,0 +1,60 @@
+<mujoco model="moka_pot_body">
+  <asset>
+    <texture file="metal_diff.png" name="tex-moka_pot_body" type="2d" />
+    <material name="moka_pot_body" reflectance="0.5" texrepeat="1 1" texture="tex-moka_pot_body" texuniform="false" />
+    <mesh file="moka_pot_body_a7_asymmetric.obj" name="moka_pot_body_vis" scale="0.025 0.025 0.025" />
+    <texture file="rubber_black.png" name="tex-moka_pot_handle" type="2d" />
+    <material name="moka_pot_handle" reflectance="0.5" texrepeat="1 1" texture="tex-moka_pot_handle" texuniform="false" />
+    <mesh file="visual/moka_pot_handle_vis.msh" name="moka_pot_handle_vis" scale="0.025 0.025 0.025" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="mesh" mesh="moka_pot_body_vis" conaffinity="0" contype="0" group="1" material="moka_pot_body" />
+        <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="mesh" mesh="moka_pot_handle_vis" conaffinity="0" contype="0" group="1" material="moka_pot_handle" />
+        <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.00000 -0.00000 0.00044" quat="0.00000 0.00000 0.00000 1.00000" size="0.02500 0.02500 0.06655" group="0" rgba="0.8 0.8 0.8 0.3" />
+        <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00000 -0.02594 0.00044" quat="0.00000 0.70711 0.70711 0.00000" size="0.00505 0.02500 0.06655" group="0" rgba="0.8 0.8 0.8 0.3" />
+        <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00000 0.02955 0.00044" quat="0.00000 0.70711 0.70711 0.00000" size="0.00505 0.02500 0.06655" group="0" rgba="0.8 0.8 0.8 0.3" />
+        <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.03017 0.01254 0.00044" quat="0.00000 -0.19372 0.98106 0.00000" size="0.00420 0.01719 0.06655" group="0" rgba="0.8 0.8 0.8 0.3" />
+        <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.02934 -0.01403 0.00044" quat="-0.00000 -0.98106 -0.19372 -0.00000" size="0.00420 0.01719 0.06655" group="0" rgba="0.8 0.8 0.8 0.3" />
+        <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.02962 -0.01403 0.00044" quat="0.00000 -0.97505 0.22201 0.00000" size="0.00420 0.01719 0.06655" group="0" rgba="0.8 0.8 0.8 0.3" />
+        <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.02934 0.01509 0.00044" quat="0.00000 -0.97505 0.22201 0.00000" size="0.00420 0.01719 0.06655" group="0" rgba="0.8 0.8 0.8 0.3" />
+        <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00000 -0.03591 0.04260" quat="0.00000 0.70711 0.70711 0.00000" size="0.00577 0.01762 0.02451" group="0" rgba="0.8 0.8 0.8 0.3" />
+        <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00000 -0.04910 0.04619" quat="0.00000 0.70711 0.70711 0.00000" size="0.00721 0.00802 0.01374" group="0" rgba="0.8 0.8 0.8 0.3" />
+        <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.00000 0.04159 0.05249" quat="0.00000 0.70711 0.70711 0.00000" size="0.00721 0.01021 0.01374" group="0" rgba="0.8 0.8 0.8 0.3" />
+        <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00000 0.05829 0.06027" quat="0.00000 -0.00000 0.70711 -0.70711" size="0.00655 0.00697 0.01409" group="0" rgba="0.8 0.8 0.8 0.3" />
+        <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.00000 0.07546 0.05391" quat="0.00000 0.00000 -0.90919 -0.41638" size="0.00655 0.00697 0.01409" group="0" rgba="0.8 0.8 0.8 0.3" />
+        <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.00000 0.07247 0.02824" quat="0.00000 -0.00000 -0.23224 -0.97266" size="0.00655 0.00710 0.02750" group="0" rgba="0.8 0.8 0.8 0.3" />
+        <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00013 0.05763 0.00230" quat="0.00000 -0.00000 0.92514 -0.37963" size="0.00655 0.00707 0.01007" group="0" rgba="0.8 0.8 0.8 0.3" />
+        <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.00000 -0.00134 0.07429" quat="0.00000 0.00000 1.00000 0.00000" size="0.00524 0.00598 0.01140" group="0" rgba="0.8 0.8 0.8 0.3" />
+        <geom name="a7_contact_asymmetric_00_00" type="ellipsoid" pos="0.0395955 -0.0042639 -0.0339144" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_00_01" type="ellipsoid" pos="0.0000000 0.0508326 -0.0339144" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_00_02" type="ellipsoid" pos="-0.0395955 -0.0042639 -0.0339144" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_00_03" type="ellipsoid" pos="-0.0000000 -0.0593605 -0.0339144" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_01_00" type="ellipsoid" pos="0.0409919 -0.0042639 -0.0189683" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_01_01" type="ellipsoid" pos="0.0013964 0.0508326 -0.0189683" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_01_02" type="ellipsoid" pos="-0.0381991 -0.0042639 -0.0189683" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_01_03" type="ellipsoid" pos="0.0013964 -0.0593605 -0.0189683" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_02_00" type="ellipsoid" pos="0.0418549 -0.0042639 -0.0040222" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_02_01" type="ellipsoid" pos="0.0022595 0.0508326 -0.0040222" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_02_02" type="ellipsoid" pos="-0.0373360 -0.0042639 -0.0040222" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_02_03" type="ellipsoid" pos="0.0022595 -0.0593605 -0.0040222" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_03_00" type="ellipsoid" pos="0.0418549 -0.0042639 0.0109240" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_03_01" type="ellipsoid" pos="0.0022595 0.0508326 0.0109240" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_03_02" type="ellipsoid" pos="-0.0373360 -0.0042639 0.0109240" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_03_03" type="ellipsoid" pos="0.0022595 -0.0593605 0.0109240" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_04_00" type="ellipsoid" pos="0.0409919 -0.0042639 0.0258701" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_04_01" type="ellipsoid" pos="0.0013964 0.0508326 0.0258701" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_04_02" type="ellipsoid" pos="-0.0381991 -0.0042639 0.0258701" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_04_03" type="ellipsoid" pos="0.0013964 -0.0593605 0.0258701" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_05_00" type="ellipsoid" pos="0.0395955 -0.0042639 0.0408162" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_05_01" type="ellipsoid" pos="0.0000000 0.0508326 0.0408162" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_05_02" type="ellipsoid" pos="-0.0395955 -0.0042639 0.0408162" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+        <geom name="a7_contact_asymmetric_05_03" type="ellipsoid" pos="-0.0000000 -0.0593605 0.0408162" size="0.0047515 0.0047515 0.0067937" group="0" mass="0" friction="0.95 0.3 0.1" solimp="0.998 0.998 0.001" solref="0.001 1" rgba="0.8 0.8 0.8 0.12" />
+      </body>
+      <site rgba="0 0 0 0" size="0.005" pos="0 0 -0.06" name="bottom_site" />
+      <site rgba="0 0 0 0" size="0.005" pos="0 0 0.04" name="top_site" />
+      <site rgba="0 0 0 0" size="0.005" pos="0.025 0.025 0" name="horizontal_radius_site" />
+    </body>
+  </worldbody>
+</mujoco>

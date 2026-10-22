@@ -1,0 +1,146 @@
+{
+  "schema_version": "wam_syncbench.trackA.v1",
+  "track": "A",
+  "scenario": "A2_target_receptacle_masking",
+  "variant": "container_black",
+  "description": "A2 target-receptacle masking changes the camera observations while preserving simulator state, the task prompt, and the success predicate.",
+  "expected_effect": "Mask the specified target container or placement fixture (basket, plate, cabinet, microwave, stove, or caddy) in the selected camera views.",
+  "enabled": true,
+  "save_masked_video": true,
+  "mask_source": "segmentation",
+  "target_policy": "object_names",
+  "target_objects_by_task": {
+    "libero_10:0": [
+      "basket_1"
+    ],
+    "libero_10:1": [
+      "basket_1"
+    ],
+    "libero_10:2": [
+      "flat_stove_1"
+    ],
+    "libero_10:3": [
+      "white_cabinet_1"
+    ],
+    "libero_10:4": [
+      "plate_1",
+      "plate_2"
+    ],
+    "libero_10:5": [
+      "desk_caddy_1"
+    ],
+    "libero_10:6": [
+      "plate_1"
+    ],
+    "libero_10:7": [
+      "basket_1"
+    ],
+    "libero_10:8": [
+      "flat_stove_1"
+    ],
+    "libero_10:9": [
+      "microwave_1"
+    ],
+    "libero_object:0": [
+      "basket_1"
+    ],
+    "libero_object:1": [
+      "basket_1"
+    ],
+    "libero_object:2": [
+      "basket_1"
+    ],
+    "libero_object:3": [
+      "basket_1"
+    ],
+    "libero_object:4": [
+      "basket_1"
+    ],
+    "libero_object:5": [
+      "basket_1"
+    ],
+    "libero_object:6": [
+      "basket_1"
+    ],
+    "libero_object:7": [
+      "basket_1"
+    ],
+    "libero_object:8": [
+      "basket_1"
+    ],
+    "libero_object:9": [
+      "basket_1"
+    ],
+    "libero_spatial:0": [
+      "plate_1"
+    ],
+    "libero_spatial:1": [
+      "plate_1"
+    ],
+    "libero_spatial:2": [
+      "plate_1"
+    ],
+    "libero_spatial:3": [
+      "plate_1"
+    ],
+    "libero_spatial:4": [
+      "plate_1"
+    ],
+    "libero_spatial:5": [
+      "plate_1"
+    ],
+    "libero_spatial:6": [
+      "plate_1"
+    ],
+    "libero_spatial:7": [
+      "plate_1"
+    ],
+    "libero_spatial:8": [
+      "plate_1"
+    ],
+    "libero_spatial:9": [
+      "plate_1"
+    ],
+    "libero_goal:0": [
+      "wooden_cabinet_1"
+    ],
+    "libero_goal:1": [
+      "flat_stove_1"
+    ],
+    "libero_goal:2": [
+      "wooden_cabinet_1"
+    ],
+    "libero_goal:3": [
+      "wooden_cabinet_1"
+    ],
+    "libero_goal:4": [
+      "wooden_cabinet_1"
+    ],
+    "libero_goal:5": [
+      "flat_stove_1"
+    ],
+    "libero_goal:6": [
+      "akita_black_bowl_1"
+    ],
+    "libero_goal:7": [
+      "flat_stove_1"
+    ],
+    "libero_goal:8": [
+      "plate_1"
+    ],
+    "libero_goal:9": [
+      "wine_rack_1"
+    ]
+  },
+  "views": [
+    "agentview",
+    "robot0_eye_in_hand"
+  ],
+  "fill_rgb": [
+    0,
+    0,
+    0
+  ],
+  "mask_geometry": "segmentation",
+  "dilate_px": 0
+}

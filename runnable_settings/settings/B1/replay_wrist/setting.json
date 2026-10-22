@@ -1,0 +1,25 @@
+{
+  "schema_version": "libero_vpro.runnable_setting.v1",
+  "setting_id": "B1.replay_wrist",
+  "category": "B1",
+  "trials_per_case": 10,
+  "backend": "b1_condition",
+  "source_roots": [
+    "source/B1_camera_staleness",
+    "source/adapted"
+  ],
+  "config_files": [
+    "source/B1_camera_staleness/configs/trackB_B1_replayv2_wrist.json"
+  ],
+  "asset_contract_schema": "libero_vpro.asset_contract.v1",
+  "asset_mode": "runtime_observation_transform",
+  "asset_roots": [
+    "source/B1_camera_staleness/configs",
+    "source/adapted"
+  ],
+  "external_dependencies": [
+    "unmodified LIBERO bddl_files and init_files",
+    "MuJoCo and the selected model backend/checkpoint"
+  ],
+  "full_result_source": "external/full_results/by_experiment_subclass_model/B1/replay_wrist"
+}

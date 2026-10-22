@@ -1,0 +1,16 @@
+{
+  "schema_version": "wam_syncbench.trackA_A4_phase_targets.v1",
+  "branch": "A4_phase_3replan_once",
+  "phases": [
+    "initial",
+    "reach",
+    "pre_grasp",
+    "grasp",
+    "transport",
+    "pre_place",
+    "release"
+  ],
+  "replan_count": 3,
+  "once_per_episode": true,
+  "note": "A4 uses a shared phase detector only to identify the phase; the corruption schedule is A4-specific. Each phase is a separate smoke subcase."
+}

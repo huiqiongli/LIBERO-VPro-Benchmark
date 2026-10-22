@@ -1,0 +1,1 @@
+{"schema_version":"wam_syncbench.trackA.v1","scenario":"A4_phase_3replan_once","trigger":"phase_pulse","phases":["release"],"replan_count":3,"once":true,"phase_diagnostics":true}

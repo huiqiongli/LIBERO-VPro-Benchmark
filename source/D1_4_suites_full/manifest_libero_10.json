@@ -1,0 +1,205 @@
+{
+  "suite": "libero_10",
+  "conditions": [
+    "same_category",
+    "same_color",
+    "same_shape",
+    "same_affordance",
+    "same_position",
+    "trajectory"
+  ],
+  "task_count": 10,
+  "case_count": 60,
+  "tasks": [
+    {
+      "task_id": 0,
+      "task_name": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+      "instruction": "LIVING ROOM SCENE2 put both the alphabet soup and the tomato sauce in the basket",
+      "target": "alphabet_soup_1",
+      "target_category": "alphabet_soup",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_00/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_00/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_00/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_00/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_00/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_00/trajectory.json"
+      }
+    },
+    {
+      "task_id": 1,
+      "task_name": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket",
+      "instruction": "LIVING ROOM SCENE2 put both the cream cheese box and the butter in the basket",
+      "target": "cream_cheese_1",
+      "target_category": "cream_cheese",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_01/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_01/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_01/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_01/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_01/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_01/trajectory.json"
+      }
+    },
+    {
+      "task_id": 2,
+      "task_name": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+      "instruction": "KITCHEN SCENE3 turn on the stove and put the moka pot on it",
+      "target": "moka_pot_1",
+      "target_category": "moka_pot",
+      "target_is_fixture": false,
+      "receiver": "flat_stove_1",
+      "receiver_category": "flat_stove",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_02/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_02/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_02/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_02/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_02/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_02/trajectory.json"
+      }
+    },
+    {
+      "task_id": 3,
+      "task_name": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+      "instruction": "KITCHEN SCENE4 put the black bowl in the bottom drawer of the cabinet and close it",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "white_cabinet_1",
+      "receiver_category": "white_cabinet",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_03/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_03/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_03/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_03/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_03/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_03/trajectory.json"
+      }
+    },
+    {
+      "task_id": 4,
+      "task_name": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+      "instruction": "LIVING ROOM SCENE5 put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "target": "porcelain_mug_1",
+      "target_category": "porcelain_mug",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_04/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_04/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_04/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_04/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_04/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_04/trajectory.json"
+      }
+    },
+    {
+      "task_id": 5,
+      "task_name": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+      "instruction": "STUDY SCENE1 pick up the book and place it in the back compartment of the caddy",
+      "target": "black_book_1",
+      "target_category": "black_book",
+      "target_is_fixture": false,
+      "receiver": "desk_caddy_1",
+      "receiver_category": "desk_caddy",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_05/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_05/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_05/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_05/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_05/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_05/trajectory.json"
+      }
+    },
+    {
+      "task_id": 6,
+      "task_name": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+      "instruction": "LIVING ROOM SCENE6 put the white mug on the plate and put the chocolate pudding to the right of the plate",
+      "target": "porcelain_mug_1",
+      "target_category": "porcelain_mug",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_06/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_06/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_06/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_06/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_06/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_06/trajectory.json"
+      }
+    },
+    {
+      "task_id": 7,
+      "task_name": "LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket",
+      "instruction": "LIVING ROOM SCENE1 put both the alphabet soup and the cream cheese box in the basket",
+      "target": "alphabet_soup_1",
+      "target_category": "alphabet_soup",
+      "target_is_fixture": false,
+      "receiver": "basket_1",
+      "receiver_category": "basket",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_07/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_07/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_07/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_07/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_07/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_07/trajectory.json"
+      }
+    },
+    {
+      "task_id": 8,
+      "task_name": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+      "instruction": "KITCHEN SCENE8 put both moka pots on the stove",
+      "target": "moka_pot_1",
+      "target_category": "moka_pot",
+      "target_is_fixture": false,
+      "receiver": "flat_stove_1",
+      "receiver_category": "flat_stove",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_08/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_08/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_08/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_08/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_08/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_08/trajectory.json"
+      }
+    },
+    {
+      "task_id": 9,
+      "task_name": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+      "instruction": "KITCHEN SCENE6 put the yellow and white mug in the microwave and close it",
+      "target": "white_yellow_mug_1",
+      "target_category": "white_yellow_mug",
+      "target_is_fixture": false,
+      "receiver": "microwave_1",
+      "receiver_category": "microwave",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_09/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_09/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_09/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_09/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_09/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_10/task_09/trajectory.json"
+      }
+    }
+  ]
+}

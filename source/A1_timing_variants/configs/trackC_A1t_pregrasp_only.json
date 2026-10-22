@@ -1,0 +1,10 @@
+{
+  "schema_version": "wam_syncbench.trackC.v1",
+  "scenario": "A1_timing_pregrasp_only",
+  "trigger": "grasp_pulse",
+  "grasp_pulse": {
+    "side": "before"
+  },
+  "pre_grasp_band": 0.25,
+  "description": "\u6293\u53d6\u524d\u906e(pre_grasp,band=0.25\u66f4\u65e9\u66f4\u957f)"
+}

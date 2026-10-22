@@ -1,0 +1,14 @@
+{
+  "schema_version": "wam_syncbench.phase_validation.v2",
+  "scenario": "A4_phase_detector_40task_validation",
+  "enabled": true,
+  "trigger": "always",
+  "phase_diagnostics": true,
+  "phase_detector": "task_aware_v2",
+  "phase_task_map": "phase_task_map_40.json",
+  "initial_hold_frames": 0,
+  "grasp_hold_frames": 24,
+  "release_hold_frames": 24,
+  "pre_grasp_band": 0.20,
+  "pre_place_progress": 0.70
+}

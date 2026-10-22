@@ -1,0 +1,10 @@
+{
+  "schema_version": "wam_syncbench.cross_model.v1",
+  "scenario": "A5_agent_plus_white_wrist",
+  "enabled": true,
+  "save_masked_video": true,
+  "mask_source": "center_rect",
+  "mask_fraction": 1.0,
+  "fill_rgb": [255, 255, 255],
+  "views": ["robot0_eye_in_hand"]
+}

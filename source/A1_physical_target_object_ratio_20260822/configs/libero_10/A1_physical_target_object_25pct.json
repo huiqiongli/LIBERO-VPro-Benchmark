@@ -1,0 +1,804 @@
+{
+  "schema_version": "wam_syncbench.A1.physical_surface.v1",
+  "track": "A1",
+  "scenario": "A1_physical_target_object_ratio",
+  "variant": "physical_surface_black_25pct",
+  "description": "Blacken the requested fraction of the task target object's complete three-dimensional render surface. A contiguous camera-aligned slice is cut from the full surface, including inner, rear, initially hidden, and later revealed regions that fall inside that slice.",
+  "status": "implemented",
+  "enabled": true,
+  "suite": "libero_10",
+  "coverage_definition": "complete_3d_render_surface_area",
+  "coverage": 0.25,
+  "selection_axis": "agentview_aligned_complete_surface_slice",
+  "render_edit_only": true,
+  "collision_unchanged": true,
+  "pose_unchanged": true,
+  "observation_pixel_masking": false,
+  "require_task_match": true,
+  "task_env_edits": [
+    {
+      "suite": "libero_10",
+      "task_id": 0,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "alphabet_soup_1",
+          "coverage": 0.25,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "alphabet_soup_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.25,
+            "actual_surface_coverage": 0.24999999999971806,
+            "surface_area_total": 0.0257229737302599,
+            "surface_area_black": 0.006430743432557723,
+            "selected_face_count": 5498,
+            "total_face_count": 13859,
+            "selection_axis": "screen_y",
+            "screen_cutoff_px": 137.55407761748768,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 564,
+            "predicted_agentview_black_pixels": 237,
+            "predicted_agentview_visible_coverage": 0.42021276595744683,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        },
+        {
+          "object": "tomato_sauce_1",
+          "coverage": 0.25,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "tomato_sauce_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.25,
+            "actual_surface_coverage": 0.25000000000029216,
+            "surface_area_total": 0.025757725868253846,
+            "surface_area_black": 0.006439431467070987,
+            "selected_face_count": 11101,
+            "total_face_count": 28588,
+            "selection_axis": "screen_y",
+            "screen_cutoff_px": 128.29986112285457,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 798,
+            "predicted_agentview_black_pixels": 229,
+            "predicted_agentview_visible_coverage": 0.2869674185463659,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "alphabet_soup_1",
+          "category": "alphabet_soup",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_00/alphabet_soup_1/25pct/alphabet_soup.xml"
+        },
+        {
+          "object": "tomato_sauce_1",
+          "category": "tomato_sauce",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_00/tomato_sauce_1/25pct/tomato_sauce.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 1,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "cream_cheese_1",
+          "coverage": 0.25,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "cream_cheese_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.25,
+            "actual_surface_coverage": 0.24999999999962685,
+            "surface_area_total": 0.010930759279131156,
+            "surface_area_black": 0.00273268981977871,
+            "selected_face_count": 4523,
+            "total_face_count": 16237,
+            "selection_axis": "screen_y",
+            "screen_cutoff_px": 194.85974187688896,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 630,
+            "predicted_agentview_black_pixels": 146,
+            "predicted_agentview_visible_coverage": 0.23174603174603176,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        },
+        {
+          "object": "butter_1",
+          "coverage": 0.25,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "butter_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.25,
+            "actual_surface_coverage": 0.24999999999971523,
+            "surface_area_total": 0.00947523595035787,
+            "surface_area_black": 0.0023688089875867693,
+            "selected_face_count": 4175,
+            "total_face_count": 14395,
+            "selection_axis": "screen_y",
+            "screen_cutoff_px": 182.38003002986795,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 424,
+            "predicted_agentview_black_pixels": 112,
+            "predicted_agentview_visible_coverage": 0.2641509433962264,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "cream_cheese_1",
+          "category": "cream_cheese",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_01/cream_cheese_1/25pct/cream_cheese.xml"
+        },
+        {
+          "object": "butter_1",
+          "category": "butter",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_01/butter_1/25pct/butter.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 2,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "moka_pot_1",
+          "coverage": 0.25,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "moka_pot_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.25,
+            "actual_surface_coverage": 0.25000000000017697,
+            "surface_area_total": 0.052346407305367604,
+            "surface_area_black": 0.013086601826351166,
+            "selected_face_count": 1417,
+            "total_face_count": 2194,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 115.26717613103115,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 1414,
+            "predicted_agentview_black_pixels": 314,
+            "predicted_agentview_visible_coverage": 0.22206506364922207,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "moka_pot_1",
+          "category": "moka_pot",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_02/moka_pot_1/25pct/moka_pot.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 3,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "coverage": 0.25,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "akita_black_bowl_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.25,
+            "actual_surface_coverage": 0.2499999999998678,
+            "surface_area_total": 0.03523426958638165,
+            "surface_area_black": 0.008808567396590755,
+            "selected_face_count": 11313,
+            "total_face_count": 42522,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 97.61998392349429,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 1026,
+            "predicted_agentview_black_pixels": 247,
+            "predicted_agentview_visible_coverage": 0.24074074074074073,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "akita_black_bowl_1",
+          "category": "akita_black_bowl",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_03/akita_black_bowl_1/25pct/akita_black_bowl.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 4,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "white_yellow_mug_1",
+          "coverage": 0.25,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "white_yellow_mug_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.25,
+            "actual_surface_coverage": 0.24999999999996897,
+            "surface_area_total": 0.06384874399441244,
+            "surface_area_black": 0.01596218599860113,
+            "selected_face_count": 3481,
+            "total_face_count": 8454,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 153.57810080530038,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 1911,
+            "predicted_agentview_black_pixels": 410,
+            "predicted_agentview_visible_coverage": 0.21454735740450026,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        },
+        {
+          "object": "porcelain_mug_1",
+          "coverage": 0.25,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "porcelain_mug_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.25,
+            "actual_surface_coverage": 0.2499999999999988,
+            "surface_area_total": 0.06908671011274903,
+            "surface_area_black": 0.017271677528187174,
+            "selected_face_count": 4410,
+            "total_face_count": 16644,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 52.68720602722869,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 1787,
+            "predicted_agentview_black_pixels": 375,
+            "predicted_agentview_visible_coverage": 0.2098489087856743,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "white_yellow_mug_1",
+          "category": "white_yellow_mug",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_04/white_yellow_mug_1/25pct/white_yellow_mug.xml"
+        },
+        {
+          "object": "porcelain_mug_1",
+          "category": "porcelain_mug",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_04/porcelain_mug_1/25pct/porcelain_mug.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 5,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "black_book_1",
+          "coverage": 0.25,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "black_book_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.25,
+            "actual_surface_coverage": 0.25000000000013334,
+            "surface_area_total": 0.43503817115543575,
+            "surface_area_black": 0.10875954278891693,
+            "selected_face_count": 3728,
+            "total_face_count": 7160,
+            "selection_axis": "screen_y",
+            "screen_cutoff_px": 134.3029765352337,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 1197,
+            "predicted_agentview_black_pixels": 396,
+            "predicted_agentview_visible_coverage": 0.3308270676691729,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "black_book_1",
+          "category": "black_book",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_05/black_book_1/25pct/black_book.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 6,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "chocolate_pudding_1",
+          "coverage": 0.25,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "chocolate_pudding_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.25,
+            "actual_surface_coverage": 0.24999999999947667,
+            "surface_area_total": 0.014849524068588032,
+            "surface_area_black": 0.003712381017139237,
+            "selected_face_count": 4635,
+            "total_face_count": 18054,
+            "selection_axis": "screen_y",
+            "screen_cutoff_px": 147.5718118049264,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 542,
+            "predicted_agentview_black_pixels": 154,
+            "predicted_agentview_visible_coverage": 0.28413284132841327,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        },
+        {
+          "object": "porcelain_mug_1",
+          "coverage": 0.25,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "porcelain_mug_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.25,
+            "actual_surface_coverage": 0.24999999999977338,
+            "surface_area_total": 0.06908671011274901,
+            "surface_area_black": 0.017271677528171596,
+            "selected_face_count": 4427,
+            "total_face_count": 16644,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 60.64220453986797,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 1756,
+            "predicted_agentview_black_pixels": 368,
+            "predicted_agentview_visible_coverage": 0.20956719817767655,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "chocolate_pudding_1",
+          "category": "chocolate_pudding",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_06/chocolate_pudding_1/25pct/chocolate_pudding.xml"
+        },
+        {
+          "object": "porcelain_mug_1",
+          "category": "porcelain_mug",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_06/porcelain_mug_1/25pct/porcelain_mug.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 7,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "alphabet_soup_1",
+          "coverage": 0.25,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "alphabet_soup_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.25,
+            "actual_surface_coverage": 0.25000000000047423,
+            "surface_area_total": 0.025722973730259897,
+            "surface_area_black": 0.006430743432577173,
+            "selected_face_count": 5282,
+            "total_face_count": 13859,
+            "selection_axis": "screen_y",
+            "screen_cutoff_px": 170.65842923423605,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 1045,
+            "predicted_agentview_black_pixels": 325,
+            "predicted_agentview_visible_coverage": 0.31100478468899523,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        },
+        {
+          "object": "cream_cheese_1",
+          "coverage": 0.25,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "cream_cheese_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.25,
+            "actual_surface_coverage": 0.24999999999996222,
+            "surface_area_total": 0.010930759279131157,
+            "surface_area_black": 0.0027326898197823765,
+            "selected_face_count": 4676,
+            "total_face_count": 16237,
+            "selection_axis": "screen_y",
+            "screen_cutoff_px": 138.03610201574065,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 290,
+            "predicted_agentview_black_pixels": 84,
+            "predicted_agentview_visible_coverage": 0.2896551724137931,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "alphabet_soup_1",
+          "category": "alphabet_soup",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_07/alphabet_soup_1/25pct/alphabet_soup.xml"
+        },
+        {
+          "object": "cream_cheese_1",
+          "category": "cream_cheese",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_07/cream_cheese_1/25pct/cream_cheese.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 8,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "moka_pot_1",
+          "coverage": 0.25,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "moka_pot_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.25,
+            "actual_surface_coverage": 0.24999999999938677,
+            "surface_area_total": 0.052346407305367604,
+            "surface_area_black": 0.0130866018263098,
+            "selected_face_count": 1406,
+            "total_face_count": 2194,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 202.12336911948626,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 1279,
+            "predicted_agentview_black_pixels": 312,
+            "predicted_agentview_visible_coverage": 0.2439405785770133,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        },
+        {
+          "object": "moka_pot_2",
+          "coverage": 0.25,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "moka_pot_2",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.25,
+            "actual_surface_coverage": 0.24999999999994624,
+            "surface_area_total": 0.052346407305367604,
+            "surface_area_black": 0.013086601826339087,
+            "selected_face_count": 1426,
+            "total_face_count": 2194,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 132.74406820547213,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 1438,
+            "predicted_agentview_black_pixels": 305,
+            "predicted_agentview_visible_coverage": 0.2121001390820584,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "moka_pot_1",
+          "category": "moka_pot",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_08/moka_pot_1/25pct/moka_pot.xml"
+        },
+        {
+          "object": "moka_pot_2",
+          "category": "moka_pot",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_08/moka_pot_2/25pct/moka_pot.xml"
+        }
+      ]
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 9,
+      "object_surface_black_fraction_overrides": [
+        {
+          "object": "white_yellow_mug_1",
+          "coverage": 0.25,
+          "coverage_definition": "complete_3d_render_surface_area",
+          "selection_axis": "agentview_aligned_complete_surface_slice",
+          "rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "require_exact": true,
+          "surface_overlay_prefix": "a1_",
+          "precompiled_surface_audit": {
+            "object": "white_yellow_mug_1",
+            "mode": "precompiled_visual_surface_partition",
+            "coverage_definition": "complete_3d_render_surface_area",
+            "requested_surface_coverage": 0.25,
+            "actual_surface_coverage": 0.2500000000004127,
+            "surface_area_total": 0.06384874399441244,
+            "surface_area_black": 0.01596218599862946,
+            "selected_face_count": 3481,
+            "total_face_count": 8454,
+            "selection_axis": "screen_x",
+            "screen_cutoff_px": 116.39784727536151,
+            "selection_side": "low_coordinate_prefix",
+            "baseline_agentview_target_pixels": 1387,
+            "predicted_agentview_black_pixels": 328,
+            "predicted_agentview_visible_coverage": 0.23648161499639508,
+            "surface_enumeration": "mujoco_render_geometries",
+            "brightness_independent_surface_enumeration": true,
+            "includes_initially_hidden_surface": true,
+            "includes_inner_and_rear_surface": true,
+            "collision_unchanged": true,
+            "pose_unchanged": true
+          }
+        }
+      ],
+      "object_scale_overrides": [
+        {
+          "object": "white_yellow_mug_1",
+          "category": "white_yellow_mug",
+          "scale": 1.0,
+          "scale_mode": "precompile_xml",
+          "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_09/white_yellow_mug_1/25pct/white_yellow_mug.xml"
+        }
+      ]
+    }
+  ]
+}

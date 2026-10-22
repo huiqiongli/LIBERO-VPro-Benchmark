@@ -1,0 +1,29 @@
+{
+  "schema_version": "wam_syncbench.phase_decisions.v1",
+  "suite": "libero_object",
+  "model": "lingbot_va",
+  "task_id": 3,
+  "scenario": "grasp_before_3_model_decisions",
+  "enabled": true,
+  "trigger": "decision_indices",
+  "decision_indices": [
+    1,
+    2,
+    3
+  ],
+  "random_replans": {
+    "indices": [
+      1,
+      2,
+      3
+    ]
+  },
+  "calibration": {
+    "event": "grasp",
+    "side": "before",
+    "event_decision": 4,
+    "requested_decisions": 3,
+    "actual_decisions": 3,
+    "index_semantics": "zero-based consumer inference index"
+  }
+}

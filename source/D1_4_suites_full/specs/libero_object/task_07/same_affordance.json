@@ -1,0 +1,96 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_affordance",
+  "suite": "libero_object",
+  "benchmark": "libero_object",
+  "task_id": 7,
+  "task_name": "pick_up_the_milk_and_place_it_in_the_basket",
+  "instruction": "pick up the milk and place it in the basket",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_object/pick_up_the_milk_and_place_it_in_the_basket.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_object/task_07/same_affordance.bddl",
+  "definition": {
+    "zh": "同可供性干扰物",
+    "definition": "不同类别的真实木托盘，具有和目标篮子相同的承放/容纳功能。",
+    "target": "basket_1",
+    "target_category": "basket",
+    "distractor": "wooden_tray_1",
+    "category": "wooden_tray",
+    "construction": "different_category_same_function"
+  },
+  "target_geometry": {
+    "collision_aabb_extents_m": [
+      0.0525,
+      0.05307,
+      0.13119
+    ],
+    "top_offset_from_body_m": 0.06144,
+    "mass_kg": 0.03166591,
+    "friction": [
+      0.95,
+      0.3,
+      0.1
+    ],
+    "calibration_init_state": 0
+  },
+  "settle_steps": 18,
+  "object_scale_overrides": [
+    {
+      "object": "wooden_tray_1",
+      "category": "wooden_tray",
+      "scale": 0.68,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/shared/wooden_tray_scaled.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "wooden_tray_1",
+      "relative_to": "basket_1",
+      "candidate_offsets": [
+        [
+          0.0,
+          0.2,
+          0.0
+        ],
+        [
+          0.2,
+          0.0,
+          0.0
+        ],
+        [
+          -0.2,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.2,
+          0.0
+        ]
+      ],
+      "candidate_selection": "max_clearance",
+      "avoid_objects": [
+        "milk_1",
+        "basket_1",
+        "cream_cheese_1",
+        "tomato_sauce_1",
+        "butter_1",
+        "orange_juice_1",
+        "chocolate_pudding_1"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.32,
+          0.32
+        ],
+        [
+          -0.32,
+          0.34
+        ]
+      ],
+      "min_distance_from_others": 0.045,
+      "z_from": "basket_1"
+    }
+  ]
+}

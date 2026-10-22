@@ -1,0 +1,22 @@
+{
+  "schema_version": "wam_syncbench.d2.case.v1",
+  "status": "implemented",
+  "track": "D2",
+  "suite": "libero_10",
+  "task_id": 9,
+  "instruction": "KITCHEN SCENE6 put the yellow and white mug in the microwave and close it",
+  "target": "white_yellow_mug_1",
+  "visual_input_contract": "official_dual_camera",
+  "perturbation_scope": "physical_simulator_state_full_episode",
+  "case_id": "libero_10__t09__articulation_precondition__s20",
+  "subtask": "articulation_precondition",
+  "severity_pct": 20,
+  "normalized_articulation_overrides": [
+    {
+      "joint": "microwave_1_microjoint",
+      "joint_family": "microwave_door",
+      "open_fraction": 0.2
+    }
+  ],
+  "case_path": "/home/huiqiongli/Sim/release/source/D2_D3_state_20260823/cases/D2/libero_10/libero_10__t09__articulation_precondition__s20.json"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "wam_syncbench.cross_model.v1",
+  "scenario": "C2_delay5_agent",
+  "enabled": true,
+  "camera": {
+    "agentview": {
+      "mode": "delay",
+      "lag": 5
+    }
+  }
+}

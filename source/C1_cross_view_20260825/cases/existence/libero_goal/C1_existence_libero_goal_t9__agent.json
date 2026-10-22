@@ -1,0 +1,38 @@
+{
+  "schema_version": "wam_syncbench.c1_cross_view.v2",
+  "status": "validated_semantic_definition",
+  "track": "C1",
+  "subtask": "existence",
+  "case_id": "C1_existence_libero_goal_t9__agent",
+  "semantic_case_id": "C1_existence_libero_goal_t9",
+  "suite": "libero_goal",
+  "task_id": 9,
+  "instruction": "put the wine bottle on the rack",
+  "bddl_file": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_goal/put_the_wine_bottle_on_the_rack.bddl",
+  "direction": "agent",
+  "enabled": true,
+  "observation_mode": "perturbed",
+  "target_policy": "object_edit",
+  "mask_source": "object_edit",
+  "render_mode": "temporary_counterfactual_simulator_branch",
+  "views": [
+    "agentview"
+  ],
+  "corrupted_view": "agentview",
+  "truth_view": "robot0_eye_in_hand",
+  "target": "wine_bottle_1",
+  "object_edits": [
+    {
+      "op": "disappear",
+      "object": "wine_bottle_1"
+    }
+  ],
+  "save_masked_video": true,
+  "visual_input_contract": "official_dual_camera",
+  "simulator_state_contract": {
+    "physical_rollout_unchanged": true,
+    "temporary_edit_restored_after_render": true
+  },
+  "source_validation_status": "existing_full",
+  "existing_scenario": "trackC_C3ext_libero_goal_t9_agent-libero_goal-t9"
+}

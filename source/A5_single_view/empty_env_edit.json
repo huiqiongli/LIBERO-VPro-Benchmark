@@ -1,0 +1,5 @@
+{
+  "schema_version": "a5_no_environment_edit.v1",
+  "enabled": false,
+  "description": "A5 changes only the model camera input; the simulator is clean."
+}

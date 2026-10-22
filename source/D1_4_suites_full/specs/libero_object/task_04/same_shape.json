@@ -1,0 +1,108 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_shape",
+  "suite": "libero_object",
+  "benchmark": "libero_object",
+  "task_id": 4,
+  "task_name": "pick_up_the_ketchup_and_place_it_in_the_basket",
+  "instruction": "pick up the ketchup and place it in the basket",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_object/task_04/same_shape.bddl",
+  "definition": {
+    "zh": "同形状干扰物",
+    "definition": "匹配目标轮廓和尺度、具有独立功能结构的不同语义类别代理。",
+    "target": "ketchup_1",
+    "target_category": "ketchup",
+    "distractor": "wine_bottle_1",
+    "category": "wine_bottle",
+    "proxy_identity": "bowling_pin",
+    "proxy_label": "白色红环保龄球瓶",
+    "shape_kind": "wine_bottle",
+    "semantic_relation": "different_category_same_outline",
+    "target_extent_match": "custom proxy calibrated to target collision AABB",
+    "construction": "different_category_outline_matched_proxy",
+    "appearance_change": "native_proxy_identity"
+  },
+  "target_geometry": {
+    "collision_aabb_extents_m": [
+      0.03676,
+      0.05622,
+      0.14561
+    ],
+    "top_offset_from_body_m": 0.07319,
+    "mass_kg": 0.02321683,
+    "friction": [
+      0.95,
+      0.3,
+      0.1
+    ],
+    "calibration_init_state": 0
+  },
+  "settle_steps": 18,
+  "object_scale_overrides": [
+    {
+      "object": "wine_bottle_1",
+      "category": "wine_bottle",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/libero_object/task_04/same_shape_bowling_pin.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "wine_bottle_1",
+      "relative_to": "ketchup_1",
+      "candidate_offsets": [
+        [
+          0.0,
+          0.075,
+          0.0
+        ],
+        [
+          0.075,
+          0.0,
+          0.0
+        ],
+        [
+          -0.075,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.075,
+          0.0
+        ]
+      ],
+      "candidate_selection": "max_clearance",
+      "avoid_objects": [
+        "ketchup_1",
+        "basket_1",
+        "bbq_sauce_1",
+        "salad_dressing_1",
+        "alphabet_soup_1",
+        "cream_cheese_1",
+        "milk_1"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.32,
+          0.32
+        ],
+        [
+          -0.32,
+          0.34
+        ]
+      ],
+      "min_distance_from_others": 0.045,
+      "z_from": "ketchup_1",
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

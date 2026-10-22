@@ -1,0 +1,38 @@
+{
+  "schema_version": "wam_syncbench.c1_cross_view.v2",
+  "status": "validated_semantic_definition",
+  "track": "C1",
+  "subtask": "existence",
+  "case_id": "C1_existence_libero_10_t3__wrist",
+  "semantic_case_id": "C1_existence_libero_10_t3",
+  "suite": "libero_10",
+  "task_id": 3,
+  "instruction": "put the black bowl in the bottom drawer of the cabinet and close it",
+  "bddl_file": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.bddl",
+  "direction": "wrist",
+  "enabled": true,
+  "observation_mode": "perturbed",
+  "target_policy": "object_edit",
+  "mask_source": "object_edit",
+  "render_mode": "temporary_counterfactual_simulator_branch",
+  "views": [
+    "robot0_eye_in_hand"
+  ],
+  "corrupted_view": "robot0_eye_in_hand",
+  "truth_view": "agentview",
+  "target": "akita_black_bowl_1",
+  "object_edits": [
+    {
+      "op": "disappear",
+      "object": "akita_black_bowl_1"
+    }
+  ],
+  "save_masked_video": true,
+  "visual_input_contract": "official_dual_camera",
+  "simulator_state_contract": {
+    "physical_rollout_unchanged": true,
+    "temporary_edit_restored_after_render": true
+  },
+  "source_validation_status": "existing_full",
+  "existing_scenario": "trackC_C3exist2_task3_agent-libero_10-t3"
+}

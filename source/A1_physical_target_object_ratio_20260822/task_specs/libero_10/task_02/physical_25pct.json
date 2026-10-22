@@ -1,0 +1,67 @@
+{
+  "schema_version": "wam_syncbench.A1.physical_surface.v1",
+  "track": "A1",
+  "scenario": "A1_physical_target_object_ratio",
+  "variant": "physical_surface_black_25pct",
+  "description": "Blacken the requested fraction of the task target object's complete three-dimensional render surface. A contiguous camera-aligned slice is cut from the full surface, including inner, rear, initially hidden, and later revealed regions that fall inside that slice.",
+  "status": "implemented",
+  "enabled": true,
+  "suite": "libero_10",
+  "coverage_definition": "complete_3d_render_surface_area",
+  "coverage": 0.25,
+  "selection_axis": "agentview_aligned_complete_surface_slice",
+  "render_edit_only": true,
+  "collision_unchanged": true,
+  "pose_unchanged": true,
+  "observation_pixel_masking": false,
+  "require_task_match": true,
+  "task_id": 2,
+  "object_surface_black_fraction_overrides": [
+    {
+      "object": "moka_pot_1",
+      "coverage": 0.25,
+      "coverage_definition": "complete_3d_render_surface_area",
+      "selection_axis": "agentview_aligned_complete_surface_slice",
+      "rgba": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "require_exact": true,
+      "surface_overlay_prefix": "a1_",
+      "precompiled_surface_audit": {
+        "object": "moka_pot_1",
+        "mode": "precompiled_visual_surface_partition",
+        "coverage_definition": "complete_3d_render_surface_area",
+        "requested_surface_coverage": 0.25,
+        "actual_surface_coverage": 0.25000000000017697,
+        "surface_area_total": 0.052346407305367604,
+        "surface_area_black": 0.013086601826351166,
+        "selected_face_count": 1417,
+        "total_face_count": 2194,
+        "selection_axis": "screen_x",
+        "screen_cutoff_px": 115.26717613103115,
+        "selection_side": "low_coordinate_prefix",
+        "baseline_agentview_target_pixels": 1414,
+        "predicted_agentview_black_pixels": 314,
+        "predicted_agentview_visible_coverage": 0.22206506364922207,
+        "surface_enumeration": "mujoco_render_geometries",
+        "brightness_independent_surface_enumeration": true,
+        "includes_initially_hidden_surface": true,
+        "includes_inner_and_rear_surface": true,
+        "collision_unchanged": true,
+        "pose_unchanged": true
+      }
+    }
+  ],
+  "object_scale_overrides": [
+    {
+      "object": "moka_pot_1",
+      "category": "moka_pot",
+      "scale": 1.0,
+      "scale_mode": "precompile_xml",
+      "xml_path": "/home/huiqiongli/Sim/release/assets/A1_target_object/precompiled_variants_full_surface_v3/libero_10/task_02/moka_pot_1/25pct/moka_pot.xml"
+    }
+  ]
+}

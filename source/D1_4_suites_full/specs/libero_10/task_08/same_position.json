@@ -1,0 +1,97 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_position",
+  "suite": "libero_10",
+  "benchmark": "libero_10",
+  "task_id": 8,
+  "task_name": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+  "instruction": "KITCHEN SCENE8 put both moka pots on the stove",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_10/task_08/same_position.bddl",
+  "target": "moka_pot_1",
+  "target_category": "moka_pot",
+  "definition": {
+    "zh": "同位置干扰物",
+    "definition": "把原目标物向旁边挪动，并在目标原始位置放置与任务无关的不同类别实体。",
+    "target": "moka_pot_1",
+    "target_category": "moka_pot",
+    "distractor": "trajectory_block_d1_same_position",
+    "category": "trajectory_block",
+    "construction": "move_target_and_replace_original_position"
+  },
+  "settle_steps": 18,
+  "object_scale_overrides": [
+    {
+      "object": "trajectory_block_d1_same_position",
+      "category": "trajectory_block",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/shared/same_position_block.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "same_position_replacements": [
+    {
+      "target": "moka_pot_1",
+      "replacement": "trajectory_block_d1_same_position",
+      "candidate_offsets": [
+        [
+          0.0,
+          0.18,
+          0.0
+        ],
+        [
+          0.18,
+          0.0,
+          0.0
+        ],
+        [
+          -0.18,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.18,
+          0.0
+        ]
+      ],
+      "candidate_selection": "max_clearance",
+      "avoid_objects": [
+        "moka_pot_2",
+        "kitchen_table",
+        "flat_stove_1"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.36,
+          0.36
+        ],
+        [
+          -0.35,
+          0.35
+        ]
+      ],
+      "min_distance_from_others": 0.055,
+      "require_min_distance": true,
+      "replacement_preserve_support_z": false
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "trajectory_block_d1_same_position",
+      "relative_to": "trajectory_block_d1_same_position",
+      "offset": [
+        0.0,
+        0.0,
+        0.02
+      ],
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

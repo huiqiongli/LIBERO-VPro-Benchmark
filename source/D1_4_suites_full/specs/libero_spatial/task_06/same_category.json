@@ -1,0 +1,92 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_category",
+  "suite": "libero_spatial",
+  "benchmark": "libero_spatial",
+  "task_id": 6,
+  "task_name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+  "instruction": "pick up the black bowl next to the cookie box and place it on the plate",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_spatial/task_06/same_category.bddl",
+  "target": "akita_black_bowl_1",
+  "target_category": "akita_black_bowl",
+  "definition": {
+    "zh": "同类别干扰物",
+    "definition": "保持与目标完全相同的类别和几何结构，但使用明显不同的颜色，并紧挨目标放置。",
+    "target": "akita_black_bowl_1",
+    "target_category": "akita_black_bowl",
+    "distractor": "akita_black_bowl_d1_same_category",
+    "category": "akita_black_bowl",
+    "construction": "same_category_exact_geometry_recolored",
+    "appearance_change": "color_changed",
+    "color_tint_rgba": [
+      0.18,
+      0.88,
+      0.25,
+      1.0
+    ]
+  },
+  "settle_steps": 18,
+  "object_scale_overrides": [
+    {
+      "object": "akita_black_bowl_d1_same_category",
+      "category": "akita_black_bowl",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/shared/same_shape/akita_black_bowl/46_224_64/akita_black_bowl_d1_exact_shape_color_copy.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "akita_black_bowl_d1_same_category",
+      "relative_to": "akita_black_bowl_1",
+      "candidate_offsets": [
+        [
+          0.0,
+          0.12,
+          0.0
+        ],
+        [
+          0.12,
+          0.0,
+          0.0
+        ],
+        [
+          -0.12,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.12,
+          0.0
+        ]
+      ],
+      "candidate_selection": "max_clearance",
+      "avoid_objects": [
+        "akita_black_bowl_1",
+        "akita_black_bowl_2",
+        "cookies_1",
+        "glazed_rim_porcelain_ramekin_1",
+        "plate_1",
+        "main_table",
+        "wooden_cabinet_1",
+        "flat_stove_1"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.48,
+          0.48
+        ],
+        [
+          -0.36,
+          0.38
+        ]
+      ],
+      "min_distance_from_others": 0.045,
+      "z_from": "akita_black_bowl_1",
+      "quat_from": "akita_black_bowl_1"
+    }
+  ]
+}

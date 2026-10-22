@@ -1,0 +1,15 @@
+{
+  "schema_version": "wam_syncbench.clean_baseline_case.v1",
+  "track": "CLEAN",
+  "subtask": "clean_baseline",
+  "condition": "clean",
+  "observation_mode": "clean",
+  "mechanism": "none",
+  "case_id": "clean__libero_10__task04",
+  "suite": "libero_10",
+  "task_id": 4,
+  "instruction_source": "LIBERO task language",
+  "environment_edit": false,
+  "observation_perturbation": false,
+  "decision_perturbation": false
+}

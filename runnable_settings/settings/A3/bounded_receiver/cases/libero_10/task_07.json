@@ -1,0 +1,32 @@
+{
+  "schema_version": "wam_syncbench.trackA.a3.blur.v1",
+  "scenario": "A3_bounded_receiver_complete_opening_world_anchored_blur",
+  "enabled": true,
+  "occlusion_space": "world_anchored_camera_blur",
+  "implementation": "projected_exact_black_bar_body_local_box_gaussian_blur",
+  "dynamics_mode": "observation_only_no_sim_mutation",
+  "localization_mode": "frozen_task_local_regions",
+  "activation": "entire_episode",
+  "task_region_manifest": "/home/huiqiongli/Sim/release/source/A3_interaction_part_occlusion/specs/regions/manifest_bounded_receivers.json",
+  "geometry_reference_spec": "/home/huiqiongli/Sim/release/source/A3_interaction_part_occlusion/specs/regions/bounded_receivers.json",
+  "geometry_parity_contract": "same_manifest_patch_pos_normal_tangent_and_three_half_extents_as_black_bar",
+  "interaction_parts": [
+    "receptacle_contact"
+  ],
+  "views": [
+    "agentview",
+    "robot0_eye_in_hand"
+  ],
+  "observation_image_convention": "opengl",
+  "mask_to_source_body_visible_pixels": false,
+  "protect_robot_visible_pixels": false,
+  "blur_operator": "gaussian",
+  "gaussian_radius_fraction": 0.12,
+  "edge_feather_fraction": 0.002,
+  "full_experiment_approved": true,
+  "track": "A3",
+  "subtask": "bounded_receiver",
+  "suite": "libero_10",
+  "task_id": 7,
+  "case_id": "A3_bounded_receiver__libero_10__task07"
+}

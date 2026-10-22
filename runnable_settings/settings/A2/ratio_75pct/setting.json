@@ -1,0 +1,27 @@
+{
+  "schema_version": "libero_vpro.runnable_setting.v1",
+  "setting_id": "A2.ratio_75pct",
+  "category": "A2",
+  "trials_per_case": 10,
+  "backend": "manifest_worker",
+  "source_roots": [
+    "source/A2_physical_receptacle_ratio_6models_full_20260822"
+  ],
+  "config_files": [
+    "source/A2_physical_receptacle_ratio_6models_full_20260822/manifest.json",
+    "source/A2_physical_receptacle_ratio_20260822/configs"
+  ],
+  "asset_contract_schema": "libero_vpro.asset_contract.v1",
+  "asset_mode": "bundled_environment_assets",
+  "asset_roots": [
+    "assets/A2_target_receptacle/precompiled_variants_full_surface_v3"
+  ],
+  "external_dependencies": [
+    "unmodified LIBERO bddl_files and init_files",
+    "MuJoCo and the selected model backend/checkpoint"
+  ],
+  "full_result_source": "external/full_results/by_experiment_subclass_model/A2/ratio_75pct",
+  "worker": "source/A2_physical_receptacle_ratio_6models_full_20260822/run_fastwam_worker.sh",
+  "manifest": "manifest.json",
+  "batch_manifest": "batch_manifest.json"
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "wam_syncbench.cross_model.v1",
+  "scenario": "C2_replay_wrist",
+  "enabled": true,
+  "camera": {
+    "robot0_eye_in_hand": {
+      "mode": "replay",
+      "replay_from": 1,
+      "replay_length": 3
+    }
+  }
+}

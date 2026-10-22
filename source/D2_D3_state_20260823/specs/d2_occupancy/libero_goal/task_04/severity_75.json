@@ -1,0 +1,47 @@
+{
+  "schema_version": "wam_syncbench.d2.occupancy.v1",
+  "status": "implemented",
+  "track": "D2",
+  "subtask": "support_region_occupancy",
+  "case_id": "libero_goal__t04__support_region_occupancy__s75",
+  "suite": "libero_goal",
+  "benchmark": "libero_goal",
+  "task_id": 4,
+  "instruction": "put the bowl on top of the cabinet",
+  "target": "akita_black_bowl_1",
+  "target_morphology": "open_vessel",
+  "receiver_kind": "support",
+  "physical_relation": "on",
+  "severity_pct": 75,
+  "severity_definition": "calibrated_fraction_of_maximum_feasible_neutral_block",
+  "achieved_nominal_footprint_fraction": 0.005964704167410985,
+  "destination": {
+    "kind": "site",
+    "name": "wooden_cabinet_1_top_side"
+  },
+  "primary_goal_states": [
+    [
+      "on",
+      "akita_black_bowl_1",
+      "wooden_cabinet_1_top_side"
+    ]
+  ],
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_goal/put_the_bowl_on_top_of_the_cabinet.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D2_D3_state_variation/bddl_overrides/libero_goal/task_04/occupancy.bddl",
+  "object_scale_overrides": [
+    {
+      "object": "occupancy_block_d2",
+      "category": "trajectory_block",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D2_D3_state_variation/assets/libero_goal/task_04/occupancy_75.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "placement_probe_freeze_other_joints": true,
+  "placement_probe_steps": 5000,
+  "placement_probe_max_linear_velocity_norm": 0.002,
+  "placement_full_scene_probe_steps": 60,
+  "placement_full_scene_max_relative_drift_m": 0.02,
+  "runtime_max_relative_drift_m": 0.02,
+  "settle_steps": 120
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": "wam_syncbench.trackA.a3.v10",
+  "scenario": "A3_selected_tasks_object_contact_always_on",
+  "enabled": true,
+  "occlusion_space": "mujoco_world",
+  "implementation": "mujoco_noncolliding_single_body_attached_contact_rectangle",
+  "dynamics_mode": "non_colliding_scene_geometry",
+  "localization_mode": "frozen_task_local_regions",
+  "activation": "entire_episode",
+  "task_region_manifest": "A3_selected_task_regions.json",
+  "interaction_parts": ["object_contact"],
+  "expected_patch_count": {"object_contact": 1},
+  "patch_geom_type": {"object_contact": "box"},
+  "occluder_rgba": [0.0, 0.0, 0.0, 1.0],
+  "views": ["agentview", "robot0_eye_in_hand"],
+  "contact_patch_min_horizontal_to_vertical_ratio": 1.5,
+  "contact_patch_max_normal_to_tangent_ratio": 0.25,
+  "minimum_contact_coverage": 0.95
+}

@@ -1,0 +1,21 @@
+<mujoco model="independent_shape_bowling_pin">
+  <worldbody>
+    <body>
+      <body name="object">
+        
+        <geom name="bowling_body" type="ellipsoid" pos="0 0 0.0342720" size="0.0145550 0.0234900 0.0342720" group="1" contype="0" conaffinity="0" rgba="0.96 0.95 0.88 1"/>
+        <geom name="bowling_shoulder" type="ellipsoid" pos="0 0 0.0664020" size="0.0122262 0.0197316 0.0171360" group="1" contype="0" conaffinity="0" rgba="0.96 0.95 0.88 1"/>
+        <geom name="bowling_neck" type="cylinder" pos="0 0 0.0921060" size="0.0055309 0.0149940" group="1" contype="0" conaffinity="0" rgba="0.96 0.95 0.88 1"/>
+        <geom name="bowling_red_ring_lower" type="cylinder" pos="0 0 0.0813960" size="0.0059734 0.0019278" group="1" contype="0" conaffinity="0" rgba="0.82 0.035 0.06 1"/>
+        <geom name="bowling_red_ring_upper" type="cylinder" pos="0 0 0.0878220" size="0.0056968 0.0019278" group="1" contype="0" conaffinity="0" rgba="0.82 0.035 0.06 1"/>
+        <geom name="bowling_body_collision" type="ellipsoid" pos="0 0 0.0342720" size="0.0145550 0.0234900 0.0342720" group="0" density="180" friction="0.95 0.3 0.1" rgba="0.8 0.8 0.8 0.2"/>
+        <geom name="bowling_shoulder_collision" type="ellipsoid" pos="0 0 0.0664020" size="0.0122262 0.0197316 0.0171360" group="0" density="180" friction="0.95 0.3 0.1" rgba="0.8 0.8 0.8 0.2"/>
+        <geom name="bowling_neck_collision" type="cylinder" pos="0 0 0.0921060" size="0.0055309 0.0149940" group="0" density="180" friction="0.95 0.3 0.1" rgba="0.8 0.8 0.8 0.2"/>
+    
+      </body>
+      <site rgba="0 0 0 0" size="0.003" pos="0 0 0" name="bottom_site"/>
+      <site rgba="0 0 0 0" size="0.003" pos="0 0 0.1071000" name="top_site"/>
+      <site rgba="0 0 0 0" size="0.003" pos="0.0145550 0.0234900 0.0535500" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

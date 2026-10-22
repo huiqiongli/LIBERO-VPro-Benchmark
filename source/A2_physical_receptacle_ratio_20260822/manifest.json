@@ -1,0 +1,118 @@
+{
+  "schema_version": "wam_syncbench.A2.physical_surface_manifest.v1",
+  "cases_per_model_per_trial": 160,
+  "entries": [
+    {
+      "suite": "libero_object",
+      "coverage": 0.25,
+      "label": "25pct",
+      "spec": "/home/huiqiongli/Sim/release/source/A2_physical_receptacle_ratio_20260822/configs/libero_object/A2_physical_receptacle_25pct.json",
+      "tasks": 10
+    },
+    {
+      "suite": "libero_object",
+      "coverage": 0.5,
+      "label": "50pct",
+      "spec": "/home/huiqiongli/Sim/release/source/A2_physical_receptacle_ratio_20260822/configs/libero_object/A2_physical_receptacle_50pct.json",
+      "tasks": 10
+    },
+    {
+      "suite": "libero_object",
+      "coverage": 0.75,
+      "label": "75pct",
+      "spec": "/home/huiqiongli/Sim/release/source/A2_physical_receptacle_ratio_20260822/configs/libero_object/A2_physical_receptacle_75pct.json",
+      "tasks": 10
+    },
+    {
+      "suite": "libero_object",
+      "coverage": 1.0,
+      "label": "100pct",
+      "spec": "/home/huiqiongli/Sim/release/source/A2_physical_receptacle_ratio_20260822/configs/libero_object/A2_physical_receptacle_100pct.json",
+      "tasks": 10
+    },
+    {
+      "suite": "libero_spatial",
+      "coverage": 0.25,
+      "label": "25pct",
+      "spec": "/home/huiqiongli/Sim/release/source/A2_physical_receptacle_ratio_20260822/configs/libero_spatial/A2_physical_receptacle_25pct.json",
+      "tasks": 10
+    },
+    {
+      "suite": "libero_spatial",
+      "coverage": 0.5,
+      "label": "50pct",
+      "spec": "/home/huiqiongli/Sim/release/source/A2_physical_receptacle_ratio_20260822/configs/libero_spatial/A2_physical_receptacle_50pct.json",
+      "tasks": 10
+    },
+    {
+      "suite": "libero_spatial",
+      "coverage": 0.75,
+      "label": "75pct",
+      "spec": "/home/huiqiongli/Sim/release/source/A2_physical_receptacle_ratio_20260822/configs/libero_spatial/A2_physical_receptacle_75pct.json",
+      "tasks": 10
+    },
+    {
+      "suite": "libero_spatial",
+      "coverage": 1.0,
+      "label": "100pct",
+      "spec": "/home/huiqiongli/Sim/release/source/A2_physical_receptacle_ratio_20260822/configs/libero_spatial/A2_physical_receptacle_100pct.json",
+      "tasks": 10
+    },
+    {
+      "suite": "libero_goal",
+      "coverage": 0.25,
+      "label": "25pct",
+      "spec": "/home/huiqiongli/Sim/release/source/A2_physical_receptacle_ratio_20260822/configs/libero_goal/A2_physical_receptacle_25pct.json",
+      "tasks": 10
+    },
+    {
+      "suite": "libero_goal",
+      "coverage": 0.5,
+      "label": "50pct",
+      "spec": "/home/huiqiongli/Sim/release/source/A2_physical_receptacle_ratio_20260822/configs/libero_goal/A2_physical_receptacle_50pct.json",
+      "tasks": 10
+    },
+    {
+      "suite": "libero_goal",
+      "coverage": 0.75,
+      "label": "75pct",
+      "spec": "/home/huiqiongli/Sim/release/source/A2_physical_receptacle_ratio_20260822/configs/libero_goal/A2_physical_receptacle_75pct.json",
+      "tasks": 10
+    },
+    {
+      "suite": "libero_goal",
+      "coverage": 1.0,
+      "label": "100pct",
+      "spec": "/home/huiqiongli/Sim/release/source/A2_physical_receptacle_ratio_20260822/configs/libero_goal/A2_physical_receptacle_100pct.json",
+      "tasks": 10
+    },
+    {
+      "suite": "libero_10",
+      "coverage": 0.25,
+      "label": "25pct",
+      "spec": "/home/huiqiongli/Sim/release/source/A2_physical_receptacle_ratio_20260822/configs/libero_10/A2_physical_receptacle_25pct.json",
+      "tasks": 10
+    },
+    {
+      "suite": "libero_10",
+      "coverage": 0.5,
+      "label": "50pct",
+      "spec": "/home/huiqiongli/Sim/release/source/A2_physical_receptacle_ratio_20260822/configs/libero_10/A2_physical_receptacle_50pct.json",
+      "tasks": 10
+    },
+    {
+      "suite": "libero_10",
+      "coverage": 0.75,
+      "label": "75pct",
+      "spec": "/home/huiqiongli/Sim/release/source/A2_physical_receptacle_ratio_20260822/configs/libero_10/A2_physical_receptacle_75pct.json",
+      "tasks": 10
+    },
+    {
+      "suite": "libero_10",
+      "coverage": 1.0,
+      "label": "100pct",
+      "spec": "/home/huiqiongli/Sim/release/source/A2_physical_receptacle_ratio_20260822/configs/libero_10/A2_physical_receptacle_100pct.json",
+      "tasks": 10
+    }
+  ]
+}

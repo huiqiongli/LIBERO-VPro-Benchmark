@@ -1,0 +1,31 @@
+{
+  "schema_version": "wam_syncbench.d3.case.v1",
+  "status": "implemented",
+  "track": "D3",
+  "suite": "libero_10",
+  "task_id": 2,
+  "instruction": "KITCHEN SCENE3 turn on the stove and put the moka pot on it",
+  "target": "moka_pot_1",
+  "ambiguity_schedule": {
+    "mode": "full_episode",
+    "operator": "symmetric_paired_state_exposure_v5"
+  },
+  "camera_render_contract": "equal_weight_paired_state_render_in_both_official_views",
+  "physics_and_goal_contract": "truth_state_unchanged",
+  "alternative_state_rendered": true,
+  "alternative_state_role": "equal_weight_visual_evidence_only_never_physics_or_goal_state",
+  "ambiguity_kind": "articulation_state_ambiguity",
+  "joint": "flat_stove_1_button",
+  "joint_family": "stove_button",
+  "truth_a_definition": "official_initial_articulation",
+  "truth_b_definition": {
+    "open_fraction_pct": 90
+  },
+  "reveal_entity": "flat_stove_1",
+  "case_id": "libero_10__t02__articulation_state_obfuscation__truth_b__obfuscated",
+  "d3_subclass": "articulation_state_obfuscation",
+  "truth_state": "truth_b",
+  "observation_mode": "obfuscated",
+  "visual_evidence_state": "truth_state_evidence_obfuscated",
+  "case_path": "/home/huiqiongli/Sim/release/source/D2_D3_state_20260823/cases/D3/libero_10/libero_10__t02__articulation_state_obfuscation__truth_b__obfuscated.json"
+}

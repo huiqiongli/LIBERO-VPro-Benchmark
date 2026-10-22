@@ -1,0 +1,24 @@
+{
+  "schema_version": "libero_vpro.runnable_setting.v1",
+  "setting_id": "A3.fixture_contact",
+  "category": "A3",
+  "trials_per_case": 10,
+  "backend": "a3_manifest",
+  "source_roots": [
+    "source/A3_interaction_part_occlusion"
+  ],
+  "config_files": [
+    "source/A3_interaction_part_occlusion/specs/A3_blur_fixture_contact_candidate.json"
+  ],
+  "asset_contract_schema": "libero_vpro.asset_contract.v1",
+  "asset_mode": "bundled_protocol_specs",
+  "asset_roots": [
+    "source/A3_interaction_part_occlusion/specs"
+  ],
+  "external_dependencies": [
+    "unmodified LIBERO bddl_files and init_files",
+    "MuJoCo and the selected model backend/checkpoint"
+  ],
+  "full_result_source": "external/full_results/by_experiment_subclass_model/A3/fixture_contact",
+  "manifest": "manifest.json"
+}

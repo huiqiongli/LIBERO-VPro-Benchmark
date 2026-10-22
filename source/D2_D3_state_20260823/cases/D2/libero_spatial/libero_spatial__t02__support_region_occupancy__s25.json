@@ -1,0 +1,46 @@
+{
+  "schema_version": "wam_syncbench.d2.occupancy.v1",
+  "status": "implemented",
+  "track": "D2",
+  "subtask": "support_region_occupancy",
+  "case_id": "libero_spatial__t02__support_region_occupancy__s25",
+  "suite": "libero_spatial",
+  "benchmark": "libero_spatial",
+  "task_id": 2,
+  "instruction": "pick up the black bowl from table center and place it on the plate",
+  "target": "akita_black_bowl_1",
+  "target_morphology": "open_vessel",
+  "receiver_kind": "support",
+  "physical_relation": "on",
+  "severity_pct": 25,
+  "severity_definition": "calibrated_fraction_of_maximum_feasible_neutral_block",
+  "achieved_nominal_footprint_fraction": 0.004414550969010099,
+  "destination": {
+    "kind": "object_aabb",
+    "name": "plate_1"
+  },
+  "primary_goal_states": [
+    [
+      "on",
+      "akita_black_bowl_1",
+      "plate_1"
+    ]
+  ],
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D2_D3_state_variation/bddl_overrides/libero_spatial/task_02/occupancy.bddl",
+  "object_scale_overrides": [
+    {
+      "object": "occupancy_block_d2",
+      "category": "trajectory_block",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D2_D3_state_variation/assets/libero_spatial/task_02/occupancy_25.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "placement_probe_steps": 500,
+  "settle_steps": 120,
+  "spec_path": "/home/huiqiongli/Sim/release/source/D2_D3_state_20260823/specs/d2_occupancy/libero_spatial/task_02/severity_25.json",
+  "visual_input_contract": "official_dual_camera",
+  "perturbation_scope": "physical_simulator_state_full_episode",
+  "case_path": "/home/huiqiongli/Sim/release/source/D2_D3_state_20260823/cases/D2/libero_spatial/libero_spatial__t02__support_region_occupancy__s25.json"
+}

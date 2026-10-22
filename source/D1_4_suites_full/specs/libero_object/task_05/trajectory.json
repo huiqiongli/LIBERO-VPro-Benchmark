@@ -1,0 +1,90 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "trajectory",
+  "suite": "libero_object",
+  "benchmark": "libero_object",
+  "task_id": 5,
+  "task_name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+  "instruction": "pick up the tomato sauce and place it in the basket",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_object/task_05/trajectory.bddl",
+  "definition": {
+    "zh": "轨迹干扰物",
+    "definition": "在目标物顶部放置真实碰撞方块，使其直接占据目标抓取路径；方块宽度近似目标所需夹爪开度。",
+    "target": "tomato_sauce_1",
+    "target_category": "tomato_sauce",
+    "distractor": "trajectory_block_d1",
+    "category": "trajectory_block",
+    "construction": "target_supported_grasp_width_matched_block"
+  },
+  "target_geometry": {
+    "collision_aabb_extents_m": [
+      0.062192,
+      0.061638,
+      0.07619
+    ],
+    "top_offset_from_body_m": 0.0376,
+    "mass_kg": 0.02663278,
+    "friction": [
+      0.95,
+      0.3,
+      0.1
+    ],
+    "calibration_init_state": 0
+  },
+  "settle_steps": 18,
+  "trajectory_xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/libero_object/task_05/trajectory_block.xml",
+  "object_scale_overrides": [
+    {
+      "object": "trajectory_block_d1",
+      "category": "trajectory_block",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/libero_object/task_05/trajectory_block.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "trajectory_block_d1",
+      "on_top_of": "tomato_sauce_1",
+      "support_gap_m": 0.001,
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "trajectory_calibration": {
+    "trajectory_phase": "pre-grasp approach to tomato_sauce_1",
+    "placement_rule": "center on the target top and settle with direct target support",
+    "block_half_size_m": 0.027435095476158057,
+    "block_side_length_m": 0.054870190952316114,
+    "target_top_reference_area_m2": 0.0038333904959999996,
+    "block_to_target_bbox_top_area_ratio": 0.7853981633974484,
+    "target_mass_kg": 0.02663278,
+    "block_density_kg_m3": 161.21560851968266,
+    "matched_friction": [
+      0.95,
+      0.3,
+      0.1
+    ],
+    "initial_spawn_center_offset_m": 0.06803509547615806,
+    "initial_spawn_xy_compensation_m": [
+      0.0,
+      0.0
+    ],
+    "settled_block_center_offset_range_m": [
+      0.05503509547615806,
+      0.07503509547615805
+    ],
+    "physical_support": "tomato_sauce_1",
+    "grasp_equivalence": "target-scaled footprint, matched mass and contact friction",
+    "placement_mode": "top",
+    "gripper_opening_reference_m": 0.054870190952316114,
+    "gripper_opening_basis": "target graspable cross-section, capped to Panda usable opening",
+    "floating": false
+  }
+}

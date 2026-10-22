@@ -1,0 +1,118 @@
+{
+  "schema_version": "wam_syncbench.trackA.a3.v5.semantic_shape_candidate.bounded_receivers",
+  "description": "Isolated receiver candidate: a body-anchored Gaussian blur mask covers the basket's complete bounded opening plane.",
+  "tasks": {
+    "libero_object/0": {
+      "target": "alphabet_soup_1",
+      "receptacle": "basket_1_contain_region",
+      "receptacle_contact_template": "basket_complete_opening_blur_plane"
+    },
+    "libero_object/1": {
+      "target": "cream_cheese_1",
+      "receptacle": "basket_1_contain_region",
+      "receptacle_contact_template": "basket_complete_opening_blur_plane"
+    },
+    "libero_object/2": {
+      "target": "salad_dressing_1",
+      "receptacle": "basket_1_contain_region",
+      "receptacle_contact_template": "basket_complete_opening_blur_plane"
+    },
+    "libero_object/3": {
+      "target": "bbq_sauce_1",
+      "receptacle": "basket_1_contain_region",
+      "receptacle_contact_template": "basket_complete_opening_blur_plane"
+    },
+    "libero_object/4": {
+      "target": "ketchup_1",
+      "receptacle": "basket_1_contain_region",
+      "receptacle_contact_template": "basket_complete_opening_blur_plane"
+    },
+    "libero_object/5": {
+      "target": "tomato_sauce_1",
+      "receptacle": "basket_1_contain_region",
+      "receptacle_contact_template": "basket_complete_opening_blur_plane"
+    },
+    "libero_object/6": {
+      "target": "butter_1",
+      "receptacle": "basket_1_contain_region",
+      "receptacle_contact_template": "basket_complete_opening_blur_plane"
+    },
+    "libero_object/7": {
+      "target": "milk_1",
+      "receptacle": "basket_1_contain_region",
+      "receptacle_contact_template": "basket_complete_opening_blur_plane"
+    },
+    "libero_object/8": {
+      "target": "chocolate_pudding_1",
+      "receptacle": "basket_1_contain_region",
+      "receptacle_contact_template": "basket_complete_opening_blur_plane"
+    },
+    "libero_object/9": {
+      "target": "orange_juice_1",
+      "receptacle": "basket_1_contain_region",
+      "receptacle_contact_template": "basket_complete_opening_blur_plane"
+    },
+    "libero_10/0": {
+      "target": "multiple_targets",
+      "receptacle": "shared_bounded_receiver",
+      "receptacle_contact_template": "basket_complete_opening_blur_plane"
+    },
+    "libero_10/1": {
+      "target": "multiple_targets",
+      "receptacle": "shared_bounded_receiver",
+      "receptacle_contact_template": "basket_complete_opening_blur_plane"
+    },
+    "libero_10/7": {
+      "target": "multiple_targets",
+      "receptacle": "shared_bounded_receiver",
+      "receptacle_contact_template": "basket_complete_opening_blur_plane"
+    }
+  },
+  "templates": {
+    "basket_complete_opening_blur_plane": {
+      "role": "receptacle",
+      "body_name": "basket_1_main",
+      "geom_type": "box",
+      "entity_type": "basket",
+      "occluder_style": "gaussian_blur_over_complete_bounded_opening",
+      "placement_mode": "opening_plane_at_inner_top_boundary",
+      "source_visual_aabb_top_local_z_m": 0.156332,
+      "calibrated_opening_half_extents_m": [
+        0.1,
+        0.1
+      ],
+      "minimum_surface_clearance_m": 0.0005,
+      "long_axis_body_local": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "semantic_region": "complete_basket_opening_plane",
+      "blur_region_kind": "complete_bounded_opening_plane",
+      "patches": [
+        {
+          "pos": [
+            0.0,
+            0.0,
+            0.156832
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tangent_y": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "size": [
+            0.1,
+            0.1,
+            0.00025
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,3 @@
+# The release layer only needs this lightweight dependency.  LIBERO, MuJoCo,
+# and model-specific environments remain external, as in LIBERO-PRO.
+PyYAML>=6.0

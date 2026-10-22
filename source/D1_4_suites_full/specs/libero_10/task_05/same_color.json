@@ -1,0 +1,80 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_color",
+  "suite": "libero_10",
+  "benchmark": "libero_10",
+  "task_id": 5,
+  "task_name": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+  "instruction": "STUDY SCENE1 pick up the book and place it in the back compartment of the caddy",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_10/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_10/task_05/same_color.bddl",
+  "target": "black_book_1",
+  "target_category": "black_book",
+  "definition": {
+    "zh": "同颜色/纹理/图案干扰物",
+    "definition": "不同类别的真实带把手杯映射目标物的颜色、纹理和图案，并紧挨目标放置。",
+    "target": "black_book_1",
+    "target_category": "black_book",
+    "distractor": "red_coffee_mug_d1_same_color",
+    "category": "red_coffee_mug",
+    "construction": "different_category_target_texture_transfer"
+  },
+  "settle_steps": 18,
+  "object_scale_overrides": [
+    {
+      "object": "red_coffee_mug_d1_same_color",
+      "category": "red_coffee_mug",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/shared/same_color/black_book/red_coffee_mug_d1_same_color_v2.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "red_coffee_mug_d1_same_color",
+      "relative_to": "black_book_1",
+      "candidate_offsets": [
+        [
+          0.0,
+          0.205,
+          0.0
+        ],
+        [
+          0.205,
+          0.0,
+          0.0
+        ],
+        [
+          -0.205,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.205,
+          0.0
+        ]
+      ],
+      "candidate_selection": "max_clearance",
+      "avoid_objects": [
+        "black_book_1",
+        "white_yellow_mug_1",
+        "study_table",
+        "desk_caddy_1"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.32,
+          0.32
+        ],
+        [
+          -0.3,
+          0.3
+        ]
+      ],
+      "min_distance_from_others": 0.045,
+      "z_from": "black_book_1"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "trajectory",
+  "suite": "libero_object",
+  "benchmark": "libero_object",
+  "task_id": 4,
+  "task_name": "pick_up_the_ketchup_and_place_it_in_the_basket",
+  "instruction": "pick up the ketchup and place it in the basket",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_object/task_04/trajectory.bddl",
+  "definition": {
+    "zh": "轨迹干扰物",
+    "definition": "在目标物顶部放置真实碰撞方块，使其直接占据目标抓取路径；方块宽度近似目标所需夹爪开度。",
+    "target": "ketchup_1",
+    "target_category": "ketchup",
+    "distractor": "trajectory_block_d1",
+    "category": "trajectory_block",
+    "construction": "target_supported_grasp_width_matched_block"
+  },
+  "target_geometry": {
+    "collision_aabb_extents_m": [
+      0.03676,
+      0.05622,
+      0.14561
+    ],
+    "top_offset_from_body_m": 0.07319,
+    "mass_kg": 0.02321683,
+    "friction": [
+      0.95,
+      0.3,
+      0.1
+    ],
+    "calibration_init_state": 0
+  },
+  "settle_steps": 18,
+  "trajectory_xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/libero_object/task_04/trajectory_block.xml",
+  "object_scale_overrides": [
+    {
+      "object": "trajectory_block_d1",
+      "category": "trajectory_block",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/libero_object/task_04/trajectory_block.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "trajectory_block_d1",
+      "on_top_of": "ketchup_1",
+      "support_gap_m": 0.001,
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "trajectory_calibration": {
+    "trajectory_phase": "pre-grasp approach to ketchup_1",
+    "placement_rule": "center on the target top and settle with direct target support",
+    "block_half_size_m": 0.02014411151720571,
+    "block_side_length_m": 0.04028822303441142,
+    "target_top_reference_area_m2": 0.0020666472,
+    "block_to_target_bbox_top_area_ratio": 0.7853981633974483,
+    "target_mass_kg": 0.02321683,
+    "block_density_kg_m3": 355.0328864705648,
+    "matched_friction": [
+      0.95,
+      0.3,
+      0.1
+    ],
+    "initial_spawn_center_offset_m": 0.09633411151720572,
+    "initial_spawn_xy_compensation_m": [
+      0.0,
+      0.0
+    ],
+    "settled_block_center_offset_range_m": [
+      0.08333411151720573,
+      0.10333411151720572
+    ],
+    "physical_support": "ketchup_1",
+    "grasp_equivalence": "target-scaled footprint, matched mass and contact friction",
+    "placement_mode": "top",
+    "gripper_opening_reference_m": 0.04028822303441142,
+    "gripper_opening_basis": "target graspable cross-section, capped to Panda usable opening",
+    "floating": false
+  }
+}

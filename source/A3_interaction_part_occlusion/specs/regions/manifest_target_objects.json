@@ -1,0 +1,756 @@
+{
+  "schema_version": "wam_syncbench.trackA.a3.v26.semantic_shape_candidate.targets",
+  "description": "Nine upright cans, bottles, and cartons use a narrow body-anchored blur bar above the object top; flat small cartons are excluded; the moka pot uses a larger vertical black-handle blur region.",
+  "selection_policy": "retain stable upright tops and the explicitly localized moka-pot handle",
+  "excluded_flat_small_carton_cases": [
+    {
+      "case_key": "libero_object/1",
+      "entity_type": "cream_cheese",
+      "reason": "flat small carton"
+    },
+    {
+      "case_key": "libero_object/6",
+      "entity_type": "butter",
+      "reason": "flat small carton"
+    },
+    {
+      "case_key": "libero_object/8",
+      "entity_type": "chocolate_pudding",
+      "reason": "flat small carton"
+    },
+    {
+      "case_key": "libero_goal/6",
+      "entity_type": "cream_cheese",
+      "reason": "flat small carton"
+    }
+  ],
+  "tasks": {
+    "libero_object/0": {
+      "target": "alphabet_soup_1",
+      "receptacle": "basket_1_contain_region",
+      "object_contact_template": "libero_object_task00_alphabet_soup_top_blur_region"
+    },
+    "libero_object/2": {
+      "target": "salad_dressing_1",
+      "receptacle": "basket_1_contain_region",
+      "object_contact_template": "libero_object_task02_salad_dressing_top_blur_region"
+    },
+    "libero_object/3": {
+      "target": "bbq_sauce_1",
+      "receptacle": "basket_1_contain_region",
+      "object_contact_template": "libero_object_task03_bbq_sauce_top_blur_region"
+    },
+    "libero_object/4": {
+      "target": "ketchup_1",
+      "receptacle": "basket_1_contain_region",
+      "object_contact_template": "libero_object_task04_ketchup_top_blur_region"
+    },
+    "libero_object/5": {
+      "target": "tomato_sauce_1",
+      "receptacle": "basket_1_contain_region",
+      "object_contact_template": "libero_object_task05_tomato_sauce_top_blur_region"
+    },
+    "libero_object/7": {
+      "target": "milk_1",
+      "receptacle": "basket_1_contain_region",
+      "object_contact_template": "libero_object_task07_milk_top_blur_region"
+    },
+    "libero_object/9": {
+      "target": "orange_juice_1",
+      "receptacle": "basket_1_contain_region",
+      "object_contact_template": "libero_object_task09_orange_juice_top_blur_region"
+    },
+    "libero_goal/2": {
+      "target": "wine_bottle_1",
+      "receptacle": "wooden_cabinet_1_top_side",
+      "object_contact_template": "libero_goal_task02_wine_bottle_top_blur_region"
+    },
+    "libero_goal/9": {
+      "target": "wine_bottle_1",
+      "receptacle": "wine_rack_1_top_region",
+      "object_contact_template": "libero_goal_task09_wine_bottle_top_blur_region"
+    },
+    "libero_10/2": {
+      "target": "moka_pot_1",
+      "receptacle": "flat_stove_1_cook_region",
+      "object_contact_template": "moka_pot_black_handle_blur_region"
+    }
+  },
+  "templates": {
+    "libero_object_task00_alphabet_soup_top_blur_region": {
+      "role": "target",
+      "body_name": "alphabet_soup_1_main",
+      "geom_type": "box",
+      "entity_type": "alphabet_soup",
+      "occluder_style": "narrow_horizontal_gaussian_blur_bar_above_object_top",
+      "placement_mode": "body_local_bar_above_top_surface",
+      "source_visual_aabb_low_m": [
+        -0.041879171,
+        -0.042666659,
+        -0.04499921
+      ],
+      "source_visual_aabb_high_m": [
+        0.042957708,
+        0.042054164,
+        0.043484392
+      ],
+      "world_up_body_local": [
+        0.020586167,
+        0.999629726,
+        -0.017793853
+      ],
+      "long_axis_body_local": [
+        -0.008008186,
+        0.01796192,
+        0.9998066
+      ],
+      "short_axis_body_local": [
+        0.99975601,
+        -0.020439689,
+        0.008374988
+      ],
+      "source_top_support_coordinate_m": 0.043723636,
+      "top_bar_overhang_m_per_side": 0.004,
+      "top_bar_half_width_m": 0.010474668,
+      "minimum_surface_clearance_m": 0.00075,
+      "semantic_region": "upright_object_top_horizontal_bar",
+      "selection_basis": "upright can, bottle, or carton with a stable top",
+      "calibration_models": [
+        "OpenVLA-OFT",
+        "Pi0",
+        "Pi0.5"
+      ],
+      "grasp_calibration_source": "external/results/A1_online_distance_grasp_6models_4suites_10trial_20260822/openvla_oft/libero_object/post_grasp/episode_records/OpenVLA-OFT-libero_object-task00-trial000-post_grasp-b09ea50f/episode.json",
+      "patches": [
+        {
+          "pos": [
+            0.001491486,
+            0.045931817,
+            -0.001580467
+          ],
+          "normal": [
+            0.020586167,
+            0.999629726,
+            -0.017793853
+          ],
+          "tangent_y": [
+            0.99975601,
+            -0.020439689,
+            0.008374988
+          ],
+          "size": [
+            0.049333814,
+            0.010474668,
+            0.0015
+          ]
+        }
+      ]
+    },
+    "libero_object_task02_salad_dressing_top_blur_region": {
+      "role": "target",
+      "body_name": "salad_dressing_1_main",
+      "geom_type": "box",
+      "entity_type": "salad_dressing",
+      "occluder_style": "narrow_horizontal_gaussian_blur_bar_above_object_top",
+      "placement_mode": "body_local_bar_above_top_surface",
+      "source_visual_aabb_low_m": [
+        -0.033257058,
+        -0.074024662,
+        -0.022233442
+      ],
+      "source_visual_aabb_high_m": [
+        0.032502236,
+        0.074028137,
+        0.022472841
+      ],
+      "world_up_body_local": [
+        0.028854763,
+        0.997677617,
+        0.061699067
+      ],
+      "long_axis_body_local": [
+        0.998445833,
+        -0.031711185,
+        0.045829249
+      ],
+      "short_axis_body_local": [
+        0.047679367,
+        0.060280784,
+        -0.997042078
+      ],
+      "source_top_support_coordinate_m": 0.076180613,
+      "top_bar_overhang_m_per_side": 0.004,
+      "top_bar_half_width_m": 0.007,
+      "minimum_surface_clearance_m": 0.00075,
+      "semantic_region": "upright_object_top_horizontal_bar",
+      "selection_basis": "upright can, bottle, or carton with a stable top",
+      "calibration_models": [
+        "OpenVLA-OFT",
+        "Pi0",
+        "Pi0.5"
+      ],
+      "grasp_calibration_source": "external/results/A1_online_distance_grasp_6models_4suites_10trial_20260822/openvla_oft/libero_object/post_grasp/episode_records/OpenVLA-OFT-libero_object-task02-trial000-post_grasp-321b8677/episode.json",
+      "patches": [
+        {
+          "pos": [
+            0.001885737,
+            0.078251972,
+            0.004958904
+          ],
+          "normal": [
+            0.028854763,
+            0.997677617,
+            0.061699067
+          ],
+          "tangent_y": [
+            0.047679367,
+            0.060280784,
+            -0.997042078
+          ],
+          "size": [
+            0.040200439,
+            0.007,
+            0.0015
+          ]
+        }
+      ]
+    },
+    "libero_object_task03_bbq_sauce_top_blur_region": {
+      "role": "target",
+      "body_name": "bbq_sauce_1_main",
+      "geom_type": "box",
+      "entity_type": "bbq_sauce",
+      "occluder_style": "narrow_horizontal_gaussian_blur_bar_above_object_top",
+      "placement_mode": "body_local_bar_above_top_surface",
+      "source_visual_aabb_low_m": [
+        -0.025024121,
+        -0.017090412,
+        -0.057142783
+      ],
+      "source_visual_aabb_high_m": [
+        0.024967928,
+        0.016838953,
+        0.057156501
+      ],
+      "world_up_body_local": [
+        -0.000377555,
+        -0.006686556,
+        0.999977573
+      ],
+      "long_axis_body_local": [
+        0.700111092,
+        0.714016155,
+        0.005038752
+      ],
+      "short_axis_body_local": [
+        -0.714033834,
+        0.700097293,
+        0.004411752
+      ],
+      "source_top_support_coordinate_m": 0.057278943,
+      "top_bar_overhang_m_per_side": 0.004,
+      "top_bar_half_width_m": 0.007194496,
+      "minimum_surface_clearance_m": 0.00075,
+      "semantic_region": "upright_object_top_horizontal_bar",
+      "selection_basis": "upright can, bottle, or carton with a stable top",
+      "calibration_models": [
+        "OpenVLA-OFT",
+        "Pi0",
+        "Pi0.5"
+      ],
+      "grasp_calibration_source": "external/results/A1_online_distance_grasp_6models_4suites_10trial_20260822/openvla_oft/libero_object/post_grasp/episode_records/OpenVLA-OFT-libero_object-task03-trial001-post_grasp-9667518c/episode.json",
+      "patches": [
+        {
+          "pos": [
+            -5.0569e-05,
+            -0.000523722,
+            0.059526757
+          ],
+          "normal": [
+            -0.000377555,
+            -0.006686556,
+            0.999977573
+          ],
+          "tangent_y": [
+            -0.714033834,
+            0.700097293,
+            0.004411752
+          ],
+          "size": [
+            0.033901014,
+            0.007194496,
+            0.0015
+          ]
+        }
+      ]
+    },
+    "libero_object_task04_ketchup_top_blur_region": {
+      "role": "target",
+      "body_name": "ketchup_1_main",
+      "geom_type": "box",
+      "entity_type": "ketchup",
+      "occluder_style": "narrow_horizontal_gaussian_blur_bar_above_object_top",
+      "placement_mode": "body_local_bar_above_top_surface",
+      "source_visual_aabb_low_m": [
+        -0.032349592,
+        -0.074398611,
+        -0.021823776
+      ],
+      "source_visual_aabb_high_m": [
+        0.032494141,
+        0.074473894,
+        0.022697888
+      ],
+      "world_up_body_local": [
+        0.000647935,
+        0.995117396,
+        -0.098696239
+      ],
+      "long_axis_body_local": [
+        0.999297889,
+        -0.004341558,
+        -0.037213975
+      ],
+      "short_axis_body_local": [
+        -0.037460769,
+        -0.098602831,
+        -0.994421527
+      ],
+      "source_top_support_coordinate_m": 0.076285246,
+      "top_bar_overhang_m_per_side": 0.004,
+      "top_bar_half_width_m": 0.007365798,
+      "minimum_surface_clearance_m": 0.00075,
+      "semantic_region": "upright_object_top_horizontal_bar",
+      "selection_basis": "upright can, bottle, or carton with a stable top",
+      "calibration_models": [
+        "OpenVLA-OFT",
+        "Pi0",
+        "Pi0.5"
+      ],
+      "grasp_calibration_source": "external/results/A1_online_distance_grasp_6models_4suites_10trial_20260822/openvla_oft/libero_object/post_grasp/episode_records/OpenVLA-OFT-libero_object-task04-trial000-post_grasp-ac7bdf0b/episode.json",
+      "patches": [
+        {
+          "pos": [
+            0.000123164,
+            0.078195035,
+            -0.007314633
+          ],
+          "normal": [
+            0.000647935,
+            0.995117396,
+            -0.098696239
+          ],
+          "tangent_y": [
+            -0.037460769,
+            -0.098602831,
+            -0.994421527
+          ],
+          "size": [
+            0.037550686,
+            0.007365798,
+            0.0015
+          ]
+        }
+      ]
+    },
+    "libero_object_task05_tomato_sauce_top_blur_region": {
+      "role": "target",
+      "body_name": "tomato_sauce_1_main",
+      "geom_type": "box",
+      "entity_type": "tomato_sauce",
+      "occluder_style": "narrow_horizontal_gaussian_blur_bar_above_object_top",
+      "placement_mode": "body_local_bar_above_top_surface",
+      "source_visual_aabb_low_m": [
+        -0.042402621,
+        -0.043135936,
+        -0.043743549
+      ],
+      "source_visual_aabb_high_m": [
+        0.040477544,
+        0.042899455,
+        0.042827755
+      ],
+      "world_up_body_local": [
+        0.013998961,
+        0.999874934,
+        -0.007358316
+      ],
+      "long_axis_body_local": [
+        -0.344325568,
+        0.011729485,
+        0.938777036
+      ],
+      "short_axis_body_local": [
+        0.938745936,
+        -0.010608247,
+        0.344446705
+      ],
+      "source_top_support_coordinate_m": 0.043782612,
+      "top_bar_overhang_m_per_side": 0.004,
+      "top_bar_half_width_m": 0.012,
+      "minimum_surface_clearance_m": 0.00075,
+      "semantic_region": "upright_object_top_horizontal_bar",
+      "selection_basis": "upright can, bottle, or carton with a stable top",
+      "calibration_models": [
+        "OpenVLA-OFT",
+        "Pi0",
+        "Pi0.5"
+      ],
+      "grasp_calibration_source": "external/results/A1_online_distance_grasp_6models_4suites_10trial_20260822/openvla_oft/libero_object/post_grasp/episode_records/OpenVLA-OFT-libero_object-task05-trial000-post_grasp-40773efb/episode.json",
+      "patches": [
+        {
+          "pos": [
+            -0.000316333,
+            0.046036929,
+            -0.000797564
+          ],
+          "normal": [
+            0.013998961,
+            0.999874934,
+            -0.007358316
+          ],
+          "tangent_y": [
+            0.938745936,
+            -0.010608247,
+            0.344446705
+          ],
+          "size": [
+            0.059409031,
+            0.012,
+            0.0015
+          ]
+        }
+      ]
+    },
+    "libero_object_task07_milk_top_blur_region": {
+      "role": "target",
+      "body_name": "milk_1_main",
+      "geom_type": "box",
+      "entity_type": "milk",
+      "occluder_style": "narrow_horizontal_gaussian_blur_bar_above_object_top",
+      "placement_mode": "body_local_bar_above_top_surface",
+      "source_visual_aabb_low_m": [
+        -0.030105315,
+        -0.072302796,
+        -0.028892613
+      ],
+      "source_visual_aabb_high_m": [
+        0.029867311,
+        0.072366746,
+        0.029159445
+      ],
+      "world_up_body_local": [
+        -0.043002779,
+        0.999067483,
+        -0.003863307
+      ],
+      "long_axis_body_local": [
+        0.96658771,
+        0.040626054,
+        -0.253096273
+      ],
+      "short_axis_body_local": [
+        -0.252703305,
+        -0.014618068,
+        -0.967433383
+      ],
+      "source_top_support_coordinate_m": 0.073705496,
+      "top_bar_overhang_m_per_side": 0.004,
+      "top_bar_half_width_m": 0.008811788,
+      "minimum_surface_clearance_m": 0.00075,
+      "semantic_region": "upright_object_top_horizontal_bar",
+      "selection_basis": "upright can, bottle, or carton with a stable top",
+      "calibration_models": [
+        "OpenVLA-OFT",
+        "Pi0",
+        "Pi0.5"
+      ],
+      "grasp_calibration_source": "external/results/A1_online_distance_grasp_6models_4suites_10trial_20260822/openvla_oft/libero_object/post_grasp/episode_records/OpenVLA-OFT-libero_object-task07-trial000-post_grasp-28dc0bc3/episode.json",
+      "patches": [
+        {
+          "pos": [
+            -0.003383728,
+            0.075880128,
+            -0.000159882
+          ],
+          "normal": [
+            -0.043002779,
+            0.999067483,
+            -0.003863307
+          ],
+          "tangent_y": [
+            -0.252703305,
+            -0.014618068,
+            -0.967433383
+          ],
+          "size": [
+            0.043269458,
+            0.008811788,
+            0.0015
+          ]
+        }
+      ]
+    },
+    "libero_object_task09_orange_juice_top_blur_region": {
+      "role": "target",
+      "body_name": "orange_juice_1_main",
+      "geom_type": "box",
+      "entity_type": "orange_juice",
+      "occluder_style": "narrow_horizontal_gaussian_blur_bar_above_object_top",
+      "placement_mode": "body_local_bar_above_top_surface",
+      "source_visual_aabb_low_m": [
+        -0.039781798,
+        -0.072543256,
+        -0.0391688
+      ],
+      "source_visual_aabb_high_m": [
+        0.039678355,
+        0.072533111,
+        0.040065771
+      ],
+      "world_up_body_local": [
+        0.031813962,
+        0.999465726,
+        -0.007492343
+      ],
+      "long_axis_body_local": [
+        0.99817767,
+        -0.031386611,
+        0.051538527
+      ],
+      "short_axis_body_local": [
+        0.051275832,
+        -0.009118334,
+        -0.998642902
+      ],
+      "source_top_support_coordinate_m": 0.07405015,
+      "top_bar_overhang_m_per_side": 0.004,
+      "top_bar_half_width_m": 0.010142914,
+      "minimum_surface_clearance_m": 0.00075,
+      "semantic_region": "upright_object_top_horizontal_bar",
+      "selection_basis": "upright can, bottle, or carton with a stable top",
+      "calibration_models": [
+        "OpenVLA-OFT",
+        "Pi0",
+        "Pi0.5"
+      ],
+      "grasp_calibration_source": "external/results/A1_online_distance_grasp_6models_4suites_10trial_20260822/openvla_oft/libero_object/post_grasp/episode_records/OpenVLA-OFT-libero_object-task09-trial000-post_grasp-aa6d1a76/episode.json",
+      "patches": [
+        {
+          "pos": [
+            0.002376009,
+            0.076264383,
+            -0.000123257
+          ],
+          "normal": [
+            0.031813962,
+            0.999465726,
+            -0.007492343
+          ],
+          "tangent_y": [
+            0.051275832,
+            -0.009118334,
+            -0.998642902
+          ],
+          "size": [
+            0.047976219,
+            0.010142914,
+            0.0015
+          ]
+        }
+      ]
+    },
+    "libero_goal_task02_wine_bottle_top_blur_region": {
+      "role": "target",
+      "body_name": "wine_bottle_1_main",
+      "geom_type": "box",
+      "entity_type": "wine_bottle",
+      "occluder_style": "narrow_horizontal_gaussian_blur_bar_above_object_top",
+      "placement_mode": "body_local_bar_above_top_surface",
+      "source_visual_aabb_low_m": [
+        -0.021560201,
+        -0.0220385,
+        -0.000332095
+      ],
+      "source_visual_aabb_high_m": [
+        0.021560204,
+        0.022760753,
+        0.158833689
+      ],
+      "world_up_body_local": [
+        0.019171373,
+        0.036044896,
+        0.999166264
+      ],
+      "long_axis_body_local": [
+        0.080899831,
+        -0.996129019,
+        0.034383072
+      ],
+      "short_axis_body_local": [
+        0.996537845,
+        0.080173211,
+        -0.022013187
+      ],
+      "source_top_support_coordinate_m": 0.159935011,
+      "top_bar_overhang_m_per_side": 0.004,
+      "top_bar_half_width_m": 0.007,
+      "minimum_surface_clearance_m": 0.00075,
+      "semantic_region": "upright_object_top_horizontal_bar",
+      "selection_basis": "upright can, bottle, or carton with a stable top",
+      "calibration_models": [
+        "OpenVLA-OFT",
+        "Pi0",
+        "Pi0.5"
+      ],
+      "grasp_calibration_source": "external/results/A1_online_distance_grasp_6models_4suites_10trial_20260822/openvla_oft/libero_goal/post_grasp/episode_records/OpenVLA-OFT-libero_goal-task02-trial000-post_grasp-dedfbcc6/episode.json",
+      "patches": [
+        {
+          "pos": [
+            0.001590981,
+            0.003352394,
+            0.162168879
+          ],
+          "normal": [
+            0.019171373,
+            0.036044896,
+            0.999166264
+          ],
+          "tangent_y": [
+            0.996537845,
+            0.080173211,
+            -0.022013187
+          ],
+          "size": [
+            0.030793439,
+            0.007,
+            0.0015
+          ]
+        }
+      ]
+    },
+    "libero_goal_task09_wine_bottle_top_blur_region": {
+      "role": "target",
+      "body_name": "wine_bottle_1_main",
+      "geom_type": "box",
+      "entity_type": "wine_bottle",
+      "occluder_style": "narrow_horizontal_gaussian_blur_bar_above_object_top",
+      "placement_mode": "body_local_bar_above_top_surface",
+      "source_visual_aabb_low_m": [
+        -0.021560201,
+        -0.0220385,
+        -0.000332095
+      ],
+      "source_visual_aabb_high_m": [
+        0.021560204,
+        0.022760753,
+        0.158833689
+      ],
+      "world_up_body_local": [
+        0.008377765,
+        -0.055130309,
+        0.998444021
+      ],
+      "long_axis_body_local": [
+        0.727041965,
+        -0.685185958,
+        -0.04393386
+      ],
+      "short_axis_body_local": [
+        0.68654191,
+        0.72627877,
+        0.034341721
+      ],
+      "source_top_support_coordinate_m": 0.159982163,
+      "top_bar_overhang_m_per_side": 0.004,
+      "top_bar_half_width_m": 0.008112809,
+      "minimum_surface_clearance_m": 0.00075,
+      "semantic_region": "upright_object_top_horizontal_bar",
+      "selection_basis": "upright can, bottle, or carton with a stable top",
+      "calibration_models": [
+        "OpenVLA-OFT",
+        "Pi0",
+        "Pi0.5"
+      ],
+      "grasp_calibration_source": "external/results/A1_online_distance_grasp_6models_4suites_10trial_20260822/openvla_oft/libero_goal/post_grasp/episode_records/OpenVLA-OFT-libero_goal-task09-trial000-post_grasp-b53a4e35/episode.json",
+      "patches": [
+        {
+          "pos": [
+            0.0006964,
+            -0.004221558,
+            0.162246044
+          ],
+          "normal": [
+            0.008377765,
+            -0.055130309,
+            0.998444021
+          ],
+          "tangent_y": [
+            0.68654191,
+            0.72627877,
+            0.034341721
+          ],
+          "size": [
+            0.038519465,
+            0.008112809,
+            0.0015
+          ]
+        }
+      ]
+    },
+    "moka_pot_black_handle_blur_region": {
+      "role": "target",
+      "body_name": "moka_pot_1_main",
+      "geom_type": "box",
+      "entity_type": "moka_pot",
+      "occluder_style": "vertical_gaussian_blur_over_black_handle_body",
+      "placement_mode": "body_local_projected_black_handle_region",
+      "source_handle_visual_geom": "moka_pot_1_g1",
+      "source_interaction_geom_names": [
+        "moka_pot_1_g11",
+        "moka_pot_1_g12"
+      ],
+      "minimum_surface_clearance_m": 0.0,
+      "semantic_region": "moka_pot_black_handle_grasp_region",
+      "grasp_calibration_source": "external/results/A1_online_distance_grasp_6models_4suites_10trial_20260822/openvla_oft/libero_10/post_grasp/episode_records/OpenVLA-OFT-libero_10-task02-trial000-post_grasp-958bf2b3/episode.json",
+      "replayed_grasp_contact_geoms": [
+        "moka_pot_1_g11",
+        "moka_pot_1_g4"
+      ],
+      "replayed_grasp_contact_local_min_m": [
+        -0.02499511,
+        0.03457769,
+        0.038753703
+      ],
+      "replayed_grasp_contact_local_max_m": [
+        0.010207249,
+        0.048798057,
+        0.055847867
+      ],
+      "patches": [
+        {
+          "pos": [
+            -0.01,
+            0.04,
+            0.051
+          ],
+          "normal": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "tangent_y": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "size": [
+            0.045,
+            0.05,
+            0.003
+          ]
+        }
+      ]
+    }
+  }
+}

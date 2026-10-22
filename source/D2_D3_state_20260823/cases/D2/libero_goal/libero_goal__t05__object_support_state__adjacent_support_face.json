@@ -1,0 +1,16 @@
+{
+  "schema_version": "wam_syncbench.d2.case.v1",
+  "status": "implemented",
+  "track": "D2",
+  "suite": "libero_goal",
+  "task_id": 5,
+  "instruction": "push the plate to the front of the stove",
+  "target": "plate_1",
+  "visual_input_contract": "official_dual_camera",
+  "perturbation_scope": "physical_simulator_state_full_episode",
+  "case_id": "libero_goal__t05__object_support_state__adjacent_support_face",
+  "subtask": "object_support_state",
+  "morphology": "planar",
+  "support_state": "adjacent_support_face",
+  "case_path": "/home/huiqiongli/Sim/release/source/D2_D3_state_20260823/cases/D2/libero_goal/libero_goal__t05__object_support_state__adjacent_support_face.json"
+}

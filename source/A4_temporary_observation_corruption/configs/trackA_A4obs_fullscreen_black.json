@@ -1,0 +1,19 @@
+{
+  "schema_version": "wam_syncbench.trackA.v1",
+  "scenario": "A4_corruption",
+  "variant": "fullscreen_black",
+  "enabled": true,
+  "save_masked_video": true,
+  "mask_source": "center_rect",
+  "mask_fraction": 1.0,
+  "fill_rgb": [
+    0,
+    0,
+    0
+  ],
+  "views": [
+    "agentview",
+    "robot0_eye_in_hand"
+  ],
+  "description": "A4 full-screen black corruption (both views)."
+}

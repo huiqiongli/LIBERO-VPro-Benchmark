@@ -1,0 +1,34 @@
+{
+  "schema_version": "wam_syncbench.c1_cross_view.v2",
+  "status": "validated_smoke",
+  "track": "C1",
+  "subtask": "count",
+  "case_id": "C1_count_libero_10_t9__agent",
+  "semantic_case_id": "C1_count_libero_10_t9",
+  "suite": "libero_10",
+  "task_id": 9,
+  "instruction": "put the yellow and white mug in the microwave and close it",
+  "direction": "agent",
+  "enabled": true,
+  "observation_mode": "perturbed",
+  "target_policy": "object_edit",
+  "mask_source": "object_edit",
+  "render_mode": "temporary_counterfactual_simulator_branch",
+  "views": ["agentview"],
+  "corrupted_view": "agentview",
+  "truth_view": "robot0_eye_in_hand",
+  "target": "porcelain_mug_1",
+  "object_edits": [
+    {"op": "disappear", "object": "porcelain_mug_1", "hidden_z": -10.0}
+  ],
+  "count_basis": "two_mugs_to_one_visible_mug",
+  "semantic_note": "Hide the irrelevant porcelain mug while keeping the white/yellow target mug visible; this is distinct from target-existence corruption.",
+  "save_masked_video": true,
+  "visual_input_contract": "official_dual_camera",
+  "simulator_state_contract": {
+    "physical_rollout_unchanged": true,
+    "temporary_edit_restored_after_render": true
+  },
+  "source_validation_status": "validated_smoke",
+  "existing_scenario": ""
+}

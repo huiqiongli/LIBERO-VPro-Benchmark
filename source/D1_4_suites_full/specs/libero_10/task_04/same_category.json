@@ -1,0 +1,90 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_category",
+  "suite": "libero_10",
+  "benchmark": "libero_10",
+  "task_id": 4,
+  "task_name": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+  "instruction": "LIVING ROOM SCENE5 put the white mug on the left plate and put the yellow and white mug on the right plate",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_10/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_10/task_04/same_category.bddl",
+  "target": "porcelain_mug_1",
+  "target_category": "porcelain_mug",
+  "definition": {
+    "zh": "同类别干扰物",
+    "definition": "保持与目标完全相同的类别和几何结构，但使用明显不同的颜色，并紧挨目标放置。",
+    "target": "porcelain_mug_1",
+    "target_category": "porcelain_mug",
+    "distractor": "porcelain_mug_d1_same_category",
+    "category": "porcelain_mug",
+    "construction": "same_category_exact_geometry_recolored",
+    "appearance_change": "color_changed",
+    "color_tint_rgba": [
+      0.05,
+      0.85,
+      1.0,
+      1.0
+    ]
+  },
+  "settle_steps": 18,
+  "object_scale_overrides": [
+    {
+      "object": "porcelain_mug_d1_same_category",
+      "category": "porcelain_mug",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/shared/same_shape/porcelain_mug/13_217_255/porcelain_mug_d1_exact_shape_color_copy.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "porcelain_mug_d1_same_category",
+      "relative_to": "porcelain_mug_1",
+      "candidate_offsets": [
+        [
+          0.0,
+          0.13,
+          0.0
+        ],
+        [
+          0.13,
+          0.0,
+          0.0
+        ],
+        [
+          -0.13,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.13,
+          0.0
+        ]
+      ],
+      "candidate_selection": "max_clearance",
+      "avoid_objects": [
+        "porcelain_mug_1",
+        "red_coffee_mug_1",
+        "white_yellow_mug_1",
+        "plate_1",
+        "plate_2",
+        "living_room_table"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.34,
+          0.34
+        ],
+        [
+          -0.34,
+          0.38
+        ]
+      ],
+      "min_distance_from_others": 0.045,
+      "z_from": "porcelain_mug_1",
+      "quat_from": "porcelain_mug_1"
+    }
+  ]
+}

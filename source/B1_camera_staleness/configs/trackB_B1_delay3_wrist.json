@@ -1,0 +1,11 @@
+{
+  "schema_version": "wam_syncbench.trackB.v1",
+  "scenario": "B1_staleness_delay3_wrist",
+  "camera": {
+    "robot0_eye_in_hand": {
+      "mode": "delay",
+      "lag": 3
+    }
+  },
+  "description": "B1 \u76f8\u673a\u9648\u65e7: robot0_eye_in_hand \u65bd\u52a0delay3(\u6309replan\u8ba1), \u53e6\u4e00\u89c6\u89d2\u4fdd\u6301clean"
+}

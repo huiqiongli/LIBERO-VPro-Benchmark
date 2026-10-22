@@ -1,0 +1,43 @@
+{
+  "schema_version": "wam_syncbench.c1_cross_view.v2",
+  "status": "validated_semantic_definition",
+  "track": "C1",
+  "subtask": "position",
+  "case_id": "C1_position_libero_10_t5__wrist",
+  "semantic_case_id": "C1_position_libero_10_t5",
+  "suite": "libero_10",
+  "task_id": 5,
+  "instruction": "pick up the book and place it in the back compartment of the caddy",
+  "bddl_file": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_10/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.bddl",
+  "direction": "wrist",
+  "enabled": true,
+  "observation_mode": "perturbed",
+  "target_policy": "object_edit",
+  "mask_source": "object_edit",
+  "render_mode": "temporary_counterfactual_simulator_branch",
+  "views": [
+    "robot0_eye_in_hand"
+  ],
+  "corrupted_view": "robot0_eye_in_hand",
+  "truth_view": "agentview",
+  "target": "black_book_1",
+  "object_edits": [
+    {
+      "op": "relocate",
+      "object": "black_book_1",
+      "offset": [
+        0.18,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "save_masked_video": true,
+  "visual_input_contract": "official_dual_camera",
+  "simulator_state_contract": {
+    "physical_rollout_unchanged": true,
+    "temporary_edit_restored_after_render": true
+  },
+  "source_validation_status": "new_case_needs_eval",
+  "existing_scenario": ""
+}

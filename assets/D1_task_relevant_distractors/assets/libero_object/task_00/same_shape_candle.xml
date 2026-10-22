@@ -1,0 +1,17 @@
+<mujoco model="independent_shape_candle">
+  <worldbody>
+    <body>
+      <body name="object">
+        
+        <geom name="candle_wax" type="cylinder" pos="0 0 0.0380950" size="0.0311990 0.0380950" group="1" contype="0" conaffinity="0" rgba="0.94 0.78 0.52 1"/>
+        <geom name="candle_color_band" type="cylinder" pos="0 0 0.0365712" size="0.0313550 0.0041905" group="1" contype="0" conaffinity="0" rgba="0.64 0.18 0.48 1"/>
+        <geom name="candle_wick" type="cylinder" pos="0 0 0.0786900" size="0.0014 0.0030" group="1" contype="0" conaffinity="0" rgba="0.04 0.025 0.02 1"/>
+        <geom name="candle_collision" type="cylinder" pos="0 0 0.0380950" size="0.0311990 0.0380950" group="0" density="180" friction="0.95 0.3 0.1" rgba="0.8 0.8 0.8 0.2"/>
+    
+      </body>
+      <site rgba="0 0 0 0" size="0.003" pos="0 0 0" name="bottom_site"/>
+      <site rgba="0 0 0 0" size="0.003" pos="0 0 0.0761900" name="top_site"/>
+      <site rgba="0 0 0 0" size="0.003" pos="0.0312145 0.0311990 0.0380950" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

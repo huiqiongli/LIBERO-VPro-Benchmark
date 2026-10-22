@@ -1,0 +1,25 @@
+{
+  "schema_version": "libero_vpro.runnable_setting.v1",
+  "setting_id": "A4.black_pre_place_3replan_once",
+  "category": "A4",
+  "trials_per_case": 10,
+  "backend": "a4_phase",
+  "source_roots": [
+    "source/A4_temporary_observation_corruption"
+  ],
+  "config_files": [
+    "source/A4_temporary_observation_corruption/configs/trackA_A4obs_fullscreen_black.json",
+    "source/A4_temporary_observation_corruption/configs/trackA_A4obs_fullscreen_noise_v2.json",
+    "source/A4_temporary_observation_corruption/configs/phase_full/pre_place.json"
+  ],
+  "asset_contract_schema": "libero_vpro.asset_contract.v1",
+  "asset_mode": "runtime_observation_transform",
+  "asset_roots": [
+    "source/A4_temporary_observation_corruption/configs"
+  ],
+  "external_dependencies": [
+    "unmodified LIBERO bddl_files and init_files",
+    "MuJoCo and the selected model backend/checkpoint"
+  ],
+  "full_result_source": "external/full_results/by_experiment_subclass_model/A4/black_pre_place_3replan_once"
+}

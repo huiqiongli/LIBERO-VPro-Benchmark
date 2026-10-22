@@ -1,0 +1,101 @@
+{
+  "schema_version": "d1_4_suites_full.v1",
+  "status": "implemented",
+  "type": "same_position",
+  "suite": "libero_spatial",
+  "benchmark": "libero_spatial",
+  "task_id": 0,
+  "task_name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+  "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+  "base_bddl_file_name": "/home/huiqiongli/Sim/Repos/LIBERO/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.bddl",
+  "bddl_file_name_override": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/bddl_overrides/libero_spatial/task_00/same_position.bddl",
+  "target": "akita_black_bowl_1",
+  "target_category": "akita_black_bowl",
+  "definition": {
+    "zh": "同位置干扰物",
+    "definition": "把原目标物向旁边挪动，并在目标原始位置放置与任务无关的不同类别实体。",
+    "target": "akita_black_bowl_1",
+    "target_category": "akita_black_bowl",
+    "distractor": "trajectory_block_d1_same_position",
+    "category": "trajectory_block",
+    "construction": "move_target_and_replace_original_position"
+  },
+  "settle_steps": 18,
+  "object_scale_overrides": [
+    {
+      "object": "trajectory_block_d1_same_position",
+      "category": "trajectory_block",
+      "scale": 1.0,
+      "xml_path": "/home/huiqiongli/Sim/release/assets/D1_task_relevant_distractors/assets/shared/same_position_block.xml",
+      "apply_stage": "precompile_xml"
+    }
+  ],
+  "same_position_replacements": [
+    {
+      "target": "akita_black_bowl_1",
+      "replacement": "trajectory_block_d1_same_position",
+      "candidate_offsets": [
+        [
+          0.0,
+          0.165,
+          0.0
+        ],
+        [
+          0.165,
+          0.0,
+          0.0
+        ],
+        [
+          -0.165,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.165,
+          0.0
+        ]
+      ],
+      "candidate_selection": "max_clearance",
+      "avoid_objects": [
+        "akita_black_bowl_2",
+        "cookies_1",
+        "glazed_rim_porcelain_ramekin_1",
+        "plate_1",
+        "main_table",
+        "wooden_cabinet_1",
+        "flat_stove_1"
+      ],
+      "workspace_bounds_xy": [
+        [
+          -0.48,
+          0.48
+        ],
+        [
+          -0.36,
+          0.38
+        ]
+      ],
+      "min_distance_from_others": 0.055,
+      "require_min_distance": true,
+      "replacement_preserve_support_z": false
+    }
+  ],
+  "object_pose_overrides": [
+    {
+      "object": "trajectory_block_d1_same_position",
+      "relative_to": "trajectory_block_d1_same_position",
+      "offset": [
+        0.0,
+        0.0,
+        0.02
+      ],
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "wam_syncbench.trackA.v1",
+  "scenario": "A4_corruption",
+  "variant": "fullscreen_noise",
+  "enabled": true,
+  "save_masked_video": true,
+  "mask_source": "center_rect",
+  "mask_fraction": 1.0,
+  "fill_mode": "noise",
+  "noise_std": 80.0,
+  "noise_seed": 20260723,
+  "views": [
+    "agentview",
+    "robot0_eye_in_hand"
+  ],
+  "description": "A4 replaces both complete camera images with Gaussian noise clipped to the image value range."
+}

@@ -1,0 +1,205 @@
+{
+  "suite": "libero_spatial",
+  "conditions": [
+    "same_category",
+    "same_color",
+    "same_shape",
+    "same_affordance",
+    "same_position",
+    "trajectory"
+  ],
+  "task_count": 10,
+  "case_count": 60,
+  "tasks": [
+    {
+      "task_id": 0,
+      "task_name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_00/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_00/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_00/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_00/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_00/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_00/trajectory.json"
+      }
+    },
+    {
+      "task_id": 1,
+      "task_name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate",
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_01/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_01/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_01/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_01/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_01/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_01/trajectory.json"
+      }
+    },
+    {
+      "task_id": 2,
+      "task_name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate",
+      "instruction": "pick up the black bowl from table center and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_02/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_02/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_02/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_02/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_02/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_02/trajectory.json"
+      }
+    },
+    {
+      "task_id": 3,
+      "task_name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+      "instruction": "pick up the black bowl on the cookie box and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_03/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_03/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_03/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_03/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_03/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_03/trajectory.json"
+      }
+    },
+    {
+      "task_id": 4,
+      "task_name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate",
+      "instruction": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_04/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_04/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_04/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_04/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_04/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_04/trajectory.json"
+      }
+    },
+    {
+      "task_id": 5,
+      "task_name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+      "instruction": "pick up the black bowl on the ramekin and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_05/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_05/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_05/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_05/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_05/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_05/trajectory.json"
+      }
+    },
+    {
+      "task_id": 6,
+      "task_name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+      "instruction": "pick up the black bowl next to the cookie box and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_06/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_06/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_06/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_06/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_06/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_06/trajectory.json"
+      }
+    },
+    {
+      "task_id": 7,
+      "task_name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate",
+      "instruction": "pick up the black bowl on the stove and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_07/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_07/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_07/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_07/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_07/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_07/trajectory.json"
+      }
+    },
+    {
+      "task_id": 8,
+      "task_name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+      "instruction": "pick up the black bowl next to the plate and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_08/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_08/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_08/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_08/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_08/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_08/trajectory.json"
+      }
+    },
+    {
+      "task_id": 9,
+      "task_name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+      "instruction": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "target": "akita_black_bowl_1",
+      "target_category": "akita_black_bowl",
+      "target_is_fixture": false,
+      "receiver": "plate_1",
+      "receiver_category": "plate",
+      "primary_target_policy": "first required manipulation for multi-stage tasks",
+      "cases": {
+        "same_category": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_09/same_category.json",
+        "same_color": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_09/same_color.json",
+        "same_shape": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_09/same_shape.json",
+        "same_affordance": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_09/same_affordance.json",
+        "same_position": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_09/same_position.json",
+        "trajectory": "/home/huiqiongli/Sim/release/source/D1_4_suites_full/specs/libero_spatial/task_09/trajectory.json"
+      }
+    }
+  ]
+}
