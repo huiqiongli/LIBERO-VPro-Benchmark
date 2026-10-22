@@ -1,9 +1,0 @@
-{
-  "schema_version": "wam_syncbench.formal_timing.v1",
-  "scenario": "A1_initially_visible_then_occluded",
-  "trigger": "time_window",
-  "time_window": {
-    "start": 80,
-    "end": 100000
-  }
-}

@@ -48,10 +48,6 @@ class ReleaseConfig:
             "data_root": "LIBERO_VPRO_DATA_ROOT",
             "libero_assets_root": "LIBERO_VPRO_LIBERO_ASSETS_ROOT",
             "libero_root": "LIBERO_VPRO_LIBERO_ROOT",
-            "fastwam_root": "FASTWAM_ROOT",
-            "fastwam_python": "FASTWAM_PYTHON",
-            "fastwam_checkpoint": "FASTWAM_CHECKPOINT",
-            "fastwam_stats": "FASTWAM_DATASET_STATS",
         }
         for key, name in names.items():
             value = str(self.data.get("external", {}).get(key, "")).strip()

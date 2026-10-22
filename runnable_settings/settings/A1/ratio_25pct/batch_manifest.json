@@ -1,5 +1,7 @@
 {
-  "schema_version": "wam_syncbench.A1.physical_target_object_ratio_fastwam_batch.v1",
+  "schema_version": "libero_vpro.setting_trial_manifest.v1",
+  "setting_id": "A1.ratio_25pct",
+  "trials_per_case": 10,
   "cases": [
     {
       "case_id": "A1_object_ratio_25pct__libero_object__task00",
@@ -5201,6 +5203,5 @@
       "spec_path": "/home/huiqiongli/Sim/release/source/A1_physical_target_object_ratio_20260822/task_specs/libero_10/task_09/physical_25pct.json",
       "trial_index": 9
     }
-  ],
-  "setting_id": "A1.ratio_25pct"
+  ]
 }

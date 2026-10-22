@@ -2,17 +2,16 @@
 
 `index.json` lists the 96 settings from `PAPER_FACING_SETTINGS.json`.
 Each `settings/<category>/<setting>/` directory contains a model-independent
-`setting.json` and a convenience `run.sh` for the FastWAM reference adapter.
-Task manifests are included where a setting has a restricted task inventory.
-Backend-specific batch manifests adapt cases to the reference evaluator;
-they do not change the dataset's task-condition case definition.
+`setting.json`. Task and trial manifests are included where a setting has a
+restricted task inventory. They do not select a model or a worker. The
+FastWAM example integration lives in the central reference runner.
 
-From this directory:
+From the release root, using the FastWAM reference integration:
 
 ```bash
-./settings/A1/ratio_25pct/run.sh --check
-./settings/C1/count.agent/run.sh --suite libero_10 --plan
-./settings/A3/gripper/run.sh --suite libero_10 --task 2 --trials 1 --trial-start 0 --gpu 0
+python3 scripts/run_eval.py --setting A1.ratio_25pct --model fastwam --check
+python3 scripts/run_eval.py --setting C1.count.agent --model fastwam --suite libero_10 --plan
+python3 scripts/run_eval.py --setting A3.gripper --model fastwam --suite libero_10 --task 2 --trials 1 --trial-start 0 --gpu 0
 ```
 
 Default evaluation uses ten trials on every applicable task. `--suite`, `--task`,

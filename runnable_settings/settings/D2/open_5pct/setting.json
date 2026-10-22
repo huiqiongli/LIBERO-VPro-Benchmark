@@ -21,7 +21,6 @@
     "unmodified LIBERO bddl_files and init_files",
     "MuJoCo and the selected model backend/checkpoint"
   ],
-  "full_result_source": "external/full_results/by_experiment_subclass_model/D2/open_5pct",
   "manifest": "manifest.json",
   "manifests_by_suite": {
     "libero_goal": "manifest_libero_goal.json"

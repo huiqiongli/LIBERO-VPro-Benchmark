@@ -43,10 +43,9 @@
       "dimension": "Visual Evidence Degradation",
       "source_roots": [
         "source/A1_physical_target_object_ratio_20260822",
-        "source/A1_physical_target_object_ratio_6models_full_20260822",
+        "paper_facing_configs/A1",
         "source/A1_timing_variants",
-        "source/formal_timing_manifests",
-        "source/adapted"
+        "source/formal_timing_manifests"
       ],
       "settings": [
         {
@@ -81,10 +80,9 @@
       "dimension": "Visual Evidence Degradation",
       "source_roots": [
         "source/A2_physical_receptacle_ratio_20260822",
-        "source/A2_physical_receptacle_ratio_6models_full_20260822",
+        "paper_facing_configs/A2",
         "source/A2_placement_timing",
-        "source/formal_timing_manifests",
-        "source/adapted"
+        "source/formal_timing_manifests"
       ],
       "settings": [
         {
@@ -252,8 +250,7 @@
       "name": "Camera Staleness",
       "dimension": "Camera Staleness",
       "source_roots": [
-        "source/B1_camera_staleness",
-        "source/adapted"
+        "source/B1_camera_staleness"
       ],
       "settings": [
         {
@@ -327,8 +324,7 @@
       "name": "Prediction–Reality Divergence",
       "dimension": "Visual Source Consistency",
       "source_roots": [
-        "source/C2_prediction_reality_fastwam",
-        "source/C2_prediction_reality_fastwam"
+        "paper_facing_configs/C2"
       ],
       "scope": "requires an interface that produces predicted camera frames",
       "settings": [
@@ -473,8 +469,7 @@
       "scripts/download_assets.sh"
     ],
     "settings_index": "runnable_settings/index.json",
-    "setting_launcher_pattern": "runnable_settings/settings/<category>/<setting>/run.sh",
-    "dispatcher": "runnable_settings/run_setting.py"
+    "reference_adapter": "runnable_settings/run_setting.py"
   },
   "scope_notes": [
     "The paper-facing count excludes the expanded D2 occupancy/support-region branches and the D3 truth-B branch that are retained in the full source archive.",

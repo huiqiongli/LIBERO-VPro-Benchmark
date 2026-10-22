@@ -1,5 +1,5 @@
 {
-  "schema_version": "libero_vpro.fastwam_batch_manifest.v1",
+  "schema_version": "libero_vpro.setting_trial_manifest.v1",
   "setting_id": "D4.taper.low",
   "trials_per_case": 10,
   "cases": [

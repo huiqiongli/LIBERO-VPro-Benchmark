@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
-"""Materialise model-independent setting contracts and reference launchers.
+"""Materialise model-independent setting contracts and case manifests.
 
 The paper-facing manifest defines the 96 settings. This builder creates
-setting-scoped launchers and filtered manifests from the bundled definitions.
-The contracts describe perturbations and cases independently of policy;
-the launchers use the FastWAM reference implementation.
+filtered manifests from the bundled definitions. Model adapters are separate.
 """
 
 from __future__ import annotations
@@ -96,11 +94,11 @@ def safe_id(value: str) -> str:
 
 def ratio_manifest(category: str, setting: str) -> tuple[str, dict]:
     if category == "A1":
-        root = "source/A1_physical_target_object_ratio_6models_full_20260822"
-        full = RELEASE / root / "manifest.json"
+        root = "paper_facing_configs/A1"
+        full = RELEASE / root / "full_case_manifest.json"
     else:
-        root = "source/A2_physical_receptacle_ratio_6models_full_20260822"
-        full = RELEASE / root / "manifest.json"
+        root = "paper_facing_configs/A2"
+        full = RELEASE / root / "full_case_manifest.json"
     ratio = int(setting.split("_")[1].replace("pct", ""))
     payload = load(full)
     rows = [row for row in payload["cases"] if int(row["ratio"]) == ratio]
@@ -112,15 +110,14 @@ def ratio_manifest(category: str, setting: str) -> tuple[str, dict]:
 
 
 def ratio_batch_manifest(category: str, setting: str) -> dict:
-    if category == "A1":
-        full = RELEASE / "source/A1_physical_target_object_ratio_6models_full_20260822/fastwam_manifest.json"
-    else:
-        full = RELEASE / "source/A2_physical_receptacle_ratio_6models_full_20260822/fastwam_manifest.json"
-    ratio = int(setting.split("_")[1].replace("pct", ""))
-    payload = load(full)
-    payload["cases"] = [row for row in payload["cases"] if int(row["ratio"]) == ratio]
-    payload["setting_id"] = f"{category}.{setting}"
-    return payload
+    _, inventory = ratio_manifest(category, setting)
+    return {
+        "schema_version": "libero_vpro.setting_trial_manifest.v1",
+        "setting_id": f"{category}.{setting}",
+        "trials_per_case": 10,
+        "cases": [{**case, "trial_index": trial}
+                  for case in inventory["cases"] for trial in range(10)],
+    }
 
 
 def d4_manifest(setting: str) -> tuple[str, dict]:
@@ -135,7 +132,7 @@ def d4_manifest(setting: str) -> tuple[str, dict]:
 
 
 def d4_batch_manifest(setting: str, inventory: dict) -> dict:
-    """Adapt case-level geometry definitions to one FastWAM row per trial."""
+    """Expand case-level geometry definitions to one row per trial."""
     rows = []
     for case in inventory["cases"]:
         case_id = f"{case['suite']}_t{int(case['task_id']):02d}__{case['case_id']}"
@@ -150,7 +147,7 @@ def d4_batch_manifest(setting: str, inventory: dict) -> dict:
                 "trial_start": trial,
                 "num_trials": 1,
             })
-    return {"schema_version": "libero_vpro.fastwam_batch_manifest.v1",
+    return {"schema_version": "libero_vpro.setting_trial_manifest.v1",
             "setting_id": f"D4.{setting}", "trials_per_case": 10, "cases": rows}
 
 
@@ -237,8 +234,7 @@ def a3_manifest(setting: str, setting_dir: Path) -> tuple[str, dict]:
         "schema_version": "libero_vpro.setting_episode_manifest.v1",
         "setting_id": f"A3.{setting}", "trials_per_case": 10,
         "episodes": episodes,
-        # FastWAM's current batch evaluator calls this field ``cases`` and
-        # expects the same rows under the legacy ``spec`` alias.
+        # Keep a ``cases`` alias for evaluators expecting trial-level rows.
         "cases": [{**row, "spec": row["case_json"]} for row in episodes],
     }
     return root, payload
@@ -306,9 +302,10 @@ def source_and_configs(category: str, setting: str) -> tuple[list[str], list[str
     backend = "shell"
     if category == "A1":
         if setting.startswith("ratio_"):
-            root, _ = ratio_manifest(category, setting); src += [root]
-            cfg += [f"{root}/manifest.json", "source/A1_physical_target_object_ratio_20260822/configs"]
-            backend = "manifest_worker"; meta["worker"] = f"{root}/run_fastwam_worker.sh"
+            root, _ = ratio_manifest(category, setting)
+            src += ["source/A1_physical_target_object_ratio_20260822"]
+            cfg += [f"{root}/full_case_manifest.json", "source/A1_physical_target_object_ratio_20260822/configs"]
+            backend = "manifest_worker"
         else:
             src += ["source/A1_timing_variants", "source/formal_timing_manifests"]
             cfg += [f"source/A1_timing_variants/configs/trackC_A1t_{ {'initially_occluded_then_revealed':'masked_then_revealed','initially_visible_then_occluded':'visible_then_masked','pre_grasp':'pregrasp_only','post_grasp':'after_grasp'}[setting]}.json"]
@@ -317,9 +314,10 @@ def source_and_configs(category: str, setting: str) -> tuple[list[str], list[str
             backend = "timing_client"
     elif category == "A2":
         if setting.startswith("ratio_"):
-            root, _ = ratio_manifest(category, setting); src += [root]
-            cfg += [f"{root}/manifest.json", "source/A2_physical_receptacle_ratio_20260822/configs"]
-            backend = "manifest_worker"; meta["worker"] = f"{root}/run_fastwam_worker.sh"
+            root, _ = ratio_manifest(category, setting)
+            src += ["source/A2_physical_receptacle_ratio_20260822"]
+            cfg += [f"{root}/full_case_manifest.json", "source/A2_physical_receptacle_ratio_20260822/configs"]
+            backend = "manifest_worker"
         else:
             src += ["source/A2_placement_timing", "source/formal_timing_manifests"]
             aliases = {"initially_occluded_then_revealed":"masked_then_revealed_replan5", "initially_visible_then_occluded":"visible_then_masked_replan5", "pre_place":"pre_place_only", "post_place":"post_place_40steps"}
@@ -343,7 +341,7 @@ def source_and_configs(category: str, setting: str) -> tuple[list[str], list[str
     elif category == "D4":
         src += ["source/D4_contact4_physical_3severity_40task_20260815"]
         cfg += ["source/D4_contact4_physical_3severity_40task_20260815/manifest.json"]
-        backend = "manifest_worker"; meta["worker"] = "source/D4_contact4_physical_3severity_40task_20260815/eval_6models/run_fastwam_worker.sh"
+        backend = "manifest_worker"
     elif category == "A4":
         src += ["source/A4_temporary_observation_corruption"]
         # A4 duration labels D1/D2/D3 select contiguous replan windows;
@@ -376,7 +374,7 @@ def source_and_configs(category: str, setting: str) -> tuple[list[str], list[str
             cfg += [f"source/A4_temporary_observation_corruption/configs/trackA_A4obs_fullscreen_{'black' if kind == 'black' else 'noise_v2'}.json", f"source/A4_temporary_observation_corruption/configs/trackA_A4rand_{n}replan.json"]
             backend = "a4_fixed"
     elif category == "B1":
-        src += ["source/B1_camera_staleness", "source/adapted"]
+        src += ["source/B1_camera_staleness"]
         c2_name = setting.replace("replay_", "replayv2_")
         cfg += [f"source/B1_camera_staleness/configs/trackB_B1_{c2_name}.json"]
         backend = "b1_condition"
@@ -385,8 +383,8 @@ def source_and_configs(category: str, setting: str) -> tuple[list[str], list[str
         cfg += [f"{root}/episode_manifests/full/all.json", f"{root}/cases/{setting.split('.')[0]}"]
         backend = "c1_manifest"
     elif category == "C2":
-        src += ["source/C2_prediction_reality_fastwam"]
-        cfg += ["source/C2_prediction_reality_fastwam/recursive_feedback_schedule.json"]
+        src += ["paper_facing_configs/C2"]
+        cfg += ["paper_facing_configs/C2/recursive_feedback_schedule.json"]
         backend = "c2_feedback"
     elif category == "A5":
         src += ["source/A5_single_view", "source/A5_view_copy", "source/A5_blank_view_control", "source/A5_white_view_control"]
@@ -411,12 +409,6 @@ def main() -> None:
             full_id = f"{cid}.{sid}"
             setting_dir = root / cid / safe_id(sid)
             setting_dir.mkdir(parents=True, exist_ok=True)
-            result_source = f"external/full_results/by_experiment_subclass_model/{cid}/{sid}"
-            if cid == "A4" and sid == "target_region_noise":
-                # The setting uses the accepted segmented-target Gaussian-noise
-                # episodes; the release name is normalized, but the archived
-                # result directory is retained as its provenance.
-                result_source = "external/full_results/by_experiment_subclass_model/A4/_legacy_segmented_target_noise"
             payload = {
                 "schema_version": "libero_vpro.runnable_setting.v1",
                 "setting_id": full_id,
@@ -429,14 +421,8 @@ def main() -> None:
                 "asset_mode": assets["asset_mode"],
                 "asset_roots": assets["asset_roots"],
                 "external_dependencies": assets["external_dependencies"],
-                "full_result_source": result_source,
                 **meta,
             }
-            dump(setting_dir / "setting.json", payload)
-            (setting_dir / "run.sh").write_text(
-                "#!/usr/bin/env bash\nset -Eeuo pipefail\nHERE=$(cd \"$(dirname \"${BASH_SOURCE[0]}\")\" && pwd)\nexec python3 \"$HERE/../../../run_setting.py\" --setting \"$HERE/setting.json\" \"$@\"\n",
-                encoding="utf-8")
-            (setting_dir / "run.sh").chmod(0o755)
             if cid in {"A1", "A2"} and sid.startswith("ratio_"):
                 _, filtered = ratio_manifest(cid, sid)
                 dump(setting_dir / "manifest.json", filtered)

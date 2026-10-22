@@ -21,6 +21,5 @@
     "unmodified LIBERO bddl_files and init_files",
     "MuJoCo and the selected model backend/checkpoint"
   ],
-  "full_result_source": "external/full_results/by_experiment_subclass_model/A1/initially_visible_then_occluded",
   "observation_spec": "source/A1_timing_variants/configs/trackA_A1_precise_100pct.json"
 }

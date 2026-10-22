@@ -72,12 +72,8 @@ def main() -> None:
         "episode_count": len(episodes),
         "cases": base_cases,
     }
-    (HERE / "manifest.json").write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
-    fastwam = {
-        "schema_version": "wam_syncbench.A2.physical_receptacle_ratio_fastwam_batch.v1",
-        "cases": episodes,
-    }
-    (HERE / "fastwam_manifest.json").write_text(json.dumps(fastwam, indent=2) + "\n", encoding="utf-8")
+    (HERE.parent.parent / "paper_facing_configs/A2/full_case_manifest.json").write_text(
+        json.dumps(payload, indent=2) + "\n", encoding="utf-8")
     print(f"built {len(base_cases)} cases and {len(episodes)} episodes")
 
 

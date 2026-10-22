@@ -25,6 +25,6 @@ exec timeout 168h "$FASTWAM_PYTHON" "$LIBERO_VPRO_FASTWAM_RUNNER" \
   ++EVALUATION.trial_start=0 EVALUATION.num_trials=1 \
   EVALUATION.output_dir="$MODEL_ROOT/batch" EVALUATION.device=cuda \
   EVALUATION.num_inference_steps=10 \
-  +EVALUATION.batch_manifest="${A2_SETTING_MANIFEST:-$HERE/fastwam_manifest.json}" \
+  +EVALUATION.batch_manifest="${A2_SETTING_MANIFEST:?set A2_SETTING_MANIFEST to the selected trial manifest}" \
   +EVALUATION.batch_shard_id=0 +EVALUATION.batch_num_shards=1 \
   model.skip_dit_load_from_pretrain=true gpu_id="$GPU_ID"

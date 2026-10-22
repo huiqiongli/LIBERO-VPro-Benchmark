@@ -15,15 +15,13 @@
   "categories": {
     "Target-Object Masking": [
       "source/A1_physical_target_object_ratio_20260822",
-      "source/A1_physical_target_object_ratio_6models_full_20260822",
-      "source/A1_timing_variants",
-      "source/adapted"
+      "paper_facing_configs/A1",
+      "source/A1_timing_variants"
     ],
     "Target-Receptacle Masking": [
       "source/A2_physical_receptacle_ratio_20260822",
-      "source/A2_physical_receptacle_ratio_6models_full_20260822",
-      "source/A2_placement_timing",
-      "source/adapted"
+      "paper_facing_configs/A2",
+      "source/A2_placement_timing"
     ],
     "Interaction-Cue Masking": [
       "source/A3_interaction_part_occlusion"
@@ -38,14 +36,13 @@
       "source/A5_view_copy"
     ],
     "Camera Staleness": [
-      "source/B1_camera_staleness",
-      "source/adapted"
+      "source/B1_camera_staleness"
     ],
     "Cross-View Contradiction": [
       "source/C1_cross_view_20260825"
     ],
     "Prediction–Reality Divergence": [
-      "source/C2_prediction_reality_fastwam"
+      "paper_facing_configs/C2"
     ],
     "Task-Relevant Distractors": [
       "source/D1_4_suites_full"

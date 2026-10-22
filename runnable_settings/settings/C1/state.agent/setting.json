@@ -21,6 +21,5 @@
     "unmodified LIBERO bddl_files and init_files",
     "MuJoCo and the selected model backend/checkpoint"
   ],
-  "full_result_source": "external/full_results/by_experiment_subclass_model/C1/state.agent",
   "manifest": "manifest.json"
 }

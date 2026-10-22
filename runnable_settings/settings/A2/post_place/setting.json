@@ -21,6 +21,5 @@
     "unmodified LIBERO bddl_files and init_files",
     "MuJoCo and the selected model backend/checkpoint"
   ],
-  "full_result_source": "external/full_results/by_experiment_subclass_model/A2/post_place",
   "observation_spec": "source/A2_placement_timing/configs/trackA_A2_receptacle_black.json"
 }

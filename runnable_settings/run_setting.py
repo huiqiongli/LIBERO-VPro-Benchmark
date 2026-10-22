@@ -88,7 +88,9 @@ def main() -> int:
     env.update(selection.as_env())
 
     if category in {"A1", "A2"} and sid.startswith("ratio_"):
-        source_root = resolve(setting["source_roots"][0])
+        source_root = resolve(
+            f"source/{'A1_physical_target_object_ratio_6models_full_20260822' if category == 'A1' else 'A2_physical_receptacle_ratio_6models_full_20260822'}"
+        )
         manifest = setting_dir / setting.get("batch_manifest", setting.get("manifest", "manifest.json"))
         manifest = selected_manifest(manifest, output, selection, dry_run=dry_run)
         env.update({

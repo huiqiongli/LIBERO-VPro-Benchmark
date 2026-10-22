@@ -20,6 +20,5 @@
   "external_dependencies": [
     "unmodified LIBERO bddl_files and init_files",
     "MuJoCo and the selected model backend/checkpoint"
-  ],
-  "full_result_source": "external/full_results/by_experiment_subclass_model/A4/noise_reach_3replan_once"
+  ]
 }

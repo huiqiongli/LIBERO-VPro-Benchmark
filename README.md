@@ -52,7 +52,8 @@ distribute the complete upstream LIBERO environment; it does include derived
 assets and some shared upstream meshes. For an installation with `Repos/FastWAM`, `Repos/LIBERO`
 and `.venvs/fastwam` under one directory, `LIBERO_VPRO_SIM_ROOT` supplies
 defaults; explicit paths take priority. Paths can also be set in
-`evaluation_config.yaml` for `scripts/run_eval.py`.
+`evaluation_config.yaml` for LIBERO paths; FastWAM paths are supplied through
+the exported adapter environment variables above.
 
 After copying the release, rebase manifest and XML paths:
 

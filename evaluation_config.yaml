@@ -5,14 +5,9 @@ release:
   statistics_manifest: PAPER_FACING_STATISTICS.json
   settings_index: runnable_settings/index.json
 
-# LIBERO and model checkpoints are intentionally external.  Set these
-# variables before evaluation; the values below are only portable defaults.
+# LIBERO is external. Model-specific runtime variables belong to adapters.
 external:
   sim_root: "${LIBERO_VPRO_SIM_ROOT:-}"
-  fastwam_root: "${FASTWAM_ROOT:-}"
-  fastwam_python: "${FASTWAM_PYTHON:-}"
-  fastwam_checkpoint: "${FASTWAM_CHECKPOINT:-}"
-  fastwam_stats: "${FASTWAM_DATASET_STATS:-}"
   libero_root: "${LIBERO_VPRO_LIBERO_ROOT:-}"
   libero_assets_root: "${LIBERO_VPRO_LIBERO_ASSETS_ROOT:-}"
   data_root: "${LIBERO_VPRO_DATA_ROOT:-}"

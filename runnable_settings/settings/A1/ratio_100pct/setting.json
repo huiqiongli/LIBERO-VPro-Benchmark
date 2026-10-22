@@ -5,10 +5,10 @@
   "trials_per_case": 10,
   "backend": "manifest_worker",
   "source_roots": [
-    "source/A1_physical_target_object_ratio_6models_full_20260822"
+    "source/A1_physical_target_object_ratio_20260822"
   ],
   "config_files": [
-    "source/A1_physical_target_object_ratio_6models_full_20260822/manifest.json",
+    "paper_facing_configs/A1/full_case_manifest.json",
     "source/A1_physical_target_object_ratio_20260822/configs"
   ],
   "asset_contract_schema": "libero_vpro.asset_contract.v1",
@@ -20,8 +20,6 @@
     "unmodified LIBERO bddl_files and init_files",
     "MuJoCo and the selected model backend/checkpoint"
   ],
-  "full_result_source": "external/full_results/by_experiment_subclass_model/A1/ratio_100pct",
-  "worker": "source/A1_physical_target_object_ratio_6models_full_20260822/run_fastwam_worker.sh",
   "manifest": "manifest.json",
   "batch_manifest": "batch_manifest.json"
 }

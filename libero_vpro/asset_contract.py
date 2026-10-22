@@ -52,7 +52,7 @@ ASSET_CONTRACTS: dict[str, dict[str, Any]] = {
     },
     "B1": {
         "asset_mode": "runtime_observation_transform",
-        "asset_roots": ["source/B1_camera_staleness/configs", "source/adapted"],
+        "asset_roots": ["source/B1_camera_staleness/configs"],
         "external_dependencies": _COMMON_EXTERNAL,
     },
     "C1": {
@@ -65,7 +65,7 @@ ASSET_CONTRACTS: dict[str, dict[str, Any]] = {
     },
     "C2": {
         "asset_mode": "runtime_feedback_transform",
-        "asset_roots": ["source/C2_prediction_reality_fastwam"],
+        "asset_roots": ["paper_facing_configs/C2"],
         "external_dependencies": _COMMON_EXTERNAL,
     },
     "D1": {

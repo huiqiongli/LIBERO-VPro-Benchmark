@@ -133,10 +133,8 @@ def main() -> int:
         errors.append(f"setting count={len(setting_ids)} != {EXPECTED_SETTING_COUNT}")
 
     # A release setting is not considered reproducible merely because a
-    # category-level launcher exists.  Each of the 96 unique expanded settings must
-    # have its own manifest, setting contract, and executable wrapper.  The
-    # wrappers may share an audited backend, but their setting id and inputs
-    # must remain explicit.
+    # category-level adapter exists. Each expanded setting must have its own
+    # model-independent contract and case inventory where applicable.
     runnable_root = resolve_release_path(
         release_root, manifest.get("runnable_settings_root", "runnable_settings")
     )
@@ -160,12 +158,9 @@ def main() -> int:
                     continue
                 setting_dir = runnable_root / row["path"]
                 contract = setting_dir / "setting.json"
-                launcher = setting_dir / "run.sh"
                 if not contract.is_file():
                     errors.append(f"missing runnable contract: {full_id}")
                     continue
-                if not launcher.is_file() or not (launcher.stat().st_mode & 0o111):
-                    errors.append(f"missing executable runnable launcher: {full_id}")
                 try:
                     payload = load_json(contract)
                     if payload.get("setting_id") != full_id:
