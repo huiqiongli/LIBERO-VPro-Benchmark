@@ -1,8 +1,7 @@
 {
   "schema_version": "libero_vpro.paper_facing_settings.v1",
-  "paper_source": "external/paper/LIBERO_VPro_arxiv/root.tex (not bundled)",
   "statistical_source": "PAPER_FACING_STATISTICS.json",
-  "case_definition": "unique suite x task x setting; model, trial, and output path are not new cases",
+  "case_definition": "unique suite x task x setting",
   "protocol": {
     "base_task_count": 40,
     "trials_per_case": 10,
@@ -20,7 +19,6 @@
       "asset_roots",
       "external_dependencies"
     ],
-    "compatibility_note": "source/ may contain relative aliases for legacy runners; assets/ is canonical",
     "category_ids": [
       "A1",
       "A2",
@@ -368,7 +366,7 @@
       "source_roots": [
         "source/D2_D3_state_20260823"
       ],
-      "scope": "paper-facing openness and object-pose subset; occupancy branches remain provenance-only",
+      "scope": "articulation openness and object-support variation",
       "settings": [
         {
           "id": "open_5pct"
@@ -472,7 +470,7 @@
     "reference_adapter": "runnable_settings/run_setting.py"
   },
   "scope_notes": [
-    "The paper-facing count excludes the expanded D2 occupancy/support-region branches and the D3 truth-B branch that are retained in the full source archive.",
+    "D2 covers articulation and object-support settings; D3 covers truth-A obfuscated articulation and object-support settings.",
     "A4 phase corruption is expanded into the five full-protocol phases (reach, pre_grasp, grasp, transport, pre_place) for both black and Gaussian-noise observations.",
     "C1 contains 190 task-condition cases across its eight settings.",
     "D4 has 36 eligible tasks per setting. Three LIBERO-Goal tasks have no grasped target; a fourth is excluded because outward contact-band deformation makes the initial bowl pose intersect its drawer."

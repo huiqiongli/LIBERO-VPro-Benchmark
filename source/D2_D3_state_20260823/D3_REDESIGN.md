@@ -46,5 +46,5 @@ valid placement; those definitions are outside the canonical D3 subset.
 - Visible state evidence must actually change; a valid configuration alone
   does not prove that a cue is visible in a particular frame.
 
-Use the public setting manifests and `scripts/run_eval.py`; this document
-does not define additional settings or model-specific launchers.
+The D3 setting manifests and `scripts/run_eval.py` provide the corresponding
+case lists and evaluation entry point.

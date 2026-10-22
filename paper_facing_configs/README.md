@@ -1,9 +1,8 @@
-# Paper-facing configuration contract
+# Setting configurations
 
-`PAPER_FACING_SETTINGS.json` is the single index for the 96 unique leaf settings in
-the paper-facing statistical hierarchy. The executable implementation remains
-in `source/`; this directory contains only configuration entries that need an
-explicit paper-scope note.
+`PAPER_FACING_SETTINGS.json` indexes the 96 settings. This directory contains
+the A1/A2 case inventories and configuration files for A4 and C2. Runtime
+implementations are under `source/`.
 
 The A4 `target_region_noise.json` entry applies Gaussian noise only to the
 target-object segmentation region in both views. It uses the fixed discrete
@@ -14,5 +13,5 @@ Explicit per-task target overrides take precedence over `obj_of_interest`.
 LIBERO-Goal task 0 selects `wooden_cabinet_1`; symbolic BDDL regions are not
 automatically interpreted as complete parent-object segmentation masks.
 
-The paper-facing D2/D3 subset excludes occupancy cases in the broader source
-manifests. Aggregate statistics use the selected subset.
+D2 covers articulation and object-support variation. D3 covers truth-A
+obfuscated articulation and object-support ambiguity.

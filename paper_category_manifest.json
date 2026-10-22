@@ -1,5 +1,4 @@
 {
-  "paper_source": "external/paper/LIBERO_VPro_arxiv/root.tex (not bundled)",
   "paper_facing_settings_manifest": "PAPER_FACING_SETTINGS.json",
   "paper_facing_counts": {
     "categories": 12,
@@ -59,10 +58,6 @@
   },
   "normal_baseline": "source/Clean_baseline_6models_40task_10trial_20260902",
   "shared_core": "source/_shared_core",
-  "known_alignment_limits": {
-    "D4": "Use the contact4 physical manifest; it retains Taper/Multipeak/Twist/Asymmetric and records inapplicable tasks explicitly.",
-    "D2_D3": "The result archive contains occupancy branches, but the current two-column paper comparison describes openness/object pose only; keep aggregation consistent."
-  },
   "category_codes": {
     "A1": "Target-Object Masking",
     "A2": "Target-Receptacle Masking",

@@ -18,8 +18,7 @@ steps. Each adapter must advance its history once per replan.
 For replay the source sequence is `0,1,2,3,1,2,3,1,2,…`. For every mode,
 the unselected view uses the current observation. Simulator state is unchanged.
 
-Use source-decision indices to verify staleness; a stale RGB image can look
-normal. A successful task alone does not verify the intended lag.
+Source-decision indices in rollout logs record the applied lag.
 
 From the release root:
 
